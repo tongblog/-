@@ -1,0 +1,1 @@
+<view class="pricing data-v-0d84c04d"><pric-nav vue-id="1" class="data-v-0d84c04d" bind:__l="__l"></pric-nav><list vue-id="2" olds="{{olds}}" higt="{{higt}}" low="{{low}}" latest="{{latest}}" class="data-v-0d84c04d" bind:__l="__l"></list></view>

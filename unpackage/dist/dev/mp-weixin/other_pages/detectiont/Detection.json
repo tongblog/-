@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "车辆检测",
+  "usingComponents": {
+    "detection-list": "/other_pages/detectiont/base/detectionList"
+  }
+}

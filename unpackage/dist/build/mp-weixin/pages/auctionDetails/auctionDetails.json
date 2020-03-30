@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-swiper": "/pages/auctionDetails/base/DetailSwiper",
+    "detail-title": "/pages/auctionDetails/base/DetailTitle",
+    "offer-list": "/pages/auctionDetails/base/OfferList",
+    "certificate": "/pages/auctionDetails/base/certificate",
+    "formalities": "/pages/auctionDetails/base/formalities",
+    "description": "/pages/auctionDetails/base/description",
+    "information": "/pages/auctionDetails/base/information",
+    "dection-list": "/pages/auctionDetails/base/DectionList",
+    "goods-nav": "/pages/auctionDetails/base/GoodsNav"
+  }
+}

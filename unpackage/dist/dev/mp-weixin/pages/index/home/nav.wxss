@@ -1,0 +1,44 @@
+.service.data-v-1e19f53b {
+  position: fixed;
+  right: 24rpx;
+  bottom: 100rpx;
+  margin: auto;
+  z-index: 80;
+  width: 60rpx;
+  height: 60rpx;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  background-color: #0657a6;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: #fff;
+}
+.swiper.data-v-1e19f53b {
+  overflow: hidden;
+  width: 100vw;
+  height: 150rpx;
+  padding: 16rpx 0rpx;
+}
+.swiper .swiper-box.data-v-1e19f53b {
+  width: 19.5% !important;
+  height: 150rpx;
+  text-align: center;
+}
+.swiper .swiper-box .nav-scroll.data-v-1e19f53b {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding-top: 10rpx;
+}
+.swiper .swiper-box .nav-scroll text.data-v-1e19f53b {
+  color: #333;
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+

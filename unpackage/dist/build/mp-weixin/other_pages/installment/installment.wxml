@@ -1,0 +1,1 @@
+<view><installment-plan vue-id="1" stages="{{stages}}" data-event-opts="{{[['^changePlan',[['changePlan']]]]}}" bind:changePlan="__e" bind:__l="__l"></installment-plan><explain vue-id="2" classId="{{classId}}" bind:__l="__l"></explain></view>

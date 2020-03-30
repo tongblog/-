@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "拒绝车源",
+  "usingComponents": {
+    "upload": "/other_pages/rejectOptions/base/upload",
+    "vehicle-data": "/other_pages/rejectOptions/base/VehicleData",
+    "results": "/other_pages/rejectOptions/base/results"
+  }
+}

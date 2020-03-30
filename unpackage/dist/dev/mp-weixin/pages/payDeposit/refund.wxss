@@ -1,0 +1,89 @@
+.refund.data-v-4c7685f6 {
+  padding: 30rpx 24rpx;
+  height: 95vh;
+}
+.refund .man-header.data-v-4c7685f6 {
+  border-radius: 5rpx;
+}
+.refund .man-header .top.data-v-4c7685f6 {
+  height: 244rpx;
+  text-align: center;
+}
+.refund .man-header .top .left.data-v-4c7685f6 {
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  color: #222;
+}
+.refund .man-header .top .right.data-v-4c7685f6 {
+  font-size: 90rpx;
+  color: #ccc;
+}
+.refund .man-header .top .right text.data-v-4c7685f6 {
+  font-size: 30rpx;
+}
+.refund .man-header .bottom.data-v-4c7685f6 {
+  border-top: 1rpx #eee solid;
+  padding: 0 5rpx;
+}
+.refund .man-header .bottom icon.data-v-4c7685f6 {
+  color: #444;
+}
+.refund .man-header .bottom .txt.data-v-4c7685f6 {
+  display: inline-block;
+  margin-left: 15rpx;
+  color: #444;
+  font-size: 26rpx;
+  line-height: 80rpx;
+}
+.refund .uni-list-cell.data-v-4c7685f6::after {
+  position: relative;
+}
+.refund .content.data-v-4c7685f6 {
+  padding-top: 35rpx;
+}
+.refund .content .con-title.data-v-4c7685f6 {
+  padding-bottom: 20rpx;
+  font-size: 28rpx;
+  color: #222;
+  font-weight: bold;
+}
+.refund .content .con-list.data-v-4c7685f6 {
+  overflow: hidden;
+  display: inline-block;
+  padding: 20rpx 23rpx;
+  width: 100%;
+  box-shadow: 0 0 10rpx 0 #ccc;
+  border-radius: 10rpx;
+}
+.refund .content .con-list .on text.data-v-4c7685f6 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+.refund .content .con-list .down.data-v-4c7685f6 {
+  overflow: hidden;
+}
+.refund .content .con-list .down .goods-name.data-v-4c7685f6 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26rpx;
+  color: #222;
+}
+.refund .content .con-list .down .goods-price.data-v-4c7685f6 {
+  font-size: 26rpx;
+  color: #222;
+}
+.refund .content .con-list .down .goods-price text.data-v-4c7685f6 {
+  color: #ff7e1f;
+}
+.refund .btn.data-v-4c7685f6 {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 25rpx;
+  padding: 0 25rpx;
+}
+.refund .btn button.data-v-4c7685f6 {
+  background-color: #ff7e1f;
+}
+

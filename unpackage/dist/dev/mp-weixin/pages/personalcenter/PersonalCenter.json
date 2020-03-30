@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "center-header": "/pages/personalcenter/base/CenterHeader",
+    "center-body": "/pages/personalcenter/base/CenterBody",
+    "center-bottom": "/pages/personalcenter/base/CenterBottom"
+  }
+}

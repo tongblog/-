@@ -1,0 +1,1 @@
+<view class="letter-list data-v-2b666952"><view class="letters uni-column data-v-2b666952"><view class="flex-item data-v-2b666952">热</view><block wx:for="{{letters}}" wx:for-item="citys" wx:for-index="key" wx:key="key"><view data-event-opts="{{[['tap',[['handleLetter',[key]]]]]}}" class="flex-item data-v-2b666952" bindtap="__e">{{key}}</view></block></view></view>

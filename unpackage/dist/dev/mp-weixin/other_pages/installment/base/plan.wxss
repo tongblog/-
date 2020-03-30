@@ -1,0 +1,30 @@
+.plan.data-v-9e0ea7f2 {
+  padding: 24rpx;
+}
+.plan .plan-item.data-v-9e0ea7f2 {
+  padding: 22rpx 22rpx 0 22rpx;
+  border-radius: 15rpx;
+  box-shadow: 0 0 10rpx 0 #ccc;
+}
+.plan .plan-item .category.data-v-9e0ea7f2 {
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  background-color: #f4f4f4;
+}
+.plan .plan-item .category .plan-category.data-v-9e0ea7f2 {
+  width: 25%;
+  padding: 10rpx 0;
+  text-align: center;
+  color: #777;
+  font-size: 23rpx;
+}
+.plan .plan-item .category .plan-category text.data-v-9e0ea7f2 {
+  color: #ff2727;
+  font-weight: bold;
+  font-size: 27rpx;
+}
+.plan .plan-item .category .plan-category .radio.data-v-9e0ea7f2 {
+  line-height: 100rpx;
+  font-size: 26rpx;
+}
+

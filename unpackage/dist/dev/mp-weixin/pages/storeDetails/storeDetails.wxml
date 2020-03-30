@@ -1,0 +1,1 @@
+<view><store-information vue-id="1c1e1020-1" shopData="{{shopData}}" shopId="{{shopId}}" fav_shop="{{fav_shop}}" bind:__l="__l"></store-information><goods-list vue-id="1c1e1020-2" shopId="{{shopId}}" carList="{{carList}}" bind:__l="__l"></goods-list></view>

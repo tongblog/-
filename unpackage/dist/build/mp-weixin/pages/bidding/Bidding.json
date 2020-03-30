@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "抢购",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "field": "/pages/bidding/base/field"
+  }
+}

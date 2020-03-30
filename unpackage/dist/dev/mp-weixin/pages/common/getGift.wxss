@@ -1,0 +1,20 @@
+.release.data-v-82585da6 {
+  padding: 0 35rpx;
+}
+.release .succes.data-v-82585da6 {
+  text-align: center;
+}
+.release .succes .img.data-v-82585da6 {
+  margin: 158rpx auto 46rpx;
+  width: 544rpx;
+  height: 604rpx;
+}
+.release .succes .img image.data-v-82585da6 {
+  width: 100%;
+  height: 100%;
+}
+.release button.data-v-82585da6 {
+  margin-top: 215rpx;
+  background-color: #f1652e;
+}
+

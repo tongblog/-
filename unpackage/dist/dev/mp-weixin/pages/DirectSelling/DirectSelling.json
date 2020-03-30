@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-swiper": "/pages/DirectSelling/base/DetailSwiper",
+    "detail-title": "/pages/DirectSelling/base/DetailTitle",
+    "certificate": "/pages/DirectSelling/base/certificate",
+    "formalities": "/pages/DirectSelling/base/formalities",
+    "description": "/pages/DirectSelling/base/description",
+    "information": "/pages/DirectSelling/base/information",
+    "dection-list": "/pages/DirectSelling/base/DectionList",
+    "goods-nav": "/pages/DirectSelling/base/GoodsNav"
+  }
+}

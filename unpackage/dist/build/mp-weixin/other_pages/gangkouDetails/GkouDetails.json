@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-swiper": "/other_pages/gangkouDetails/base/DetailSwiper",
+    "detail-title": "/other_pages/gangkouDetails/base/DetailTitle",
+    "certificate": "/other_pages/gangkouDetails/base/certificate",
+    "formalities": "/other_pages/gangkouDetails/base/formalities",
+    "description": "/other_pages/gangkouDetails/base/description",
+    "information": "/other_pages/gangkouDetails/base/information",
+    "dection-list": "/other_pages/gangkouDetails/base/DectionList",
+    "goods-nav": "/other_pages/gangkouDetails/base/GoodsNav"
+  }
+}

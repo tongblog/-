@@ -1,0 +1,105 @@
+.shop-body.data-v-29339d52 {
+  padding: 0 24rpx;
+  margin-top: 70rpx;
+}
+.shop-body .uni-flex .order.data-v-29339d52 {
+  padding-bottom: 15rpx;
+  box-shadow: 0 0 10rpx 0 #ccc;
+  border-radius: 25rpx;
+  margin-top: 42rpx;
+  background-color: #fff;
+}
+.shop-body .uni-flex .order .order-title.data-v-29339d52 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  padding: 0 21rpx;
+  border-bottom: 2rpx #eee solid;
+}
+.shop-body .uni-flex .order .order-title .my-oder.data-v-29339d52 {
+  font-size: 28rpx;
+  line-height: 70rpx;
+  color: #222;
+  font-weight: bold;
+}
+.shop-body .uni-flex .order .order-title .all-oder.data-v-29339d52 {
+  font-size: 0;
+  line-height: 40rpx;
+}
+.shop-body .uni-flex .order .order-title .all-oder text.data-v-29339d52 {
+  padding-right: 10rpx;
+  font-size: 24rpx;
+  color: #777;
+  vertical-align: 2%;
+}
+.shop-body .uni-flex .order .order-title .all-oder icon.data-v-29339d52 {
+  font-size: 10px;
+  color: #777;
+  vertical-align: 6%;
+}
+.shop-body .uni-flex .order .oder-list.data-v-29339d52 {
+  padding-top: 30rpx;
+}
+.shop-body .uni-flex .order .oder-list .list-nav.data-v-29339d52 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 20%;
+  position: relative;
+}
+.shop-body .uni-flex .order .oder-list .list-nav .order-num-icon.data-v-29339d52 {
+  position: absolute;
+  top: -5rpx;
+  right: 18rpx;
+  background: #fff;
+  border: 1px solid #ff2828;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30rpx;
+  font-size: 24rpx;
+  color: #ff2828;
+}
+.shop-body .uni-flex .order .oder-list .list-nav .nav-img.data-v-29339d52 {
+  width: 80rpx;
+  height: 80rpx;
+}
+.shop-body .uni-flex .order .oder-list .list-nav .nav-img image.data-v-29339d52 {
+  width: 100%;
+  height: 100%;
+}
+.shop-body .uni-flex .order .oder-list .list-nav .nav-bar.data-v-29339d52 {
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 24rpx;
+  color: #444;
+}
+.shop-body .after-sales.data-v-29339d52 {
+  box-shadow: 0 0 10rpx 0 #ccc;
+  border-radius: 25rpx;
+  padding: 0 24rpx;
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.shop-body .after-sales .after-item.data-v-29339d52 {
+  border-bottom: 2rpx #eee solid;
+  color: #222;
+  font-size: 26rpx;
+  line-height: 86rpx;
+}
+.shop-body .after-sales .after-item icon.data-v-29339d52 {
+  float: right;
+  color: #777;
+  font-size: 22rpx;
+}
+

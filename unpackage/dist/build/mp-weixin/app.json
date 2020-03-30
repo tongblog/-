@@ -1,0 +1,125 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/pricing/index",
+    "pages/city/City",
+    "pages/unsoldCar/index",
+    "pages/bidding/Bidding",
+    "pages/common/truckService",
+    "pages/store/Store",
+    "pages/sellcars/SellCars",
+    "pages/common/brand",
+    "pages/personalcenter/PersonalCenter",
+    "pages/general/details",
+    "pages/DirectSelling/DirectSelling",
+    "pages/common/dgMore",
+    "pages/common/viewMore",
+    "pages/kucunDetails/kucunDetails",
+    "pages/auctionDetails/auctionDetails",
+    "pages/storeDetails/storeDetails",
+    "pages/storeDetails/base/ShopDetails",
+    "pages/common/phonenumber",
+    "pages/common/login",
+    "pages/general/base/installment",
+    "pages/common/release",
+    "pages/common/TestingDetaile",
+    "pages/common/appointment",
+    "pages/DirectSelling/base/discounts",
+    "pages/common/getGift",
+    "pages/kucunDetails/base/discounts",
+    "pages/payDeposit/management",
+    "pages/payDeposit/payment",
+    "pages/payDeposit/agreement"
+  ],
+  "subPackages": [
+    {
+      "root": "other_pages",
+      "pages": [
+        "member/collectiongoods/index",
+        "member/collectionshop/index",
+        "member/newmypath/index",
+        "member/orderlist/index",
+        "member/orderdetail/index",
+        "member/shop/index",
+        "member/applyshop/index",
+        "member/shop/base/ShopDetails",
+        "member/cargoods/index",
+        "member/offer_records/index",
+        "help/index",
+        "special/Special",
+        "gangkouDetails/GkouDetails",
+        "recommend/Recommend",
+        "tebieDetails/tebieDetails",
+        "installment/installment",
+        "RealName/RealName",
+        "VehicleImg/VehicleImg",
+        "daiguaSell/SellCars",
+        "huanxin/HuanXin",
+        "oldVehicleImg/VehicleImg",
+        "sousuo/suosuo",
+        "SearchDetail/SearchDetail"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "路运二手车",
+    "navigationBarBackgroundColor": "#0657A6",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "height": "110px",
+    "color": "#444444",
+    "selectedColor": "#0657A6",
+    "borderStyle": "black",
+    "fontSize": "24px",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/home2.png",
+        "selectedIconPath": "static/images/home1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/store/Store",
+        "iconPath": "static/images/shop2.png",
+        "selectedIconPath": "static/images/shop1.png",
+        "text": "店铺"
+      },
+      {
+        "pagePath": "pages/common/truckService",
+        "iconPath": "static/images/chefu2.png",
+        "selectedIconPath": "static/images/chefu1.png",
+        "text": "路运车服"
+      },
+      {
+        "pagePath": "pages/sellcars/SellCars",
+        "iconPath": "static/images/meto2.png",
+        "selectedIconPath": "static/images/meto1.png",
+        "text": "我要卖车"
+      },
+      {
+        "pagePath": "pages/personalcenter/PersonalCenter",
+        "iconPath": "static/images/my2.png",
+        "selectedIconPath": "static/images/my1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "preloadRule": {
+    "other_pages/help/index": {
+      "network": "all",
+      "packages": [
+        "other_pages"
+      ]
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": " "
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

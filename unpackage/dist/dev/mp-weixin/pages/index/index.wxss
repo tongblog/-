@@ -1,0 +1,15 @@
+.test.data-v-22b8903a {
+  position: fixed;
+  top: 70rpx;
+  width: 100%;
+  background-color: #fff;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.uni-title.data-v-22b8903a {
+  padding: 15rpx 30rpx;
+  font-size: 28rpx;
+  background-color: #f4f4f4;
+}
+

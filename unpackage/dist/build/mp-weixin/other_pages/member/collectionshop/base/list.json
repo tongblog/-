@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "uni-load-more": "/components/uni-load-more/uni-load-more",
+    "uni-rate": "/components/uni-rate/uni-rate"
+  },
+  "component": true
+}

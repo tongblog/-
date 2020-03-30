@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "足迹",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "list": "/other_pages/member/newmypath/base/list"
+  }
+}

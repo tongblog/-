@@ -1,0 +1,1 @@
+<view><shop-notice vue-id="f2228a16-1" shopId="{{shopId}}" bind:__l="__l"></shop-notice></view>

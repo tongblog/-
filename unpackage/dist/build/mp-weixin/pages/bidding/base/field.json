@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list": "/pages/bidding/base/list"
+  },
+  "component": true
+}

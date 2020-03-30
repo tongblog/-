@@ -1,0 +1,1 @@
+<view><search vue-id="1" bind:__l="__l"></search><history vue-id="2" bind:__l="__l"></history><hot-search vue-id="3" bind:__l="__l"></hot-search></view>

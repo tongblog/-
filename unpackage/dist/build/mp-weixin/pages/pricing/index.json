@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "一口价",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "pric-nav": "/pages/pricing/base/nav",
+    "list": "/pages/pricing/base/list",
+    "sell": "/pages/common/sell"
+  }
+}

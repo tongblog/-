@@ -1,0 +1,1 @@
+<view><shop-head vue-id="0f00b04f-1" shopData="{{shopData}}" bind:__l="__l"></shop-head><shop-body vue-id="0f00b04f-2" shopId="{{shopId}}" orderNum="{{orderNum}}" bind:__l="__l"></shop-body></view>

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-title": "/pages/kucunDetails/base/DetailTitle",
+    "detail-swiper": "/pages/kucunDetails/base/DetailSwiper",
+    "parameter": "/pages/kucunDetails/base/Parameter",
+    "goods-nav": "/pages/kucunDetails/base/GoodsNav"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "我要卖车",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "upload": "/pages/sellcars/base/upload",
+    "identify": "/pages/sellcars/base/identify",
+    "vehicle-data": "/pages/sellcars/base/VehicleData"
+  }
+}

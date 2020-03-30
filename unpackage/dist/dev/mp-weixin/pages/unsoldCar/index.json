@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "库存车",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "exhibition": "/pages/unsoldCar/base/exhibition",
+    "kucunnav": "/pages/unsoldCar/base/kucunnav",
+    "list": "/pages/unsoldCar/base/list"
+  }
+}

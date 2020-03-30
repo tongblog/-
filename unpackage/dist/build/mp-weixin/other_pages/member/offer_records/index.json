@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的出价",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "list": "/other_pages/member/offer_records/base/list",
+    "wuc-tab": "/components/wuc-tab/wuc-tab"
+  }
+}

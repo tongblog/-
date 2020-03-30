@@ -1,0 +1,90 @@
+.data-none.data-v-61e0251a {
+  padding: 10rpx 0;
+  text-align: center;
+  color: #222;
+}
+.data-none .txt.data-v-61e0251a {
+  width: 304rpx;
+  margin: auto;
+  border-radius: 6rpx;
+  line-height: 66rpx;
+  background-color: #0657a6;
+  color: #fff;
+}
+.data-none .img.data-v-61e0251a {
+  width: 50%;
+  margin-top: 100rpx;
+}
+.store-list.data-v-61e0251a {
+  border-bottom: 10rpx #f4f4f4 solid;
+}
+.store-list .store.data-v-61e0251a {
+  height: 225rpx;
+  padding: 24rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.store-list .store .store-img.data-v-61e0251a {
+  overflow: hidden;
+  width: 35%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.store-list .store .store-img image.data-v-61e0251a {
+  width: 100%;
+  height: 100%;
+}
+.store-list .store .store-content.data-v-61e0251a {
+  width: 63%;
+}
+.store-list .store .store-content .store-title.data-v-61e0251a {
+  display: inline-block;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #222;
+}
+.store-list .store .store-content .mark.data-v-61e0251a {
+  display: inline-block;
+  width: 102rpx;
+  margin-left: 20rpx;
+  border-radius: 8rpx;
+  background-color: #fff2c5;
+  line-height: 34rpx;
+  text-align: center;
+  color: #ff8d28;
+  font-size: 20rpx;
+}
+.store-list .store .store-phone.data-v-61e0251a {
+  line-height: 0rpx;
+  font-size: 25rpx;
+  color: #444;
+}
+.store-list .store .store-phone text.data-v-61e0251a {
+  padding-left: 8rpx;
+}
+.store-list .store .store-phone icon.data-v-61e0251a {
+  font-size: 23rpx;
+  color: #444;
+}
+.store-list .store .store-address.data-v-61e0251a {
+  font-size: 25rpx;
+  color: #444;
+  line-height: 0rpx;
+}
+.store-list .store .store-address text.data-v-61e0251a {
+  display: inline-block;
+  padding-left: 8rpx;
+}
+.store-list .store .store-address icon.data-v-61e0251a {
+  font-size: 23rpx;
+  color: #444;
+}
+.store-list .store .store-address .address.data-v-61e0251a {
+  float: right;
+  display: inline-block;
+  margin-top: 18rpx;
+  width: 300rpx;
+  font-size: 25rpx;
+}
+

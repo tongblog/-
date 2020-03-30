@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "我的店铺",
+  "usingComponents": {
+    "shop-head": "/other_pages/shop/base/shopHead",
+    "shop-body": "/other_pages/shop/base/shopBody"
+  }
+}

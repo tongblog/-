@@ -1,0 +1,1 @@
+<view class="release data-v-c85d7c86"><view class="succes data-v-c85d7c86"><view class="img data-v-c85d7c86"><image src="../../static/images/tijiao.png" mode="scaleToFill" class="data-v-c85d7c86"></image></view><view class="font data-v-c85d7c86">{{title}}</view><view class="font data-v-c85d7c86">{{''+font+''}}</view></view></view>

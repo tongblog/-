@@ -1,0 +1,63 @@
+.brand.data-v-62c9b778 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.btn.data-v-62c9b778 {
+  background-color: #f4f4f4;
+  padding: 40rpx 25rpx;
+}
+.btn button.data-v-62c9b778 {
+  background-color: #0657a6;
+}
+.uni-flex.data-v-62c9b778 {
+  padding: 0 20rpx;
+}
+.uni-flex .flex-item.data-v-62c9b778 {
+  border-bottom: 1rpx solid #eee;
+  font-size: 26rpx;
+  color: #222;
+}
+.uni-flex .flex-item .radio.data-v-62c9b778 {
+  display: inline-block;
+  float: right;
+  line-height: 90rpx;
+  width: auto;
+}
+.uni-flex .flex-item .check.data-v-62c9b778 {
+  display: inline-block;
+  width: auto;
+  float: right;
+  line-height: 90rpx;
+}
+.uni-flex .flex-item .check label.data-v-62c9b778 {
+  padding: 0 20rpx;
+}
+.uni-flex .flex-item text.data-v-62c9b778 {
+  display: inline-block;
+  line-height: 91rpx;
+  vertical-align: middle;
+}
+.uni-flex .flex-item input.data-v-62c9b778 {
+  float: right;
+  display: inline-block;
+  padding: 18rpx 25rpx;
+  vertical-align: middle;
+  text-align: right;
+}
+.uni-flex .flex-item icon.data-v-62c9b778 {
+  float: right;
+  vertical-align: middle;
+  line-height: 90rpx;
+  font-size: 21rpx;
+  color: #999;
+}
+.uni-flex .flex-item .one.data-v-62c9b778 {
+  padding-left: 10rpx;
+}
+.uni-flex .flex-item .on.data-v-62c9b778 {
+  padding-right: 10rpx;
+}
+

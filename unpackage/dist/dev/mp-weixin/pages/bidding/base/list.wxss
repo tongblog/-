@@ -1,0 +1,72 @@
+
+.obscuration.data-v-02dfbf2d{
+	opacity:0.6;
+}
+.list.data-v-02dfbf2d{
+	padding: 24rpx;
+	border-bottom: 10rpx #F4F4F4 solid;
+}
+.list .list-imgs.data-v-02dfbf2d{
+	overflow: hidden;
+	display: inline-block;
+	width: 256rpx;
+	height: 218rpx;
+	vertical-align: middle;
+	border-radius: 10rpx;
+}
+.list>.list-content.data-v-02dfbf2d{
+	color: #999999!important;
+}
+.list-content .uni-flex.data-v-02dfbf2d{
+	margin-top: 10rpx;
+}
+.list-content .flex-item.data-v-02dfbf2d{
+	padding:0 5rpx;
+	margin-right:25rpx;
+	border: 1rpx #0657A6 solid;
+	border-radius: 10rpx;
+	font-size: 20rpx;
+	line-height: 30rpx;
+	color: #0657A6;
+	text-align: center;
+}
+.list .list-content.data-v-02dfbf2d{
+	position: relative;
+	display: inline-block;
+	width: 418rpx;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: 3%;
+}
+.list-content .title.data-v-02dfbf2d{
+	line-height: 42rpx;
+	color: #222222;
+}
+.list-content .date.data-v-02dfbf2d{
+	font-size: 22rpx;
+	color: #888888;
+}
+.list-content .price.data-v-02dfbf2d{
+	font-size: 22rpx;
+	color: #777777;
+}
+.price text.data-v-02dfbf2d{
+	padding-left: 15rpx;
+	font-size: 30rpx;
+	color: #FF1A1A;
+	font-weight: bold;
+}
+.paiimg.data-v-02dfbf2d{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 117rpx;
+	height: 90rpx;
+}
+.paiimg image.data-v-02dfbf2d{
+	width: 100%;
+	height: 100%;
+}
+	
+		
+

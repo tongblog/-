@@ -1,0 +1,118 @@
+.store-information.data-v-7afddc4a {
+  position: relative;
+  padding: 25rpx 25rpx 90rpx 25rpx;
+  background-color: #0657a6;
+}
+.store-information .store-name.data-v-7afddc4a {
+  display: inline-block;
+  font-size: 36rpx;
+  color: #fff;
+}
+.store-information .store-name icon.data-v-7afddc4a {
+  padding-left: 18rpx;
+  font-size: 28rpx;
+}
+.store-information .attent.data-v-7afddc4a {
+  background-color: #fff;
+}
+.store-information .attention.data-v-7afddc4a {
+  display: inline-block;
+  float: right;
+  margin-top: 10rpx;
+  width: 97rpx;
+  border: 2rpx solid #fff;
+  border-radius: 30rpx;
+  line-height: 35rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+.store-information .store-label.data-v-7afddc4a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.store-information .store-label .label.data-v-7afddc4a {
+  padding: 0 11rpx;
+  margin-right: 24rpx;
+  background-color: #fff2c5;
+  border-radius: 5rpx;
+  font-size: 21rpx;
+  line-height: 34rpx;
+  color: #ff8d28;
+}
+.store-information .discou.data-v-7afddc4a {
+  padding-bottom: 20rpx !important;
+}
+.store-information .discounts.data-v-7afddc4a {
+  position: absolute;
+  top: 150rpx;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 89%;
+  padding: 20rpx 20rpx 50rpx 20rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  box-shadow: 0 0 10rpx 0 #ccc;
+}
+.store-information .discounts .discounts-item.data-v-7afddc4a:nth-child(2) {
+  padding-top: 10rpx;
+}
+.store-information .discounts .discounts-item.data-v-7afddc4a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #444;
+}
+.store-information .discounts .discounts-item .item-left.data-v-7afddc4a {
+  width: 18%;
+  font-size: 24rpx;
+}
+.store-information .discounts .discounts-item .itemtap.data-v-7afddc4a {
+  height: 35rpx;
+  overflow: hidden;
+}
+.store-information .discounts .discounts-item .item-right.data-v-7afddc4a {
+  width: 80%;
+  font-size: 24rpx;
+}
+.store-information .discounts .discounts-item .item-right text.data-v-7afddc4a {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.store-information .discounts .icon.data-v-7afddc4a {
+  text-align: right !important;
+  bottom: 30rpx !important;
+  -webkit-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
+}
+.store-information .discounts .iconfont.data-v-7afddc4a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10rpx;
+  margin: auto;
+  padding: 0 20rpx;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 12rpx;
+  text-align: center;
+}
+.store-information .service.data-v-7afddc4a {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  line-height: 88rpx;
+  background-color: #0657a6;
+  text-align: center;
+  font-size: 25rpx;
+  color: #fff;
+}
+.store-information .service icon.data-v-7afddc4a {
+  padding-right: 15rpx;
+  font-size: 25rpx;
+}
+

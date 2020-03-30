@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "关注店铺",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "list": "/other_pages/member/collectionshop/base/list"
+  }
+}

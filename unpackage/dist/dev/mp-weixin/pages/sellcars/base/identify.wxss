@@ -1,0 +1,23 @@
+.identify.data-v-009267d2 {
+  border-bottom: 9rpx #eee solid;
+}
+.identify .uni-flex.data-v-009267d2 {
+  padding: 0 20rpx;
+}
+.identify .uni-flex .flex-item.data-v-009267d2 {
+  border-bottom: 1rpx solid #eee;
+  font-size: 26rpx;
+  color: #444;
+}
+.identify .uni-flex .flex-item text.data-v-009267d2 {
+  display: inline-block;
+  line-height: 81rpx;
+  vertical-align: middle;
+}
+.identify .uni-flex .flex-item input.data-v-009267d2 {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: right;
+}
+

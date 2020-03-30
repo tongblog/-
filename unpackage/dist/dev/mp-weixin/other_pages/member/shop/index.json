@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "店铺中心",
+  "navigationBarBackgroundColor": "#0657A6",
+  "usingComponents": {
+    "store-information": "/other_pages/member/shop/base/StoreInformation",
+    "goods-list": "/other_pages/member/shop/base/GoodsList"
+  }
+}

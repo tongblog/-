@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "特别推荐",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "sell": "/pages/common/sell",
+    "list": "/other_pages/recommend/base/list"
+  }
+}

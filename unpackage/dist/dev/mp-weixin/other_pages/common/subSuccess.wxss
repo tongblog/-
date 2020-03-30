@@ -1,0 +1,28 @@
+.release.data-v-c85d7c86 {
+  position: relative;
+  height: 95vh;
+}
+.release .succes.data-v-c85d7c86 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 600rpx;
+  text-align: center;
+}
+.release .succes .img.data-v-c85d7c86 {
+  margin: auto;
+  width: 217rpx;
+  height: 217rpx;
+}
+.release .succes .img image.data-v-c85d7c86 {
+  width: 100%;
+  height: 100%;
+}
+.release .succes .font.data-v-c85d7c86 {
+  font-size: 30rpx;
+  color: #444;
+}
+

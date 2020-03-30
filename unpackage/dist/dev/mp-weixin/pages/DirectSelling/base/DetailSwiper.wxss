@@ -1,0 +1,25 @@
+.detail-swiper.data-v-8db789b8 {
+  position: relative;
+}
+.detail-swiper .swiper.data-v-8db789b8 {
+  width: 100%;
+  height: 373rpx;
+}
+.detail-swiper .swiper .swiper-item.data-v-8db789b8 {
+  height: 100%;
+}
+.detail-swiper .swiper .swiper-item image.data-v-8db789b8 {
+  width: 100%;
+  height: 100%;
+}
+.detail-swiper .swiper .swiper-item video.data-v-8db789b8 {
+  width: 100%;
+  height: 100%;
+}
+.detail-swiper .num.data-v-8db789b8 {
+  position: absolute;
+  bottom: 15rpx;
+  right: 24rpx;
+  color: #fff;
+}
+

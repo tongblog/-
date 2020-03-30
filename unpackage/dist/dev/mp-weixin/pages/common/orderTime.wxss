@@ -1,0 +1,102 @@
+.order-time.data-v-de9c36fc {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 910;
+  background-color: rgba(0,0,0,0.5);
+}
+.order-time .orderHeight.data-v-de9c36fc {
+  height: 600rpx !important;
+}
+.order-time .order-content.data-v-de9c36fc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background-color: #fff;
+}
+.order-time .order-content .order-title.data-v-de9c36fc {
+  position: relative;
+  border-bottom: 1rpx solid #f4f4f4;
+  text-align: center;
+  line-height: 80rpx;
+}
+.order-time .order-content .order-title text.data-v-de9c36fc {
+  font-size: 30rpx;
+  color: #333;
+}
+.order-time .order-content .order-title icon.data-v-de9c36fc {
+  position: absolute;
+  right: 0;
+  padding-right: 25rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.order-time .order-content .fiveday.data-v-de9c36fc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.order-time .order-content .fiveday .oneday.data-v-de9c36fc {
+  background-color: rgba(6,87,166,0.1);
+}
+.order-time .order-content .fiveday .day-list.data-v-de9c36fc {
+  width: 20%;
+  padding: 10rpx 0;
+  text-align: center;
+}
+.order-time .order-content .fiveday .day-list .one.data-v-de9c36fc {
+  color: #0657a6 !important;
+}
+.order-time .order-content .fiveday .day-list .on.data-v-de9c36fc {
+  font-size: 26rpx;
+  color: #666;
+}
+.order-time .order-content .fiveday .day-list .down.data-v-de9c36fc {
+  font-size: 26rpx;
+  color: #666;
+}
+.order-time .order-content .timer.data-v-de9c36fc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+  height: 200rpx;
+  margin: auto;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.order-time .order-content .timer .scroll.data-v-de9c36fc {
+  width: 100%;
+  height: 200rpx;
+  text-align: center;
+  color: #fff;
+}
+.order-time .order-content .timer .scroll .hour.data-v-de9c36fc {
+  line-height: 68rpx;
+}
+.order-time .order-content .prompt.data-v-de9c36fc {
+  text-align: center;
+  font-size: 26rpx;
+  color: #333;
+}
+.order-time .order-content .btn.data-v-de9c36fc {
+  padding: 20rpx 25rpx 0;
+}
+.order-time .order-content .btn .ensure.data-v-de9c36fc {
+  width: 680rpx;
+  margin: auto;
+  border-radius: 10rpx;
+  background-color: #0657a6;
+  color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+}
+

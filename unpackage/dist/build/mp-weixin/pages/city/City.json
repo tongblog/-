@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "选择城市",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "city-search": "/pages/city/base/Search",
+    "city-list": "/pages/city/base/List",
+    "letter-list": "/pages/common/letterList"
+  }
+}

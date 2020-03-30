@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "路运二手车",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "home-header": "/pages/index/home/header",
+    "home-swiper": "/pages/index/home/swiper",
+    "home-nav": "/pages/index/home/nav",
+    "home-bidding": "/pages/index/home/bidding",
+    "home-tuijian": "/pages/index/home/tuijian",
+    "sell": "/pages/common/sell",
+    "list": "/pages/index/home/list"
+  }
+}

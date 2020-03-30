@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的订单",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "list": "/other_pages/member/orderlist/base/list",
+    "wuc-tab": "/components/wuc-tab/wuc-tab"
+  }
+}

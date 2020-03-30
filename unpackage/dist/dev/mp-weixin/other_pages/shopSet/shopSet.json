@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "店铺公告",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "shop-notice": "/other_pages/shopSet/base/shopNotice"
+  }
+}

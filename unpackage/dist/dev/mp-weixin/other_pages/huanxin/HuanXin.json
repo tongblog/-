@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "以旧换新",
+  "usingComponents": {
+    "upload": "/other_pages/huanxin/base/upload",
+    "old-car": "/other_pages/huanxin/base/oldcar",
+    "new-car": "/other_pages/huanxin/base/newcar"
+  }
+}

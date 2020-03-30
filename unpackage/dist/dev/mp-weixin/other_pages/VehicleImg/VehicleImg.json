@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "车辆图片",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "must-img": "/other_pages/VehicleImg/base/MustImg",
+    "non-img": "/other_pages/VehicleImg/base/NonImg"
+  }
+}

@@ -1,0 +1,89 @@
+.offer-list.data-v-66dcc6f1 {
+  border-bottom: 20rpx #f4f4f4 solid;
+}
+.offer-list .bordertop.data-v-66dcc6f1 {
+  border-top: 20rpx #f4f4f4 solid;
+}
+.offer-list .offer-explain.data-v-66dcc6f1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 24rpx;
+}
+.offer-list .offer-explain .explain.data-v-66dcc6f1 {
+  display: flax;
+  width: 50%;
+  font-size: 24rpx;
+}
+.offer-list .offer-explain .explain .before.data-v-66dcc6f1 {
+  display: inline-block;
+  width: 50%;
+  color: #777;
+}
+.offer-list .offer-explain .explain .after.data-v-66dcc6f1 {
+  display: inline-block;
+  width: 50%;
+  color: #222;
+}
+.offer-list .offer-data.data-v-66dcc6f1 {
+  background-color: #f4f4f4;
+}
+.offer-list .offer-data .offer-title.data-v-66dcc6f1 {
+  padding: 10rpx 24rpx;
+  color: #222;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.offer-list .offer-data .uni-row.data-v-66dcc6f1 {
+  padding: 0 15rpx 20rpx 15rpx;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.offer-list .offer-data .uni-row .flex-item.data-v-66dcc6f1:nth-child(1) {
+  border: 1rpx #ff7e1f solid;
+  color: #ff7e1f;
+}
+.offer-list .offer-data .uni-row .flex-item:nth-child(1) .top.data-v-66dcc6f1 {
+  position: absolute;
+  top: -15rpx;
+  left: -1rpx;
+  padding: 0 8rpx;
+  background-color: #ff7e1f;
+  border-radius: 0;
+  color: #fff;
+  font-size: 20rpx;
+}
+.offer-list .offer-data .uni-row .flex-item.data-v-66dcc6f1 {
+  position: relative;
+  width: 29%;
+  padding: 16rpx 16rpx 0 0;
+  border: 1rpx #aaa solid;
+  color: #444;
+  text-align: right;
+}
+.offer-list .offer-data .uni-row .flex-item .on.data-v-66dcc6f1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26rpx;
+  line-height: 26rpx;
+}
+.offer-list .offer-data .uni-row .flex-item .down.data-v-66dcc6f1 {
+  font-size: 32rpx;
+  font-weight: bold;
+  line-height: 50rpx;
+}
+.offer-list .offer-data .uni-row .flex-item .top.data-v-66dcc6f1 {
+  position: absolute;
+  top: -1rpx;
+  left: -1rpx;
+  padding: 0 8rpx;
+  background-color: #aaa;
+  border-bottom-right-radius: 10rpx;
+  color: #fff;
+  font-size: 20rpx;
+}
+

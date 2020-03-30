@@ -1,0 +1,60 @@
+.uni-row.data-v-630de8be {
+  padding: 0 15rpx;
+  border-bottom: 20rpx #f4f4f4 solid;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.uni-row .boredrBtn.data-v-630de8be {
+  border-bottom: 2rpx #0657a6 solid;
+  color: #0657a6 !important;
+}
+.uni-row .flex-item.data-v-630de8be {
+  width: 16%;
+  height: 70rpx;
+  color: #444;
+  font-size: 24rpx;
+  text-align: center;
+  line-height: 70rpx;
+}
+.uni-column.data-v-630de8be {
+  padding: 0 24rpx;
+}
+.uni-column .flex-item.data-v-630de8be {
+  height: 80rpx;
+}
+.uni-column .flex-item .list.data-v-630de8be {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  border-bottom: 1rpx #eee solid;
+}
+.uni-column .flex-item .list .left.data-v-630de8be {
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #222;
+}
+.uni-column .flex-item .list .icon-jiancequeding.data-v-630de8be {
+  line-height: 80rpx;
+  color: #4bc44b;
+  font-size: 26rpx;
+}
+.uni-column .flex-item .list .mark text.data-v-630de8be {
+  margin-right: 15rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #777;
+}
+.uni-column .flex-item .list .icon-jiancefengxian.data-v-630de8be {
+  color: #ff2323;
+  font-size: 26rpx;
+}
+.uni-column .flex-item .list .icon-jiancezhaopian.data-v-630de8be {
+  margin-right: 15rpx;
+  color: #777;
+  font-size: 26rpx;
+}
+

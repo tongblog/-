@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['handleRegion',['$event']]]]]}}" class="store-region data-v-15218c08" bindtap="__e"><input type="text" disabled="true" placeholder="请选择店铺所在地区" value="{{address_name}}" class="data-v-15218c08"/><view class="region data-v-15218c08"><text class="data-v-15218c08">地区</text><icon class="iconfont icon--guanbi data-v-15218c08"></icon></view></view>

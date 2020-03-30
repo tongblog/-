@@ -1,0 +1,1 @@
+<view><detail-list vue-id="1" detail="{{goodsList}}" bind:__l="__l"></detail-list></view>

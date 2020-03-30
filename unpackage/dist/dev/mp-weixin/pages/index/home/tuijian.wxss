@@ -1,0 +1,45 @@
+.tuijian.data-v-7c805f4c {
+  padding: 25rpx;
+}
+.tuijian .tuijian-content.data-v-7c805f4c {
+  width: 670rpx;
+  height: 138rpx;
+  padding: 18rpx;
+  box-shadow: 0 0 10rpx 0 #ccc;
+}
+.tuijian .tuijian-content .tuijian-title.data-v-7c805f4c {
+  display: inline-block;
+  font-size: 30rpx;
+  color: #111;
+  line-height: 0rpx;
+}
+.tuijian .tuijian-content .tuijian-right.data-v-7c805f4c {
+  float: right;
+  padding: 0 17rpx;
+  border: 2rpx #0657a6 solid;
+  border-radius: 30rpx;
+  font-size: 22rpx;
+  color: #0657a6;
+  line-height: 43rpx;
+}
+.tuijian .tuijian-content .tuijian-list.data-v-7c805f4c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  padding-top: 13rpx;
+}
+.tuijian .tuijian-content .tuijian-list .item.data-v-7c805f4c {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 20%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.tuijian .tuijian-content .tuijian-list .item image.data-v-7c805f4c {
+  overflow: hidden;
+  border-radius: 50%;
+}
+

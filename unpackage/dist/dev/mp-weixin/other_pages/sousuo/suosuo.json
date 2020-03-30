@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "搜索",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "search": "/other_pages/sousuo/base/Search",
+    "history": "/other_pages/sousuo/base/history",
+    "hot-search": "/other_pages/sousuo/base/hotSearch"
+  }
+}

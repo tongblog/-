@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-swiper": "/pages/general/base/DetailSwiper",
+    "detail-title": "/pages/general/base/DetailTitle",
+    "certificate": "/pages/general/base/certificate",
+    "formalities": "/pages/general/base/formalities",
+    "description": "/pages/general/base/description",
+    "information": "/pages/general/base/information",
+    "dection-list": "/pages/general/base/DectionList",
+    "goods-nav": "/pages/general/base/GoodsNav"
+  }
+}

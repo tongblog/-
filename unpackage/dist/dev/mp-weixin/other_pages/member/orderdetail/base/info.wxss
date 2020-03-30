@@ -1,0 +1,215 @@
+
+scroll-view.data-v-739b66fe {
+	height: 100vh;
+}
+.data-none.data-v-739b66fe {
+	text-align: center;
+	height: 100rpx;
+	line-height: 100rpx;
+}
+.list.data-v-739b66fe {
+	background: #fff;
+	padding:0 10rpx 10rpx;
+}
+.list .list-title.data-v-739b66fe {
+	font-size: 24rpx;
+}
+.list .list-title .title-left.data-v-739b66fe{
+	display: inline-block;
+	width: 60%;
+	line-height: 60rpx;
+	vertical-align: middle;
+}
+.title-left .icon-xiangqingzuixiadianpu.data-v-739b66fe{
+		font-size: 24rpx;
+}
+.title-left text.data-v-739b66fe{
+		padding: 0 10rpx;
+		font-size: 24rpx;
+		color: #222222;
+}
+.title-left .icon-jiantou.data-v-739b66fe{
+		font-size: 20rpx;
+		color: #222222;
+}
+.list .list-title .title-right.data-v-739b66fe{
+	display: inline-block;
+	width: 40%;
+	text-align: right;
+	color: #006BB3;
+	font-size: 24rpx;
+	line-height: 60rpx;
+}
+.list .list-imgs.data-v-739b66fe {
+	overflow: hidden;
+	display: inline-block;
+	width: 166rpx;
+	height: 166rpx;
+	border-radius: 10rpx;
+	vertical-align: middle;
+}
+.list .list-content.data-v-739b66fe {
+	display: inline-block;
+	width: 418rpx;
+	margin-left: 3%;
+	position: relative;
+	vertical-align: middle;
+}
+.list-content .title.data-v-739b66fe {
+	color: #222222;
+	font-size: 24rpx;
+	line-height: 36rpx;
+}
+.list-content .date.data-v-739b66fe {
+	font-size: 22rpx;
+	color: #888888;
+	line-height: 40rpx;
+}
+.list-content .uni-flex .flex-item.data-v-739b66fe {
+	padding:6rpx;
+	margin-right:15rpx;
+	height: 20rpx;
+	border:1rpx #0657A6 solid;
+	border-radius:10rpx;
+	font-size:20rpx;
+	color:#0657A6;
+	text-align:center;	
+	line-height: 18rpx;
+}
+.list-content .price.data-v-739b66fe {
+	font-size: 24rpx;
+	color: #444;
+	text-align: right;
+}
+.list-content .price text.data-v-739b66fe{
+	font-size: 24rpx;
+	color: #FF1A1A;
+}
+.price .fixed-price.data-v-739b66fe {
+	padding: 5rpx 8rpx;
+	margin-right: 10rpx;
+	background-color: #ff2727;
+	border-radius: 4rpx;
+	font-size: 22rpx;
+	color: #ffffff;
+}
+.list-content .cancel-fav.data-v-739b66fe {
+	border: 1px solid #ccc;
+	border-radius: 10rpx;
+	padding: 4rpx 12rpx;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 21rpx;
+	color: #ccc;
+}
+.list .list-action.data-v-739b66fe{
+	width: 100%;
+}
+.list .list-action .action-close.data-v-739b66fe{
+	border: 1px solid #ccc;
+	color: #ccc;
+	border-radius: 50rpx;
+	font-size: 24rpx;
+	margin-left: 78%;
+	width: 20%;
+	display: inline-block;
+	text-align: center;
+}
+.pay-info.data-v-739b66fe,.order-info.data-v-739b66fe{
+	border-top: 16rpx solid #f4f4f4;
+	padding: 18rpx 24rpx;
+	background: #fff;
+}
+.info-title.data-v-739b66fe{
+	/* text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #0657A6; */
+	color: #222222;
+	font-size: 24rpx;
+}
+.info-title .title-left.data-v-739b66fe{
+	display: inline-block;
+	width: 4rpx;
+	height: 26rpx;
+	background-color: #006BB3;
+	margin-right: 15rpx;
+	vertical-align: middle;
+}
+.info-title .title-right.data-v-739b66fe{
+	float: right;
+	color: #006BB3;
+}
+.info-title .title-statu.data-v-739b66fe{
+	float: right;
+	color: #006BB3;
+}
+.info-item.data-v-739b66fe{
+	width: 100%;
+	display: block;
+}
+.info-item .item-left.data-v-739b66fe{
+	width:30%;
+	display: inline-block;
+	font-size: 22rpx;
+	color: #444444;
+	vertical-align: middle
+}
+.info-item .item-lf.data-v-739b66fe{
+	color: #006BB3;
+	font-size: 24rpx;
+}
+.info-item .item-right.data-v-739b66fe{
+	width: 58%;
+	display: inline-block;
+	vertical-align: middle
+}
+.info-item .item-right .item-txt.data-v-739b66fe{
+	font-size: 22rpx;
+	line-height: 50rpx;
+	color: #444444;
+}
+.info-item .item-right .call-phone.data-v-739b66fe{
+	display: inline-block;
+	padding: 0px 15rpx;
+	margin-left: 18rpx;
+	border: 1rpx #444 solid;
+	color: #444;
+	font-size: 18rpx;
+	border-radius: 20rpx;
+	line-height: 30rpx;
+	vertical-align: middle;
+}
+.info-item .item-right .refund.data-v-739b66fe{
+	float: right;
+	padding: 0px 25rpx;
+	margin-top: 5rpx;
+	border: 1rpx #AAAAAA solid;
+	color: #AAAAAA;
+	font-size: 22rpx;
+	border-radius: 20rpx;
+	line-height: 40rpx;
+	vertical-align: middle;
+}
+.category.data-v-739b66fe{
+}
+.category .plan-category.data-v-739b66fe{
+	width:33%;
+	padding:10rpx 0;
+	text-align: center;
+	color: #777777;
+	font-size: 25rpx;
+}
+.plan-category .item-con.data-v-739b66fe{
+	color: #FF2727;
+	font-weight: bold;
+	font-size: 26rpx;
+}
+.clearfix.data-v-739b66fe:after{
+		display:block;
+		clear:both;
+		content:"";
+		visibility:hidden;
+		height:0
+}
+

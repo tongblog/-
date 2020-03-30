@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "configuration": "/pages/kucunDetails/base/Configuration"
+  },
+  "component": true
+}

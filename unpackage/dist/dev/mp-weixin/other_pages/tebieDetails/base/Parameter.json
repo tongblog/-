@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "configuration": "/other_pages/tebieDetails/base/Configuration"
+  }
+}

@@ -1,0 +1,1 @@
+<view class="description data-v-4f42c11e"><view class="dpt-title data-v-4f42c11e">车辆描述</view><view class="dpt-content data-v-4f42c11e"><weixin-parse vue-id="ecfe1d32-1" content="{{description}}" class="data-v-4f42c11e" bind:__l="__l"></weixin-parse></view></view>

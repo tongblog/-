@@ -1,0 +1,1 @@
+<view class="release data-v-4e569fe6"><view class="succes data-v-4e569fe6"><view class="img data-v-4e569fe6"><image src="../../static/images/gift.png" mode="scaleToFill" class="data-v-4e569fe6"></image></view></view><button type="primary" data-event-opts="{{[['tap',[['clickHome',['$event']]]]]}}" bindtap="__e" class="data-v-4e569fe6">返回上一页</button></view>

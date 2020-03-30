@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "brand": "/pages/common/brand",
+    "letter-list": "/pages/common/letterList"
+  },
+  "component": true
+}

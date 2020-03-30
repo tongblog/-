@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "店铺详情",
+  "usingComponents": {
+    "store-information": "/pages/storeDetails/base/StoreInformation",
+    "goods-list": "/pages/storeDetails/base/GoodsList"
+  }
+}

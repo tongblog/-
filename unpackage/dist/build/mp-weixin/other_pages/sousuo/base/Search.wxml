@@ -1,0 +1,1 @@
+<view class="search data-v-73208b05"><view class="uni-form-item uni-column data-v-73208b05"><icon class="iconfont icon-sousuo data-v-73208b05"></icon><input class="uni-input data-v-73208b05" type="text" adjust-position="true" focus="true" placeholder="搜索" data-event-opts="{{[['confirm',[['searchFun',['$event']]]]]}}" value="{{changeValue}}" bindconfirm="__e"/></view></view>

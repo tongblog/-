@@ -1,0 +1,95 @@
+.amount.data-v-51297f16 {
+  padding: 30rpx 24rpx;
+  height: 95vh;
+}
+.amount .man-header.data-v-51297f16 {
+  box-shadow: 0 0 5rpx 0 #ccc;
+  border-radius: 5rpx;
+}
+.amount .man-header .top.data-v-51297f16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 244rpx;
+  text-align: center;
+}
+.amount .man-header .top .left.data-v-51297f16 {
+  width: 50%;
+  font-size: 38rpx;
+  line-height: 244rpx;
+  color: #ccc;
+}
+.amount .man-header .top .right.data-v-51297f16 {
+  width: 50%;
+  font-size: 90rpx;
+  line-height: 244rpx;
+  color: #ccc;
+}
+.amount .man-header .top .right text.data-v-51297f16 {
+  font-size: 32rpx;
+}
+.amount .man-header .bottom.data-v-51297f16 {
+  border-top: 1rpx #eee solid;
+  padding: 0 5rpx;
+}
+.amount .man-header .bottom icon.data-v-51297f16 {
+  color: #444;
+}
+.amount .man-header .bottom .txt.data-v-51297f16 {
+  display: inline-block;
+  margin-left: 15rpx;
+  color: #444;
+  font-size: 26rpx;
+  line-height: 90rpx;
+}
+.amount .man-header .bottom .txt text.data-v-51297f16 {
+  color: #1980e4;
+}
+.amount .content.data-v-51297f16 {
+  padding-top: 60rpx;
+}
+.amount .content .con-title.data-v-51297f16 {
+  padding-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #222;
+  font-weight: bold;
+}
+.amount .content .con-list.data-v-51297f16:nth-last-child(1) {
+  margin-bottom: 80rpx;
+}
+.amount .content .con-list.data-v-51297f16 {
+  padding: 25rpx 0;
+  border-bottom: 1rpx #e1e1e1 solid;
+}
+.amount .content .con-list .on text.data-v-51297f16 {
+  font-size: 24rpx;
+  color: #ccc;
+}
+.amount .content .con-list .on text.txt.data-v-51297f16 {
+  float: right;
+  color: #1980e4;
+}
+.amount .content .con-list .down.data-v-51297f16 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.amount .content .con-list .down .goods-name.data-v-51297f16 {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 26rpx;
+  color: #222;
+}
+.amount .content .con-list .down .goods-price.data-v-51297f16 {
+  font-size: 26rpx;
+  color: #222;
+}
+.amount .content .con-list .down .goods-price text.data-v-51297f16 {
+  color: #ff7e1f;
+}
+

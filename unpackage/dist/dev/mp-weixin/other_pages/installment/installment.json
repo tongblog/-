@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "分期咨询",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "installment-plan": "/other_pages/installment/base/plan",
+    "explain": "/other_pages/installment/base/explain"
+  }
+}

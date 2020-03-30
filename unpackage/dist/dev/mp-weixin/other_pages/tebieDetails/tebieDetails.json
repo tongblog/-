@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "车辆详情",
+  "navigationBarBackgroundColor": "#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "detail-title": "/other_pages/tebieDetails/base/DetailTitle",
+    "detail-swiper": "/other_pages/tebieDetails/base/DetailSwiper",
+    "parameter": "/other_pages/tebieDetails/base/Parameter",
+    "goods-nav": "/other_pages/tebieDetails/base/GoodsNav"
+  }
+}

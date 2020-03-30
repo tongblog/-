@@ -1,0 +1,732 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "路运二手车",
+				"enablePullDownRefresh":true
+			}
+		},
+		
+		{
+			"path": "pages/pricing/index",
+			"style": {
+				"navigationBarTitleText": "一口价",
+				"enablePullDownRefresh":true
+			}
+		},
+		
+		{
+			"path": "pages/city/City",
+			"style": {
+				"navigationBarTitleText": "选择城市",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		{
+			"path": "pages/unsoldCar/index",
+			"style": {
+				"navigationBarTitleText": "库存车",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"enablePullDownRefresh":true
+			}
+		},
+		
+		{
+			"path": "pages/bidding/Bidding",
+			"style": {
+				"navigationBarTitleText": "抢购",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/common/truckService",
+			"style": {
+				"navigationBarTitleText": "路运车服",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/store/Store",
+			"style": {
+				"navigationBarTitleText": "店铺",
+				"enablePullDownRefresh":true
+			}
+		},
+		
+		
+		{
+			"path": "pages/sellcars/SellCars",
+			"style": {
+				"navigationBarTitleText": "我要卖车",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/common/brand",
+			"style": {
+				"navigationBarTitleText": "选择品牌",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+	
+		{
+			"path": "pages/personalcenter/PersonalCenter",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+	
+		// 一口价商品详情
+		{
+			"path": "pages/general/details",
+			"style": {
+				"navigationBarTitleText": "车辆详情",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		// 首页商品详情
+		{
+			"path": "pages/DirectSelling/DirectSelling",
+			"style": {
+				"navigationBarTitleText": "车辆详情",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		// 详情页查看更多
+		{
+			"path": "pages/common/dgMore",
+			"style": {
+				"navigationBarTitleText": "挂车信息",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarShadow":{
+					"colorType":"grey"
+				}
+			}
+		},
+		// 详情页挂车查看更多
+		{
+			"path": "pages/common/viewMore",
+			"style": {
+				"navigationBarTitleText": "车辆基本信息",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black",
+				"navigationBarShadow":{
+					"colorType":"grey"
+				}
+			}
+		},
+		// 库存车商品详情
+		{
+			"path": "pages/kucunDetails/kucunDetails",
+			"style": {
+				"navigationBarTitleText": "车辆详情",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		// 竞拍开场和即将开场商品详情
+		{
+			"path": "pages/auctionDetails/auctionDetails",
+			"style": {
+				"navigationBarTitleText": "车辆详情",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		
+		// 店铺详情页面
+		{
+			"path": "pages/storeDetails/storeDetails",
+			"style": {
+				"navigationBarTitleText": "店铺详情"
+			}
+		},
+		// 店铺信息页面
+		{
+			"path": "pages/storeDetails/base/ShopDetails",
+			"style": {
+				"navigationBarTitleText": "店铺详情",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		{
+			"path": "pages/common/phonenumber",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+
+		{
+			"path": "pages/common/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		// 一口价商品分期
+		{
+			"path": "pages/general/base/installment",
+			"style": {
+				"navigationBarTitleText": "分期咨询",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+
+		
+		// 发布成功
+		{
+			"path": "pages/common/release",
+			"style": {
+				"navigationBarTitleText": "发布成功",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/common/TestingDetaile",
+			"style": {
+				"navigationBarTitleText": "检测信息详情",
+				"enablePullDownRefresh":true
+			}
+		},
+		{
+			"path": "pages/common/appointment",
+			"style": {
+				"navigationBarTitleText": "提交成功",
+				"enablePullDownRefresh":true
+			}
+		},
+		// 路运直卖我要优惠
+		{
+			"path": "pages/DirectSelling/base/discounts",
+			"style": {
+				"navigationBarTitleText": "我要优惠",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/common/getGift",
+			"style": {
+				"navigationBarTitleText": "领取礼品成功",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		// 库存车出价
+		{
+			"path": "pages/kucunDetails/base/discounts",
+			"style": {
+				"navigationBarTitleText": "库存车",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/payDeposit/management",
+			"style": {
+				"navigationBarTitleText": "保证金管理",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/payDeposit/amountFrozen",
+			"style": {
+				"navigationBarTitleText": "冻结金额详情",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		{
+			"path": "pages/payDeposit/refund",
+			"style": {
+				"navigationBarTitleText": "保证金退款",
+				"navigationBarBackgroundColor":"#F4F4F4",
+				"navigationBarTextStyle":"black"
+			}
+		},
+
+		{
+			"path": "pages/payDeposit/payment",
+			"style": {
+				"navigationBarTitleText": "缴纳保证金",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		},
+		
+		{
+			"path": "pages/payDeposit/agreement",
+			"style": {
+				"navigationBarTitleText": "保证金充值协议",
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTextStyle":"black"
+			}
+		}
+
+	],
+
+
+	"subPackages": [
+		/************************************************会员中心Start****************************************************************/
+		
+		{
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/collectiongoods/index",
+				"style": {
+					"navigationBarTitleText": "收藏夹",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/collectionshop/index",
+				"style": {
+					"navigationBarTitleText": "关注店铺",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/newmypath/index",
+				"style": {
+					"navigationBarTitleText": "足迹",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/orderlist/index",
+				"style": {
+					"navigationBarTitleText": "我的订单",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/orderdetail/index",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/shop/index",
+				"style": {
+					"navigationBarTitleText": "店铺中心",
+					"navigationBarBackgroundColor":"#0657A6"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/applyshop/index",
+				"style": {
+					"navigationBarTitleText": "我要开店",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/shop/base/ShopDetails",
+				"style": {
+					"navigationBarTitleText": "店铺详情",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/cargoods/index",
+				"style": {
+					"navigationBarTitleText": "车辆管理",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/carprogress/index",
+				"style": {
+					"navigationBarTitleText": "卖车进度",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		},{
+			"root": "other_pages",
+			"pages": [{
+				"path": "member/offer_records/index",
+				"style": {
+					"navigationBarTitleText": "我的出价",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}
+		/************************************************帮助中心Start****************************************************************/
+
+		, {
+			"root": "other_pages",
+			"pages": [{
+				"path": "help/index",
+				"style": {
+					"navigationBarTitleText": "帮助中心",
+					"navigationBarBackgroundColor": "#F4F4F4",
+					"navigationBarTextStyle": "black"
+				}
+			}]
+		}
+		/************************************************帮助中心End****************************************************************/
+	/************************************************会员中心End****************************************************************/
+		// 港口特价商品列表
+		,{
+			"root": "other_pages",
+			"pages":[{
+				"path": "special/Special",
+				"style": {
+					"navigationBarTitleText": "港口特价",
+					"enablePullDownRefresh":true
+				}
+			}]
+			
+		},
+		// 港口特价商品详情
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "gangkouDetails/GkouDetails",
+				"style": {
+					"navigationBarTitleText": "车辆详情",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 特别推荐
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "recommend/Recommend",
+				"style": {
+					"navigationBarTitleText": "特别推荐",
+					"enablePullDownRefresh":true
+				}
+			}]
+			
+		},
+		// 特别推荐商品详情
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "tebieDetails/tebieDetails",
+				"style": {
+					"navigationBarTitleText": "车辆详情",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 分期
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "installment/installment",
+				"style": {
+					"navigationBarTitleText": "分期咨询",
+					"navigationBarBackgroundColor":"#F4F4F4",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 个人实名认证
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "RealName/RealName",
+				"style": {
+					"navigationBarTitleText": "个人实名认证",
+					"enablePullDownRefresh":true
+				}
+			}]
+			
+		},
+		// 我要卖车上传车辆图片
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "VehicleImg/VehicleImg",
+				"style": {
+					"navigationBarTitleText": "车辆图片",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		//挂车信息
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "daiguaSell/SellCars",
+				"style": {
+					"navigationBarTitleText": "挂车信息",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 以旧换新
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "huanxin/HuanXin",
+				"style": {
+					"navigationBarTitleText": "以旧换新"
+				}
+			}]
+			
+		},
+		// 以旧换新上传车辆图片
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "oldVehicleImg/VehicleImg",
+				"style": {
+					"navigationBarTitleText": "车辆图片",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 搜索
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "sousuo/suosuo",
+				"style": {
+					"navigationBarTitleText": "搜索",
+					"navigationBarBackgroundColor":"#F4F4F4",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+			
+		},
+		// 搜索内容
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "SearchDetail/SearchDetail",
+				"style": {
+					"navigationBarTitleText": "搜索中"
+				}
+			}]
+			
+		},
+		// 检测师
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "detectiont/Detection",
+				"style": {
+					"navigationBarTitleText": "车辆检测"
+				}
+			}]
+			
+		},
+		// 检测报告
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "common/testReport",
+				"style": {
+					"navigationBarTitleText": "检测报告"
+				}
+			}]
+		},
+		// 分期付款
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "common/installment",
+				"style": {
+					"navigationBarTitleText": "分期付款"
+				}
+			}]
+		},
+		// 个人中心店铺
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "shop/shop",
+				"style": {
+					"navigationBarTitleText": "我的店铺"
+				}
+			}]
+		},
+		// 个人中心店铺订单
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "shopList/shopList",
+				"style": {
+					"navigationBarTitleText": "店铺订单"
+				}
+			}]
+		},
+		// 个人中心店铺订单详情
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "shopDetail/index",
+				"style": {
+					"navigationBarTitleText": "订单详情"
+				}
+			}]
+		},
+		// 信息提交成功
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "common/subSuccess",
+				"style": {
+					"navigationBarTitleText": "信息提交成功"
+				}
+			}]
+		},
+		// 查看检测项
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "common/TestingDetaile",
+				"style": {
+					"navigationBarTitleText": "检测项目"
+				}
+			}]
+		},
+		// 拒绝车源
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "rejectOptions/rejectOptions",
+				"style": {
+					"navigationBarTitleText": "拒绝车源"
+				}
+			}]
+		},
+		// 店铺公告
+		{
+			"root": "other_pages",
+			"pages":[{
+				"path": "shopSet/shopSet",
+				"style": {
+					"navigationBarTitleText": "店铺公告",
+					"navigationBarBackgroundColor":"#FFFFFF",
+					"navigationBarTextStyle":"black"
+				}
+			}]
+		}
+		
+	],
+	"permission": {
+	    "scope.userLocation": {
+	      "desc": " " 
+	    }
+	},
+
+	"preloadRule": {
+		"other_pages/help/index": {
+			"network": "all",
+			"packages": ["other_pages"]
+		}
+	},
+
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "路运二手车",
+		"navigationBarBackgroundColor": "#0657A6",
+		"backgroundColor": "#F8F8F8"
+	},
+
+
+	"tabBar": {
+		"position": "bottom",
+		"color": "#444444",
+		"selectedColor": "#0657A6",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/images/home2.png",
+			"selectedIconPath": "static/images/home1.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/store/Store",
+			"iconPath": "static/images/shop2.png",
+			"selectedIconPath": "static/images/shop1.png",
+			"text": "店铺"
+		},  {
+			"pagePath": "pages/sellcars/SellCars",
+			"iconPath": "static/images/meto2.png",
+			"selectedIconPath": "static/images/meto1.png",
+			"text": "我要卖车"
+		}, {
+			"pagePath": "pages/personalcenter/PersonalCenter",
+			"iconPath": "static/images/my2.png",
+			"selectedIconPath": "static/images/my1.png",
+			"text": "我的"
+		}] 
+	}
+}
+/* 
+{
+			"pagePath": "pages/common/truckService",
+			"iconPath": "static/images/chefu2.png",
+			"selectedIconPath": "static/images/chefu1.png",
+			"text": "路运车服"
+		}, 
+ 
+ */

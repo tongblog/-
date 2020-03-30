@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "店铺订单",
+  "usingComponents": {
+    "wuc-tab": "/components/wuc-tab/wuc-tab",
+    "list": "/other_pages/shopList/base/list"
+  }
+}

@@ -1,0 +1,10 @@
+(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["pages/index/home/nav"],{"097f":function(n,a,e){"use strict";var t=function(){var n=this,a=n.$createElement;n._self._c},u=[];e.d(a,"a",function(){return t}),e.d(a,"b",function(){return u})},"4c90":function(n,a,e){},"54c2":function(n,a,e){"use strict";(function(n){Object.defineProperty(a,"__esModule",{value:!0}),a.default=void 0;var t=i(e("92ba")),u=e("5776");function i(n){return n&&n.__esModule?n:{default:n}}var o={props:{scrollS:{type:Boolean}},data:function(){return{navcontent:[{id:1,imgsrc:t.default.domain+"upload/applet/nav1.png",pages:"/pages/pricing/index",navstr:"一口价"},{id:2,imgsrc:t.default.domain+"upload/applet/nav2.png",pages:"/pages/unsoldCar/index",navstr:"库存车"},{id:3,imgsrc:t.default.domain+"upload/applet/nav3.png",pages:"/other_pages/special/Special",navstr:"港口特价"},{id:4,imgsrc:t.default.domain+"upload/applet/nav4.png",pages:"/other_pages/huanxin/HuanXin",navstr:"以旧换新"},{id:5,imgsrc:t.default.domain+"upload/applet/nav5.png",pages:"/other_pages/installment/installment",navstr:"分期咨询"}]}},methods:{pageJump:function(n){(0,u.goWindow)(n.pages)},clickService:function(){n.makePhoneCall({phoneNumber:"4000519898"})}}};a.default=o}).call(this,e("543d")["default"])},"8b91":function(n,a,e){"use strict";e.r(a);var t=e("54c2"),u=e.n(t);for(var i in t)"default"!==i&&function(n){e.d(a,n,function(){return t[n]})}(i);a["default"]=u.a},f652:function(n,a,e){"use strict";e.r(a);var t=e("097f"),u=e("8b91");for(var i in u)"default"!==i&&function(n){e.d(a,n,function(){return u[n]})}(i);e("fd81");var o=e("2877"),r=Object(o["a"])(u["default"],t["a"],t["b"],!1,null,"5bdb13a8",null);a["default"]=r.exports},fd81:function(n,a,e){"use strict";var t=e("4c90"),u=e.n(t);u.a}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'pages/index/home/nav-create-component',
+    {
+        'pages/index/home/nav-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("f652"))
+        })
+    },
+    [['pages/index/home/nav-create-component']]
+]);                

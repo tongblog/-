@@ -1,0 +1,16 @@
+.goods-nav.data-v-2b4a41e6 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+.bomNav.data-v-2b4a41e6 {
+  -webkit-filter: grayscale(50%);
+          filter: grayscale(50%);
+}
+.bomNav .failure.data-v-2b4a41e6 {
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+}
+

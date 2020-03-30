@@ -1,0 +1,14 @@
+.letters.data-v-73979c2d {
+  position: fixed;
+  right: 0;
+  top: 18%;
+  margin: auto;
+  color: #333;
+}
+.letters .flex-item.data-v-73979c2d {
+  padding-right: 20rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 22rpx;
+}
+

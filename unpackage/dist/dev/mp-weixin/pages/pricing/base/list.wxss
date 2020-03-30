@@ -1,0 +1,73 @@
+
+.data-none.data-v-17afbc38{
+	padding: 10rpx 0;
+	border-bottom: 10rpx #F4F4F4 solid;
+	text-align: center;
+	color: #222;
+}
+.data-none .txt.data-v-17afbc38{
+	color: #0657A6;
+}
+.data-none .img.data-v-17afbc38{
+	width: 40%;
+}
+.list.data-v-17afbc38{
+	padding: 24rpx;
+	height: 140;
+	border-bottom: 10rpx #F4F4F4 solid;
+}
+.list .list-imgs.data-v-17afbc38{
+	overflow: hidden;
+	display: inline-block;
+	width: 256rpx;
+	height: 218rpx;
+	vertical-align: middle;
+	border-radius: 10rpx;
+}
+.list .list-content.data-v-17afbc38{
+	display: inline-block;
+	width: 418rpx;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: 3%;
+}
+.list-content .title.data-v-17afbc38{
+	line-height: 42rpx;
+	color: #222222;
+}
+.list-content .date.data-v-17afbc38{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	height: 45rpx;
+	font-size: 22rpx;
+	color: #888888;
+}
+.list-content .uni-flex.data-v-17afbc38{
+	margin-top: 10rpx;
+}
+.list-content .uni-flex .flex-item.data-v-17afbc38{
+	padding:0 10rpx;
+	margin-right:25rpx;
+	border:1rpx #0657A6 solid;
+	border-radius:10rpx;
+	font-size:20rpx;
+	color:#0657A6;
+	text-align:center;
+	line-height: 30rpx;
+}
+.list-content .price.data-v-17afbc38{
+	font-size: 30rpx;
+	color: #FF1A1A;
+	font-weight: bold;
+}
+.price .fixed-price.data-v-17afbc38{
+	padding: 5rpx 8rpx;
+	margin-right: 10rpx;
+	background-color: #FF2727;
+	border-radius: 4rpx;
+	font-size: 22rpx;
+	color: #FFFFFF;
+}	
+		
+

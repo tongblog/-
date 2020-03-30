@@ -1,0 +1,148 @@
+.brand.data-v-ed44bb64 {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+.brand .secon.data-v-ed44bb64 {
+  width: 60% !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.brand .secondary.data-v-ed44bb64 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  box-shadow: 0 0 20rpx 0 #ccc;
+  width: 0;
+  height: 100%;
+  background: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.brand .secondary .sec-title.data-v-ed44bb64 {
+  padding: 0 20rpx;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 70rpx;
+}
+.brand .secondary .sec-scroll.data-v-ed44bb64 {
+  height: 100vh;
+}
+.brand .secondary .sec-scroll .sec-list.data-v-ed44bb64 {
+  padding: 0 30rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+  font-size: 26rpx;
+  line-height: 70rpx;
+  color: #444;
+}
+.brand .scroll-view.data-v-ed44bb64 {
+  height: 100vh;
+}
+.brand .scroll-view .brand-title.data-v-ed44bb64 {
+  padding-left: 26rpx;
+  background-color: #e6e6e6;
+  font-size: 26rpx;
+  color: #ff2929;
+}
+.brand .scroll-view .brand-content.data-v-ed44bb64 {
+  padding: 30rpx;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.brand .scroll-view .brand-content .flex-item.data-v-ed44bb64 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 20%;
+}
+.brand .scroll-view .brand-content .flex-item image.data-v-ed44bb64 {
+  width: 90rpx;
+  height: 60rpx;
+}
+.brand .scroll-view .brand-content .flex-item .text.data-v-ed44bb64 {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 70rpx;
+  color: #222;
+  font-size: 24rpx;
+}
+.brand .scroll-view .brand-list .letter.data-v-ed44bb64 {
+  padding-left: 26rpx;
+  background-color: #e6e6e6;
+  font-size: 26rpx;
+  color: #444;
+}
+.brand .scroll-view .brand-list .letter-car .flex-item.data-v-ed44bb64 {
+  padding: 15rpx 20rpx;
+  border-bottom: 1rpx #e6e6e6 solid;
+  color: #333;
+}
+
+.kucunnav.data-v-685e3ccc {
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.kucunnav .flex-item.data-v-685e3ccc {
+  width: 50%;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #444;
+  text-align: center;
+  font-size: 0;
+}
+.kucunnav .flex-item text.data-v-685e3ccc {
+  margin-right: 8rpx;
+  vertical-align: middle;
+  font-size: 24rpx;
+}
+.kucunnav .flex-item text.txtC.data-v-685e3ccc {
+  color: #0657a6;
+}
+.kucunnav .flex-item icon.data-v-685e3ccc {
+  vertical-align: middle;
+  color: #444;
+  font-size: 20rpx;
+}
+.kucunnav .flex-item icon.rotate.data-v-685e3ccc {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  color: #0657a6;
+}
+.models.data-v-685e3ccc {
+  position: absolute;
+  top: 70rpx;
+  z-index: 100;
+  width: 100%;
+  background-color: #fff;
+}
+.models .car-models.data-v-685e3ccc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 20rpx 30rpx;
+}
+.models .car-models .models-item.data-v-685e3ccc {
+  width: 25%;
+  margin: 10px;
+  border: 1rpx #ddd solid;
+  border-radius: 10rpx;
+  line-height: 72rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #222;
+}
+

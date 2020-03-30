@@ -1,0 +1,16 @@
+.description.data-v-a3d7e2c2 {
+  padding: 28rpx;
+}
+.description .dpt-title.data-v-a3d7e2c2 {
+  width: 105rpx;
+  border-bottom: 2rpx #0657a6 solid;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #222;
+}
+.description .dpt-content.data-v-a3d7e2c2 {
+  padding-top: 10px;
+  font-size: 26rpx;
+  color: #444;
+}
+

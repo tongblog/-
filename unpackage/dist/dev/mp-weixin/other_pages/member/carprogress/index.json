@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "卖车进度",
+  "navigationBarBackgroundColor": "#F4F4F4",
+  "navigationBarTextStyle": "black",
+  "usingComponents": {
+    "wuc-tab": "/components/wuc-tab/wuc-tab",
+    "list": "/other_pages/member/carprogress/base/list"
+  }
+}

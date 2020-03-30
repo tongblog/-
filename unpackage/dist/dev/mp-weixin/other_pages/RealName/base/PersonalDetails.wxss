@@ -1,0 +1,35 @@
+.personal-details.data-v-2d80cf40 {
+  position: relative;
+  padding: 0 24rpx;
+  background-color: #fff;
+}
+.personal-details button.data-v-2d80cf40 {
+  position: absolute;
+  bottom: -30vh;
+  width: 93vw;
+  background-color: #0657a6;
+  font-size: 34rpx;
+}
+.personal-details .details-title.data-v-2d80cf40 {
+  padding: 20rpx 0;
+  font-size: 30rpx;
+  color: #222;
+  font-weight: 600;
+}
+.personal-details .uni-flex .flex-item.data-v-2d80cf40 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  border-bottom: 2rpx #eee solid;
+}
+.personal-details .uni-flex .flex-item text.data-v-2d80cf40 {
+  width: 30%;
+  font-szie: 28rpx;
+  color: #222;
+  line-height: 80rpx;
+}
+.personal-details .uni-flex .flex-item input.data-v-2d80cf40 {
+  width: 70%;
+  height: 80rpx;
+}
+

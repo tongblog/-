@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "店铺",
+  "usingComponents": {
+    "store-data": "/pages/store/base/StoreData",
+    "store-region": "/pages/store/base/StoreRegion",
+    "store-list": "/pages/store/base/StoreList"
+  }
+}

@@ -1,0 +1,19 @@
+.agreement.data-v-78a4a408 {
+  padding: 30rpx 33rpx;
+}
+.agreement .center.data-v-78a4a408 {
+  padding: 0 25rpx;
+  box-shadow: 0 0 5rpx 0 #ccc;
+  border-radius: 5rpx;
+}
+.agreement .title.data-v-78a4a408 {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 35rpx;
+  color: #2579cb;
+}
+.agreement .content .txt.data-v-78a4a408 {
+  color: #444;
+  font-size: 24rpx;
+}
+

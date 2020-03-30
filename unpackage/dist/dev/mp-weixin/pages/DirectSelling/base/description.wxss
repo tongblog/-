@@ -1,0 +1,16 @@
+.description.data-v-4f42c11e {
+  padding: 28rpx;
+}
+.description .dpt-title.data-v-4f42c11e {
+  width: 105rpx;
+  border-bottom: 2rpx #0657a6 solid;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #222;
+}
+.description .dpt-content.data-v-4f42c11e {
+  padding-top: 10px;
+  font-size: 26rpx;
+  color: #444;
+}
+

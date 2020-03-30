@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索中",
+  "usingComponents": {
+    "detail-list": "/other_pages/SearchDetail/base/DetailList"
+  }
+}

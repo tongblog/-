@@ -1,0 +1,72 @@
+.scroll-view.data-v-39159643 {
+  height: 100vh;
+}
+.all-city .all-letter.data-v-39159643 {
+  width: 100%;
+}
+.all-city .all-letter .letters.data-v-39159643 {
+  background-color: #f4f4f4;
+  color: #444;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+}
+.all-city .all-letter .all-list .flex-item.data-v-39159643 {
+  padding: 0 20rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx #f4f4f4 solid;
+}
+.current-title.data-v-39159643,
+.hot-city.data-v-39159643 {
+  width: 100%;
+  background-color: #f4f4f4;
+  color: #444;
+  line-height: 50rpx;
+  padding-left: 20rpx;
+}
+.current-list.data-v-39159643 {
+  padding: 0 20rpx;
+  line-height: 80rpx;
+}
+.current-list .current-city.data-v-39159643 {
+  display: inline-block;
+  padding-right: 50rpx;
+  line-height: 80rpx;
+  vertical-align: middle;
+}
+.current-list .positioning.data-v-39159643 {
+  display: inline-block;
+  float: right;
+  margin-top: 5rpx;
+  font-size: 26rpx;
+}
+.current-list .positioning icon.iconft.data-v-39159643 {
+  -webkit-transform: rotate(1080deg);
+          transform: rotate(1080deg);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.hot-list.data-v-39159643 {
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.hot-list .flex-item.data-v-39159643 {
+  width: 25%;
+  border: 1px #ccc solid;
+  border-radius: 5rpx;
+  margin: 15rpx 0;
+  text-align: center;
+}
+.national.data-v-39159643 {
+  padding: 0 20rpx;
+  line-height: 80rpx;
+}
+.national .national-item.data-v-39159643 {
+  width: 190rpx;
+  border: 1px #ccc solid;
+  margin: 15rpx 0;
+  border-radius: 5rpx;
+  text-align: center;
+}
+

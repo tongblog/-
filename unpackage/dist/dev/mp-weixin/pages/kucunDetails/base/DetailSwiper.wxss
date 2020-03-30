@@ -1,0 +1,46 @@
+.detail-swiper.data-v-d0f8631a {
+  position: relative;
+}
+.detail-swiper .swiper.data-v-d0f8631a {
+  width: 100%;
+  height: 373rpx;
+}
+.detail-swiper .swiper .swiper-item.data-v-d0f8631a {
+  height: 100%;
+}
+.detail-swiper .swiper .swiper-item image.data-v-d0f8631a {
+  width: 100%;
+  height: 100%;
+}
+.detail-swiper .swiper .swiper-item video.data-v-d0f8631a {
+  width: 100%;
+  height: 100%;
+}
+.detail-swiper .num.data-v-d0f8631a {
+  position: absolute;
+  bottom: 105rpx;
+  right: 24rpx;
+  color: #fff;
+}
+.detail-swiper .price.data-v-d0f8631a {
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+}
+.detail-swiper .price image.data-v-d0f8631a {
+  width: 100%;
+  height: 100%;
+}
+.detail-swiper .price .price-data.data-v-d0f8631a {
+  position: absolute;
+  left: 185rpx;
+  top: 10rpx;
+  font-size: 42rpx;
+  text-align: center;
+  color: #fff;
+}
+.detail-swiper .price .price-data text.data-v-d0f8631a {
+  margin-left: 40rpx;
+  font-weight: bold;
+}
+
