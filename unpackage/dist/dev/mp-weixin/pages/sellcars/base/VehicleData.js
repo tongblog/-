@@ -279,8 +279,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26); //
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -449,7 +463,7 @@ var _default = { props: { jsonId1: { // 行驶证数据json
       type: Number }, state: { type: Boolean } }, data: function data() {var currentDate = this.getDate({ format: true });var xszDate = this.getVehicleDate({ format: true });return { array: [], index: 0, // 车型id
       array1: [], index1: 0, // 排放id
       array2: [], index2: 0, // 驱动id
-      date: currentDate, vehicleDate: xszDate, slider: false, sliderData: 0, // 马力值
+      date: currentDate, vehicleDate: xszDate, slider: false, sliderData: "", // 马力值
       multiArray: [[], ["台湾省"]], multiindex: [0, 0], provList: [], citysList: [], provId: 0, // 省份id
       cityId: 0, // 城市id
       province: '', citys: '', carName: '', brandId: 0, // 品牌id
@@ -477,7 +491,8 @@ var _default = { props: { jsonId1: { // 行驶证数据json
     getVehicleDate: function getVehicleDate(type) {var date = new Date();var year = date.getFullYear();var month = date.getMonth() + 1; //let day = date.getDate();
       if (type === 'start') {year = year - 20;} else if (type === 'end') {year = year + 5;}month = month > 9 ? month : '0' + month;; //day = day > 9 ? day : '0' + day;
       return "".concat(year, "-").concat(month);}, // 马力值
-    sliderChange: function sliderChange(e) {this.sliderData = e.detail.value;this.slider = false;}, // 保险
+    sliderChange: function sliderChange(e) {this.sliderData = e.detail.value + "匹"; //this.slider = false
+    }, // 保险
     changeCheck: function changeCheck(e) {this.insurance = e.detail.value;}, // 所有人类型
     changeType: function changeType(e) {this.genre = parseInt(e.detail.value);}, // 是否提档
     changeArchives: function changeArchives(e) {this.archives = parseInt(e.detail.value);}, // 是否带挂
@@ -486,15 +501,7 @@ var _default = { props: { jsonId1: { // 行驶证数据json
     changePrice: function changePrice(e) {this.price = parseInt(e.detail.value);}, clickSlider: function clickSlider() {this.slider = true;}, // 轮胎规格
     blurLuntai: function blurLuntai(e) {this.tyre_spec = e.detail.value;}, // 发动机品牌
     blurPinpai: function blurPinpai(e) {this.engine_brand = e.detail.value;}, // 获取用户手机号
-    getPhone: function getPhone(e) {
-      var _this = this;
-      if (!_this.validata(e.detail.value)) {
-        return false;
-      }
-      var token = uni.getStorageSync('token');
-      if (token !== '') {
-        (0, _reques.request)("/member/isbindmobile", {
-          token: token },
+    getPhone: function getPhone(e) {var _this = this;if (!_this.validata(e.detail.value)) {return false;}var token = uni.getStorageSync('token');if (token !== '') {(0, _reques.request)("/member/isbindmobile", { token: token },
         "POST").
         then(function (res) {
           if (res.data.data === 1) {
@@ -534,6 +541,7 @@ var _default = { props: { jsonId1: { // 行驶证数据json
     },
 
     validata: function validata(data) {
+      console.log(data);
       var msg = '';
       var _this = this;
       if (data.cat_type == '' && msg == '') {
@@ -602,6 +610,7 @@ var _default = { props: { jsonId1: { // 行驶证数据json
     pageJump: function pageJump() {
       Object.assign(this._data, this._props);
       var jsonObj = this._data;
+      jsonObj.sliderData.replace(/匹/, "");
       delete jsonObj.array;
       delete jsonObj.array1;
       delete jsonObj.array2;

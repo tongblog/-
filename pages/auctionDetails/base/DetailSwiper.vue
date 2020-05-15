@@ -127,6 +127,7 @@
 						this.min1 = min;
 						this.sec1 = sec
 					}else{
+						this.$emit("handleStart",true)
 						clearInterval(times)
 					}	  
 				},1000)

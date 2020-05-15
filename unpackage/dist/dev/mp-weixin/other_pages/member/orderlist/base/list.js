@@ -212,10 +212,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
 var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/member.js */ 89));
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
 var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _interopRequireWildcard(obj) {if (obj && obj.__esModule) {return obj;} else {var newObj = {};if (obj != null) {for (var key in obj) {if (Object.prototype.hasOwnProperty.call(obj, key)) {var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {};if (desc.get || desc.set) {Object.defineProperty(newObj, key, desc);} else {newObj[key] = obj[key];}}}}newObj.default = obj;return newObj;}} //
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -299,14 +313,7 @@ var _default2 = { data: function data() {return { data_list: [], borderBtm: 'bor
     handlePric: function handlePric(order_id) {(0, _navigate.goWindow)('/other_pages/member/orderdetail/index?order_id=', order_id);}, // 店铺跳转
     handleShop: function handleShop(shop_id) {if (shop_id == 0) return;(0, _navigate.goWindow)('/pages/storeDetails/storeDetails?id=', shop_id);}, getData: function getData(page_index) {var _this2 = this;var _this = this;MemberApi.getOrderList({ page_index: page_index, order_status: _this.status == -1 ? 'all' : _this.status }).then(function (res) {uni.showLoading({ title: '加载中' });var data = res.data.data;for (var index in data) {for (var index2 in data[index].order_item_list) {data[index].order_item_list[index2].picture.pic_cover = _config.default.domain + data[index].order_item_list[index2].picture.pic_cover;}}if (page_index > 1) {data = _this2.data_list.concat(data);}setTimeout(function () {_this2.data_list = data;console.log(_this2.data_list);_this2.page_count = res.data.page_count;uni.hideLoading();}, 500);});}, // 取消收藏
     action: function action(fav_id) {uni.showToast({ title: '取消收藏成功', duration: 2000, success: function success() {setTimeout(function () {_this.newMyPath(1);}, 2000);} });}, // 取消订单
-    action_close: function action_close(order_id, index) {var _this = this;uni.showLoading({ title: '取消订单中' });MemberApi.orderClose({
-        order_id: order_id }).
-      then(function (res) {
-        uni.hideLoading();
-        if (res.data > 0) {
-          uni.showToast({
-            title: '取消订单成功',
-            duration: 2000,
+    action_close: function action_close(order_id, index) {var _this = this;uni.showLoading({ title: '取消订单中' });MemberApi.orderClose({ order_id: order_id }).then(function (res) {uni.hideLoading();if (res.data > 0) {uni.showToast({ title: '取消订单成功', duration: 2000,
             success: function success() {
               _this.data_list[index].order_status = 5;
               _this.data_list[index].status_name = '订单关闭';

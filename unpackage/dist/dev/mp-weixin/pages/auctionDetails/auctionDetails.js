@@ -183,7 +183,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41); //
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -235,13 +247,7 @@ var _reques = __webpack_require__(/*! @/api/reques.js */ 41); //
 //
 // 竞拍商品详情页
 var DetailSwiper = function DetailSwiper() {return Promise.all(/*! import() | pages/auctionDetails/base/DetailSwiper */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/auctionDetails/base/DetailSwiper")]).then(__webpack_require__.bind(null, /*! ./base/DetailSwiper.vue */ 823));};var DetailTitle = function DetailTitle() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/DetailTitle */ "pages/auctionDetails/base/DetailTitle").then(__webpack_require__.bind(null, /*! ./base/DetailTitle.vue */ 830));};var OfferList = function OfferList() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/OfferList */ "pages/auctionDetails/base/OfferList").then(__webpack_require__.bind(null, /*! ./base/OfferList.vue */ 837));};var Certificate = function Certificate() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/certificate */ "pages/auctionDetails/base/certificate").then(__webpack_require__.bind(null, /*! ./base/certificate.vue */ 844));};var Formalities = function Formalities() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/formalities */ "pages/auctionDetails/base/formalities").then(__webpack_require__.bind(null, /*! ./base/formalities.vue */ 851));};var Description = function Description() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/description */ "pages/auctionDetails/base/description").then(__webpack_require__.bind(null, /*! ./base/description.vue */ 858));};var Information = function Information() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/information */ "pages/auctionDetails/base/information").then(__webpack_require__.bind(null, /*! ./base/information.vue */ 865));};var DectionList = function DectionList() {return __webpack_require__.e(/*! import() | pages/auctionDetails/base/DectionList */ "pages/auctionDetails/base/DectionList").then(__webpack_require__.bind(null, /*! ./base/DectionList.vue */ 872));};var GoodsNav = function GoodsNav() {return Promise.all(/*! import() | pages/auctionDetails/base/GoodsNav */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/auctionDetails/base/GoodsNav")]).then(__webpack_require__.bind(null, /*! ./base/GoodsNav.vue */ 879));};var _default = { data: function data() {return { show: false, action_id: 0, goods_id: 0, start_time: 0, end_time: 0, imgList: [], price: '', introduction: '', // 简介
-      certificate: [], testInfo: [], label_arr: [], jsonData: {}, person_num: 0, description: "", goods_name: "", nick_name: "", auth_img: "", testing_desc: "", remark: "", records: [], add_price: 0, money: 0, offer: 0, notice: 0, video: "", fav_goods: 0, is_remind: 0, state: 1, is_testing: 0 };}, components: { DetailSwiper: DetailSwiper, DetailTitle: DetailTitle, OfferList: OfferList, Certificate: Certificate, Formalities: Formalities, Description: Description, Information: Information, DectionList: DectionList,
-    GoodsNav: GoodsNav },
-
-  onLoad: function onLoad(option) {
-    var data = JSON.parse(option.json);
-    this.jsonData = data;
-    this.action_id = data.action_id;
+      certificate: [], testInfo: [], label_arr: [], jsonData: {}, person_num: 0, description: "", goods_name: "", nick_name: "", auth_img: "", testing_desc: "", remark: "", records: [], add_price: 0, money: 0, offer: 0, notice: 0, video: "", fav_goods: 0, is_remind: 0, state: 1, is_testing: 0 };}, components: { DetailSwiper: DetailSwiper, DetailTitle: DetailTitle, OfferList: OfferList, Certificate: Certificate, Formalities: Formalities, Description: Description, Information: Information, DectionList: DectionList, GoodsNav: GoodsNav }, onLoad: function onLoad(option) {var data = JSON.parse(option.json);this.jsonData = data;this.action_id = data.action_id;
     this.goods_id = data.goods_id;
     /* this.start_time = data.start_time;
                                    this.end_time = data.end_time; */
@@ -372,6 +378,11 @@ var DetailSwiper = function DetailSwiper() {return Promise.all(/*! import() | pa
       //return 
       if (num) {
         //console.log(num)
+        this.getDirect(this.action_id, this.goods_id);
+      }
+    },
+    handleStart: function handleStart(bool) {
+      if (bool) {
         this.getDirect(this.action_id, this.goods_id);
       }
     } } };exports.default = _default;

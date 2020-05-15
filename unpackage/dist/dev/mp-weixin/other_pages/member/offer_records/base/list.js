@@ -202,7 +202,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/member.js */ 89));
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
 
@@ -266,10 +265,10 @@ var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 
 //
 //
 //
-//
 // 首页商品
 var orderTime = function orderTime() {return __webpack_require__.e(/*! import() | pages/common/orderTime */ "pages/common/orderTime").then(__webpack_require__.bind(null, /*! @/pages/common/orderTime.vue */ 907));};var _default2 = { data: function data() {return { order_time: false, data_list: [], page_index: 1, page_count: 0, goodsJson: {} };}, props: { options: { type: Object, default: function _default() {return {};} }, status: { type: Number, default: -1 } }, watch: { status: function status(e) {var _this = this;_this.page_idnex = 1;_this.status = e;_this.getData(_this.page_idnex);} }, components: { orderTime: orderTime }, created: function created() {}, methods: { // 页面跳转
-    handleDetail: function handleDetail(group_id, action_id, goods_id) {var auction = { action_id: action_id, goods_id: goods_id };var kcId = { goodsId: goods_id, stockId: action_id };if (group_id == 1) {(0, _navigate.goWindow)('/pages/kucunDetails/kucunDetails?id=', JSON.stringify(kcId));} else if (group_id == 5) {(0, _navigate.goWindow)('/pages/auctionDetails/auctionDetails?json=', JSON.stringify(auction));} else if (group_id == 3) {(0, _navigate.goWindow)('/pages/DirectSelling/DirectSelling?id=', goods_id);}}, getData: function getData(page_index) {var _this2 = this;var _this = this;this.data_list = [];MemberApi.getMemberPromotionOfferRecords({ page_index: page_index,
+    handleDetail: function handleDetail(group_id, action_id, goods_id) {var auction = { action_id: action_id, goods_id: goods_id };var kcId = { goodsId: goods_id, stockId: action_id };if (group_id == 1) {(0, _navigate.goWindow)('/pages/kucunDetails/kucunDetails?id=', JSON.stringify(kcId));} else if (group_id == 5) {(0, _navigate.goWindow)('/pages/auctionDetails/auctionDetails?json=', JSON.stringify(auction));} else if (group_id == 3) {(0, _navigate.goWindow)('/pages/DirectSelling/DirectSelling?id=', goods_id);}}, getData: function getData(page_index) {var _this2 = this;var _this = this;this.data_list = [];MemberApi.getMemberPromotionOfferRecords({
+        page_index: page_index,
         status: _this.status == -1 ? "" : _this.status,
         get_type: _this.status == -1 ? 3 : 0 }).
       then(function (res) {
@@ -287,7 +286,7 @@ var orderTime = function orderTime() {return __webpack_require__.e(/*! import() 
         }
         setTimeout(function () {
           _this2.data_list = data;
-          //console.log(this.data_list)
+          console.log(_this2.data_list);
           _this2.page_count = res.data.page_count;
           uni.hideLoading();
         }, 500);
@@ -312,7 +311,7 @@ var orderTime = function orderTime() {return __webpack_require__.e(/*! import() 
       _this.$c.goUrl(url);
     },
     // 议价我要看车
-    placeOrder: function placeOrder(goods_id, group_id, id, offer_price) {
+    placeOrder: function placeOrder(goods_id, group_id, id, offer_price, index) {
       var _this = this;
       _this.order_time = true;
       _this.goodsJson.goods_id = goods_id;
@@ -341,9 +340,10 @@ var orderTime = function orderTime() {return __webpack_require__.e(/*! import() 
       then(function (res) {
         if (res.code >= 0) {
           uni.hideLoading();
+          _this.getData(_this.page_index);
           _this.$c.msg("下单成功");
         } else {
-          _this.$c.msg("商家暂未同意议价");
+          _this.$c.msg(res.message);
         }
         //console.log(res)
       });

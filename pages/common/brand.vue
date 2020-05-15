@@ -62,7 +62,7 @@
 				off:false,
 				series:[],
 				model:{},
-				mark:false,
+				mark:0,
 			}
 		},
 		filters:{
@@ -80,7 +80,7 @@
 			_this = this
 		},
 		onLoad(option) {
-			this.mark = option.bool == "true" ? true : "";
+			this.mark = parseInt(option.mark)
 		},
 		watch:{
 			"$store.state.letter":(v)=>{
@@ -115,9 +115,13 @@
 					categoryId:item.category_id,
 					categoryName:item.category_name,
 				}
-				this.$store.commit("changeCars",carType);
+				if(this.mark == 2){
+					this.$store.commit("changeKcCars",carType);
+				}else{
+					this.$store.commit("changeCars",carType);
+				}
+				
 				this.off = false
-				console.log(2)
 				uni.navigateBack({
 				    delta: 1
 				});
@@ -161,7 +165,7 @@
 				color #222222
 				line-height 70rpx
 			.sec-scroll
-				height 100vh
+				height 95vh
 				.sec-list
 					padding 0 30rpx
 					border-bottom 1rpx solid #F4F4F4

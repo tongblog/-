@@ -265,6 +265,7 @@ var timer = null;var _default = { props: { show: { type: Boolean, default: false
                   _this3.min1 = min;
                   _this3.sec1 = sec;
                 } else {
+                  _this3.$emit("handleStart", true);
                   clearInterval(times);
                 }case 7:case "end":return _context2.stop();}}}, _callee2, this);})),
       1000);

@@ -318,6 +318,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
 var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/member.js */ 89));
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
@@ -508,9 +512,13 @@ var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 
 //
 //
 //
+//
+//
+//
+//
 // 订单详情页
 // 页面跳转
-var _default = { data: function data() {return { data: [] };}, props: { order_id: { type: String, default: '0' }, shop_id: { type: String, default: '0' } }, watch: { order_id: function order_id(e) {this.getData();} }, filters: { transferTime: function transferTime(time) {var date = new Date(parseInt(time) * 1000);var y = date.getFullYear();var m = date.getMonth() + 1;m = m < 10 ? '0' + m : m;var d = date.getDate();d = d < 10 ? '0' + d : d;var h = date.getHours();h = h < 10 ? '0' + h : h;var min = date.getMinutes();min = min < 10 ? '0' + min : min;var newDate = y + "-" + m + "-" + d + " " + h + ":" + min;return newDate;}, filiterImg: function filiterImg(value) {if (value) {return _config.default.domain + value;}} }, methods: { handleDetail: function handleDetail() {var goods_id = this.data.order_goods[0].goods_id;var group_id = this.data.group_id;var promotion_id = this.data.promotion_id;this.$c.detailsJump(goods_id, group_id, promotion_id);}, getData: function getData() {var _this2 = this;var _this = this;uni.showLoading({ title: '加载中' });MemberApi.carOrderDetail({ order_id: _this.order_id, shop_id: _this.shop_id }).then(function (res) {console.log(res);var data = res.data;data.create_time = _this.$c.timeStampTurnTime(data.create_time);data.order_goods[0].picture_info.pic_cover = _config.default.domain + data.order_goods[0].picture_info.pic_cover;setTimeout(function () {_this2.data = data;console.log(_this2.data);uni.hideLoading();}, 300);});}, handleErr: function handleErr(e, index) {if (e.type == 'error') {this.data.order_goods[0].picture_info.pic_cover = '/static/images/list.jpg';}}, handleReport: function handleReport() {(0, _navigate.goWindow)("/other_pages/common/testReport");}, // 联系买家
+var _default = { data: function data() {return { data: [] };}, props: { order_id: { type: String, default: '0' }, shop_id: { type: String, default: '0' } }, watch: { order_id: function order_id(e) {this.getData();} }, filters: { transferTime: function transferTime(time) {var date = new Date(parseInt(time) * 1000);var y = date.getFullYear();var m = date.getMonth() + 1;m = m < 10 ? '0' + m : m;var d = date.getDate();d = d < 10 ? '0' + d : d;var h = date.getHours();h = h < 10 ? '0' + h : h;var min = date.getMinutes();min = min < 10 ? '0' + min : min;var newDate = y + "-" + m + "-" + d + " " + h + ":" + min;return newDate;}, filiterImg: function filiterImg(value) {if (value) {return _config.default.domain + value;}} }, methods: { handleDetail: function handleDetail() {var goods_id = this.data.order_goods[0].goods_id;var group_id = this.data.group_id;var promotion_id = this.data.promotion_id;this.$c.detailsJump(goods_id, group_id, promotion_id);}, getData: function getData() {var _this2 = this;var _this = this;uni.showLoading({ title: '加载中' });MemberApi.carOrderDetail({ order_id: _this.order_id, shop_id: _this.shop_id, get_type: 2 }).then(function (res) {console.log(res);var code = Number(res.code);if (res.code >= 0) {var data = res.data;data.create_time = _this.$c.timeStampTurnTime(data.create_time);data.order_goods[0].picture_info.pic_cover = _config.default.domain + data.order_goods[0].picture_info.pic_cover;setTimeout(function () {_this2.data = data;console.log(_this2.data);uni.hideLoading();}, 300);} else {_this.$c.msg(res.message);uni.hideLoading();setTimeout(function () {uni.navigateBack({ delta: 1 });}, 1000);}}).catch(function (err) {console.log(err);});}, handleErr: function handleErr(e, index) {if (e.type == 'error') {this.data.order_goods[0].picture_info.pic_cover = '/static/images/list.jpg';}}, handleReport: function handleReport() {(0, _navigate.goWindow)("/other_pages/common/testReport");}, // 联系买家
     callPhone: function callPhone(phone) {console.log(phone);uni.makePhoneCall({ phoneNumber: phone });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 

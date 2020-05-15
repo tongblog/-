@@ -28,7 +28,7 @@
 			</view>
 		</view>
 		<!-- 约看记录 -->
-		<view class="pay-info">
+		<view class="pay-info" v-if="data.group_id == 3">
 			<view class="info-title">
 				<text class="title-left"></text>约看记录
 				<text class="title-right" v-if="data.order_status == 0 ? true : data.order_status == 101 ? true : false">待确认</text>
@@ -47,7 +47,7 @@
 		</view>
 		
 		<!-- 卖家信息 -->
-		<view class="order-info">
+		<view class="order-info" v-if="data.group_id == 3 && data.belong_type == 2">
 			<view class="info-title">
 				<text class="title-left"></text>卖家信息
 			</view>
@@ -59,7 +59,9 @@
 					<text class="item-txt">{{data.shop_name}}</text>
 				</view>
 			</view>
-			<view class="info-item" v-if="data.order_status == 0 ? true : data.order_status !== 101 ? true : false">
+			<view 
+				class="info-item" 
+				v-if="data.order_status == 0 ? true : data.order_status !== 101 ? true : false">
 				<view class="item-left">
 					联系方式:
 				</view>

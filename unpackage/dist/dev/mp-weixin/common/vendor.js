@@ -2460,6 +2460,7 @@ var store = new _vuex.default.Store({
     history: '',
     search: '',
     cars: {},
+    kucars: {},
     group: 0 },
 
   mutations: {
@@ -2482,6 +2483,10 @@ var store = new _vuex.default.Store({
     // 获取车系数据
     changeCars: function changeCars(state, cars) {
       state.cars = cars;
+    },
+    // 获取库存车系数据
+    changeKcCars: function changeKcCars(state, cars) {
+      state.kucars = cars;
     },
     // 活动id
     changeGroup: function changeGroup(state, group) {
@@ -9773,17 +9778,17 @@ var callPhone = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PUR
 Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var config = {
   baseUrl: '',
   timeout: 10000,
-  domain: 'https://beta.api.chinartn.cn/',
-  socket_url: 'wss://beta.socket.chinartn.cn'
+  domain: 'https://api.chinartn.cn/',
+  socket_url: 'wss://socket.chinartn.cn'
 
 
   /* 
-                                               api.chinartn.cn
-                                               beta.api.chinartn.cn
-                                               */ };
+                                          api.chinartn.cn
+                                          beta.api.chinartn.cn
+                                          */ };
 var baseUrl = '';
 if (true) {
-  baseUrl = "https://beta.api.chinartn.cn/api.php?s="; // 开发环境地址
+  baseUrl = "https://api.chinartn.cn/api.php?s="; // 开发环境地址
 } else {}
 
 config.baseUrl = baseUrl;var _default =
@@ -10919,7 +10924,7 @@ if (hadRuntime) {
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.request = void 0;
 
-var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);var baseUrl = 'https://beta.api.chinartn.cn/api.php?s='; // 'https://beta.api.chinartn.cn/api.php?s='
+var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);var baseUrl = 'https://api.chinartn.cn/api.php?s='; // 'https://beta.api.chinartn.cn/api.php?s='
 // 页面跳转
 // request 封装
 var request = function request(url, params, type) {

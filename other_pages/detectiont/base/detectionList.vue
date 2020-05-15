@@ -51,10 +51,11 @@
 			<view class="not-data" v-else>
 				暂无检测师
 			</view>
-			<view class="ascertain">
-				<button type="primary" :disabled="!show" @tap="handleSub">确定</button>
-			</view>
+			
 		</scroll-view>
+		<view class="ascertain">
+			<button type="primary" :disabled="!show" @tap="handleSub">确定</button>
+		</view>
 		
 	</view>
 </template>
@@ -252,7 +253,7 @@
 		position fixed
 		left 0
 		right 0
-		bottom 0
+		bottom 45rpx
 		z-index 5
 		padding 0 35rpx 10rpx
 		background-color #F4F4F4

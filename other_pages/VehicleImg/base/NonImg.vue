@@ -333,6 +333,8 @@
 								uni.reLaunch({
 								    url: '/pages/common/release'
 								});
+							}else{
+								_this.$c.msg(res.data.message)
 							}
 						})
 					});
@@ -358,6 +360,8 @@
 								uni.reLaunch({
 								    url: '/pages/common/release'
 								});
+							}else{
+								_this.$c.msg(res.data.message)
 							}
 						})
 					})

@@ -1,7 +1,13 @@
 <template>
 	<view>
 		<scroll-view style="max-height: calc(100vh - 106rpx);" scroll-y="true" >
-			<detail-swiper :show="show" :start_time="start_time" :video="video" :end_time="end_time" :imgList="imgList"></detail-swiper>
+			<detail-swiper 
+				:show="show" 
+				:start_time="start_time" 
+				:video="video" 
+				:end_time="end_time" 
+				:imgList="imgList"
+				@handleStart="handleStart"></detail-swiper>
 			<detail-title 
 				:show="show" 
 				:price="price" 
@@ -239,6 +245,11 @@
 				//return 
 				if(num){
 					//console.log(num)
+					this.getDirect(this.action_id,this.goods_id)
+				}
+			},
+			handleStart(bool){
+				if(bool){
 					this.getDirect(this.action_id,this.goods_id)
 				}
 			}

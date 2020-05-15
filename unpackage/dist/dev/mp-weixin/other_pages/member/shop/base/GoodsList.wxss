@@ -89,6 +89,9 @@
   border-radius: 10rpx;
   vertical-align: middle;
 }
+.goods-list .list .list-images.data-v-7992b974 {
+  height: 250rpx;
+}
 .goods-list .list .list-con.data-v-7992b974 {
   width: 365rpx !important;
 }
@@ -101,14 +104,15 @@
 }
 .goods-list .list .list-content .list-title.data-v-7992b974 {
   color: #222;
+  line-height: 40rpx;
 }
 .goods-list .list .list-content .list-title text.data-v-7992b974 {
-  padding: 0 8rpx;
-  margin-right: 10rpx;
+  padding: 0 6rpx;
+  margin-right: 8rpx;
   display: inline-block;
   border-radius: 5rpx;
   background-color: #ff2f2f;
-  font-size: 24rpx;
+  font-size: 22rpx;
   color: #fff;
 }
 .goods-list .list .list-content .date.data-v-7992b974 {

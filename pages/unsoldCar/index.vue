@@ -6,7 +6,7 @@
 			@handleBrands="handleBrands"></kucunnav>
 		<list
 			:carId="carId"
-			:brandId="brandId"
+			:brandObj="brandObj"
 			@changePage="changePage"></list>
 	</view>
 </template>
@@ -20,7 +20,7 @@
 		data(){
 			return{
 				carId:0,
-				brandId:0,
+				brandObj:{},
 				page:1,
 				count:1,
 			}
@@ -28,8 +28,7 @@
 		// 下拉刷新
 		onPullDownRefresh(){
 			this.page = 1
-			this.carId = 0,
-			this.brandId = 0,
+			this.brandObj = {},
 			this.$children[2].getGoodsList(this.page)
 			setTimeout(()=>{
 				uni.stopPullDownRefresh();
@@ -56,8 +55,8 @@
 				this.carId = parseInt(index);
 			},
 			// 品牌筛选
-			handleBrands(brandId){
-				this.brandId = parseInt(brandId);
+			handleBrands(brandObj){
+				this.brandObj = brandObj
 			},
 			// 刷新数据
 			changePage(page,count){

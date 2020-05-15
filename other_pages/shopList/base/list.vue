@@ -1,13 +1,15 @@
 <template>
 	<scroll-view @scrolltolower="loadData" scroll-y="true">
 		<view v-if="data_list.length > 0">
-			<view class="list" v-for="(item, index) in data_list" :key="index">
+			<view class="list" v-for="(item,index) in data_list" :key="index">
 				<view class="list-title">
-					<view class="title-left">
-						<image class="touxiang" :src="item.buyer_info.user_headimg | filiterImg" mode="scaleToFill"></image>
+					<view class="title-left" v-if="item.buyer_info">
+						<image 
+							class="touxiang" :src="item.buyer_info.user_headimg" 
+							mode="scaleToFill"></image>
 						<text>{{item.buyer_info.nick_name}}</text>
 					</view>
-					<view class="title-right">
+					<view v-if="item.status_name" class="title-right">
 						{{item.status_name}}
 					</view>
 				</view>
@@ -19,10 +21,10 @@
 						class="list-content" 
 						:class="{content: item.order_status == 101 || 4 || 3 || 1302 }">
 						<view class="title">{{ item.order_item_list[0].goods_name }}</view>
-						<view class="about-time" v-if="item.order_status == 101 ">
+						<view class="about-time" v-if="item.order_status == 101 && item.group_id == 3">
 							约看时间：<text>{{item.reserv_time | transferTime}}</text>
 						</view>
-						<view class="date" v-if="item.order_status != 101">{{ item.order_item_list[0].introduction }}</view>
+						<view class="date" v-if="item.group_id != 3">{{ item.order_item_list[0].introduction }}</view>
 						
 						<view class="uni-flex uni-row" v-if="item.order_status != 101">
 							<view class="flex-item" v-for="(item2, index2) in item.order_item_list[0].label_arr" :key="index2">{{ item2 }}</view>
@@ -33,22 +35,24 @@
 						
 					</view>
 				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 101 ">
-					<view class="action-close action-testing" @tap="handleConfirm(item.order_id,index)">
-						确认
+				<view v-if="item.group_id == 3">
+					<view class="list-action clearfix" v-if="item.order_status == 101 ">
+						<view class="action-close action-testing" @tap="handleConfirm(item.order_id,index)">
+							确认
+						</view>
+						<view class="action-close" @tap="handleRefused(item.order_id,index)">
+							拒绝
+						</view>
 					</view>
-					<view class="action-close" @tap="handleRefused(item.order_id,index)">
-						拒绝
+					<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1302 ? true : false">
+						<view class="action-close action-testing" @tap="handleDeal(item.order_id,index)">
+							已过户
+						</view>
 					</view>
-				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1302 ? true : false">
-					<view class="action-close action-testing" @tap="handleDeal(item.order_id,index)">
-						已过户
-					</view>
-				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 4 ">
-					<view class="action-close action-testing" @tap="handleSub(item.order_id)">
-						支付服务费
+					<view class="list-action clearfix" v-if="item.order_status == 4 ">
+						<view class="action-close action-testing" @tap="handleSub(item.order_id)">
+							支付服务费
+						</view>
 					</view>
 				</view>
 			</view>
@@ -113,11 +117,7 @@ export default {
 			let newDate = y+ "-" +m+ "-" +d+ " " +h + ":" +min;
 			return newDate
 		},
-		filiterImg(value){
-			if(value){
-				return config.domain + value
-			}
-		}
+		
 	},
 	created() {
 		_this = this;
@@ -129,9 +129,9 @@ export default {
 	methods: {
 		// 页面跳转
 		handlePric(order_id,shop_id) {
+			console.log(order_id,shop_id)
 			goWindow(`/other_pages/shopDetail/index?order_id=${order_id}&shop_id=${shop_id}`);
 		},
-
 		getData(page_index) {
 			let _this = this;
 			MemberApi.getOrderList({
@@ -145,6 +145,9 @@ export default {
 				});
 				let data = res.data.data;
 				for (let index in data) {
+					if(data[index].buyer_info){
+						data[index].buyer_info.user_headimg  = config.domain + data[index].buyer_info.user_headimg;
+					}
 					for(let index2 in data[index].order_item_list)
 					data[index].order_item_list[index2].picture.pic_cover = config.domain + data[index].order_item_list[index2].picture.pic_cover;
 				}
@@ -153,6 +156,7 @@ export default {
 				}
 				setTimeout(() => {
 					this.data_list = data;
+					console.log(this.data_list)
 					this.page_count = res.data.page_count;
 					uni.hideLoading();
 				}, 500);
@@ -195,14 +199,15 @@ export default {
 						}
 					});
 				}else{
-					uni.showToast({
-						title: '预约失败',
-						duration: 2000,
-						icon: "none",
-						success: () => {
+					_this.$c.msg(res.message)
+					// uni.showToast({
+					// 	title: '预约失败',
+					// 	duration: 2000,
+					// 	icon: "none",
+					// 	success: () => {
 							
-						}
-					});
+					// 	}
+					// });
 				}
 			})
 		},

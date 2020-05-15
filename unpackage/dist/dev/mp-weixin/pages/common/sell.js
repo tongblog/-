@@ -364,14 +364,14 @@ var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26); //
 // 下拉选择页面
 // 页面跳转
 var _this = void 0;var _default = { props: { status: { type: Number } }, data: function data() {return { show1: false, show2: false, show3: false, show4: false, show5: false, show6: false, olds: [], higt: [], low: [], latest: [], num: '', car_type: [], // 车型
-      sortItem: [{ num: 1, icon: "icon-chelingzuiduan", text: "车龄最短" }, { num: 2, icon: "icon--jiageyougaodaodi", text: "价格由高到低" }, { num: 3, icon: "icon--jiageyoudidaogao", text: "价格由低到高" }, { num: 4, icon: "icon--zuixinshangxian", text: "最新上线" }], priceData: [{ text: "20万以上", min_price: 200000, max_price: 9999999 }, { text: "15-20万", max_price: 210000, min_price: 150000 }, { text: "10-15万", max_price: 160000, min_price: 100000 }, { text: "10万以下", max_price: 110000, min_price: 0 }], index1: 0, array1: [], // 排放
+      sortItem: [{ num: 1, icon: "icon-chelingzuiduan", text: "车龄最短" }, { num: 2, icon: "icon--jiageyougaodaodi", text: "价格由高到低" }, { num: 3, icon: "icon--jiageyoudidaogao", text: "价格由低到高" // ,{
+        // 	num:4,
+        // 	icon:"icon--zuixinshangxian",
+        // 	text:"最新上线",
+        // }
+      }], priceData: [{ text: "20万以上", min_price: 200000, max_price: 9999999 }, { text: "15-20万", max_price: 210000, min_price: 150000 }, { text: "10-15万", max_price: 160000, min_price: 100000 }, { text: "10万以下", max_price: 110000, min_price: 0 }], index1: 0, array1: [], // 排放
       index2: 0, array2: [], // 驱动
-      index3: 0, array3: ["不限", "0 - 199", "200 - 399", "400 - 600"], min_ml: 0, max_ml: 600, gatherItem: [], modelsCar: [], brandName: [], priceDrop: [], arrs: [] };}, created: function created() {_this = this;this.getSearchCondition();}, watch: { "$store.state.cars": function $storeStateCars(v) {_this.handleBrands(v.brandId, v.brandName);}, status: function status(num) {if (num == 1) {_this.bindScreening();_this.handleReset();} else if (num == 2) {_this.handleReset();}} }, computed: { merge: function merge() {return this.arrs.concat(this.gatherItem, this.modelsCar, this.brandName, this.priceDrop);} }, methods: { handlesort: function handlesort() {this.show1 = !this.show1;this.show2 = false;this.show3 = false;this.show4 = false;this.show5 = false;}, handlemodels: function handlemodels() {this.show2 = !this.show2;this.show1 = false;this.show3 = false;this.show4 = false;this.show5 = false;}, handlebrand: function handlebrand() {this.show3 = !this.show3;this.show1 = false;this.show2 = false;this.show4 = false;this.show5 = false;(0, _navigate.goWindow)("/pages/common/brand");}, handleprice: function handleprice() {this.show4 = !this.show4;this.show1 = false;this.show2 = false;this.show3 = false;this.show5 = false;},
-    handlemore: function handlemore() {
-      this.show5 = !this.show5;
-      this.show1 = false;
-      this.show2 = false;
-      this.show3 = false;
+      index3: 0, array3: ["不限", "0 - 199", "200 - 399", "400 - 600"], min_ml: 0, max_ml: 600, gatherItem: [], modelsCar: [], brandName: [], priceDrop: [], arrs: [] };}, created: function created() {_this = this;this.getSearchCondition();}, watch: { "$store.state.cars": function $storeStateCars(v) {_this.handleBrands(v);}, status: function status(num) {if (num == 1) {_this.bindScreening();_this.handleReset();} else if (num == 2) {_this.handleReset();}} }, computed: { merge: function merge() {return this.arrs.concat(this.gatherItem, this.modelsCar, this.brandName, this.priceDrop);} }, methods: { handlesort: function handlesort() {this.show1 = !this.show1;this.show2 = false;this.show3 = false;this.show4 = false;this.show5 = false;}, handlemodels: function handlemodels() {this.show2 = !this.show2;this.show1 = false;this.show3 = false;this.show4 = false;this.show5 = false;}, handlebrand: function handlebrand() {this.show3 = !this.show3;this.show1 = false;this.show2 = false;this.show4 = false;this.show5 = false;(0, _navigate.goWindow)("/pages/common/brand");}, handleprice: function handleprice() {this.show4 = !this.show4;this.show1 = false;this.show2 = false;this.show3 = false;this.show5 = false;}, handlemore: function handlemore() {this.show5 = !this.show5;this.show1 = false;this.show2 = false;this.show3 = false;
       this.show4 = false;
     },
     //车龄最短
@@ -404,10 +404,13 @@ var _this = void 0;var _default = { props: { status: { type: Number } }, data: f
       this.show6 = true;
     },
     // 根据品牌筛选
-    handleBrands: function handleBrands(brandId, brandName) {
+    handleBrands: function handleBrands(brandObj) {
+      if (Object.keys(brandObj).length == 0) return;
       this.brandName = [];
-      this.$emit('handleBrands', brandId);
-      this.brandName.push(brandName);
+      this.$emit('handleBrands', brandObj);
+      var brand = brandObj.brandName + brandObj.categoryName;
+      this.brandName.push(brand);
+
       this.show6 = true;
       //this.$EventBus.$emit('handleBrands',brandData,brandId)
     },

@@ -27,7 +27,7 @@
   line-height: 70rpx;
 }
 .brand .secondary .sec-scroll.data-v-ed44bb64 {
-  height: 100vh;
+  height: 95vh;
 }
 .brand .secondary .sec-scroll .sec-list.data-v-ed44bb64 {
   padding: 0 30rpx;

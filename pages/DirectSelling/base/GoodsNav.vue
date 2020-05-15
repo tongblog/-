@@ -171,8 +171,10 @@
 						}, 300);
 						
 					}else{
-						this.$c.msg(`${res.data.message}`)
-						uni.hideLoading();
+						this.$c.msg(res.data.message)
+						setTimeout(() => {
+							uni.hideLoading();
+						}, 1000);
 					}
 					
 				})

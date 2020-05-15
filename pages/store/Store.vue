@@ -67,7 +67,7 @@
 		},
 		methods:{
 			getShoplist(page_index = 1,value=""){
-				this.shopList = [];
+				
 				request("/shop/getShopList",{
 					page_index:page_index,
 					page_size:10,
@@ -78,6 +78,7 @@
 					_this.$c.showLoading("加载中")
 					this.search_text = ""
 					if(res.data.data.data.length == 0){
+						_this.shopList = [];
 						uni.showToast({
 						    title: '暂无相关店铺',
 						    duration: 1000,

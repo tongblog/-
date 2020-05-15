@@ -3,7 +3,11 @@
 		<view class="list" @tap="handleDetail">
 			<view class="list-title">
 				<view class="title-left">
-					<image class="touxiang" :src="data.user_info.user_headimg | filiterImg" mode="scaleToFill"></image>
+					<image 
+						v-if="data.user_info.user_headimg"
+						class="touxiang" 
+						:src="data.user_info.user_headimg | filiterImg" 
+						mode="scaleToFill"></image>
 					<text>{{data.user_info.nick_name}}</text>
 				</view>
 				<view class="title-right">
@@ -27,7 +31,7 @@
 			</view>
 		</view>
 		<!-- 约看记录 -->
-		<view class="pay-info">
+		<view class="pay-info" v-if="data.group_id == 3">
 			<view class="info-title">
 				<text class="title-left"></text>约看记录
 				<text class="title-right" v-if="data.order_status == 0 ? true : data.order_status == 101 ? true : false">待确认</text>
@@ -250,18 +254,33 @@ export default {
 			MemberApi.carOrderDetail({
 				order_id: _this.order_id,
 				shop_id: _this.shop_id,
+				get_type: 2,
 			}).then(res => {
 				console.log(res)
-				let data = res.data;
-				data.create_time = _this.$c.timeStampTurnTime(data.create_time)
-				data.order_goods[0].picture_info.pic_cover = config.domain + data.order_goods[0].picture_info.pic_cover
-				
-				setTimeout(() => {
-					this.data = data;
-					console.log(this.data)
+				let code = Number(res.code);
+				if(res.code >= 0){
+					let data = res.data;
+					data.create_time = _this.$c.timeStampTurnTime(data.create_time)
+					data.order_goods[0].picture_info.pic_cover = config.domain + data.order_goods[0].picture_info.pic_cover
+					
+					setTimeout(() => {
+						this.data = data;
+						console.log(this.data)
+						uni.hideLoading();
+					}, 300);
+				}else{
+					_this.$c.msg(res.message)
 					uni.hideLoading();
-				}, 300);
-			});
+					setTimeout(() => {
+						uni.navigateBack({
+						    delta: 1
+						});
+					},1000)
+				}
+				
+			}).catch(err=>{
+				console.log(err)
+			})
 		},
 		
 		handleErr(e, index) {

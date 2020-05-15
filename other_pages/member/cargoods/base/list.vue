@@ -149,11 +149,11 @@
 						</view>
 						<!-- <view class="cancel-fav" v-on:click="cancelFavorites(item.fav_id)">取消收藏</view> -->
 					</view>
-					<view class="btns" v-if="status == -1">
-						<view class="refuse" @tap.stop="handleAccept(item.id)">
+					<view class="btns" v-if="status == -1 && item.status == 0">
+						<view class="refuse" @tap.stop="handleAccept(item.id,index)">
 							接受
 						</view>
-						<view class="refuse accept" @tap.stop="handleRefused(item.id)">
+						<view class="refuse accept" @tap.stop="handleRefused(item.id,index)">
 							拒绝此价
 						</view>
 					</view>
@@ -235,7 +235,7 @@ export default {
 		},
 		
 
-		getData(page_index) {
+		getData(page_index = 1) {
 			let _this = this;
 			MemberApi.getUserCarGoodsList({
 				page_index: page_index,
@@ -291,7 +291,9 @@ export default {
 			}
 		},
 		// 接受议价
-		handleAccept(id){
+		handleAccept(id,index){
+			console.log(index)
+			let _this = this;
 			MemberApi.agreeyj({
 				offer_id:id
 			})
@@ -305,7 +307,8 @@ export default {
 						title: '已接受',
 						duration: 2000,
 						success: () => {
-							
+							_this.data_lists[index].status = 1
+							_this.data_lists[index].status_name = '同意'
 						}
 					});
 				}
@@ -313,6 +316,7 @@ export default {
 		},
 		// 拒绝议价
 		handleRefused(id){
+			let _this = this;
 			MemberApi.cancelyj({
 				offer_id:id
 			})
@@ -326,7 +330,8 @@ export default {
 						title: '已拒绝',
 						duration: 2000,
 						success: () => {
-							
+							_this.data_lists[index].status = 2
+							_this.data_lists[index].status_name = '拒绝'
 						}
 					});
 				}

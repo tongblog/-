@@ -136,7 +136,7 @@
 							uni.hideLoading();
 						}, 300);
 					}else{
-						this.$c.msg("系统错误,请联系客服")
+						this.$c.msg(res.data.message)
 						uni.hideLoading();
 					}
 				})

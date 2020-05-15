@@ -292,8 +292,10 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
           }, 300);
 
         } else {
-          _this3.$c.msg("".concat(res.data.message));
-          uni.hideLoading();
+          _this3.$c.msg(res.data.message);
+          setTimeout(function () {
+            uni.hideLoading();
+          }, 1000);
         }
 
       });

@@ -1,7 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "uni-goods-nav": "/components/uni-goods-nav/uni-goods-nav",
-    "order-time": "/pages/common/orderTime"
+    "uni-goods-nav": "/components/uni-goods-nav/uni-goods-nav"
   }
 }

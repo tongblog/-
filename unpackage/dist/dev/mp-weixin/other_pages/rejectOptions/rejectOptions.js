@@ -147,6 +147,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
 
@@ -167,18 +173,22 @@ var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/mem
 //
 //
 //
+//
+//
+//
+//
+//
+//
 // 我要卖车页面
-var Upload = function Upload() {return Promise.all(/*! import() | other_pages/rejectOptions/base/upload */[__webpack_require__.e("common/vendor"), __webpack_require__.e("other_pages/rejectOptions/base/upload")]).then(__webpack_require__.bind(null, /*! ./base/upload.vue */ 1261));};var VehicleData = function VehicleData() {return __webpack_require__.e(/*! import() | other_pages/rejectOptions/base/VehicleData */ "other_pages/rejectOptions/base/VehicleData").then(__webpack_require__.bind(null, /*! ./base/VehicleData.vue */ 1268));};var Results = function Results() {return __webpack_require__.e(/*! import() | other_pages/rejectOptions/base/results */ "other_pages/rejectOptions/base/results").then(__webpack_require__.bind(null, /*! ./base/results.vue */ 1275));};var _default = { data: function data() {return { /* plate_num:'',
+var Upload = function Upload() {return Promise.all(/*! import() | other_pages/rejectOptions/base/upload */[__webpack_require__.e("common/vendor"), __webpack_require__.e("other_pages/rejectOptions/base/upload")]).then(__webpack_require__.bind(null, /*! ./base/upload.vue */ 1261));};var VehicleData = function VehicleData() {return Promise.all(/*! import() | other_pages/rejectOptions/base/VehicleData */[__webpack_require__.e("common/vendor"), __webpack_require__.e("other_pages/rejectOptions/base/VehicleData")]).then(__webpack_require__.bind(null, /*! ./base/VehicleData.vue */ 1268));};var Results = function Results() {return __webpack_require__.e(/*! import() | other_pages/rejectOptions/base/results */ "other_pages/rejectOptions/base/results").then(__webpack_require__.bind(null, /*! ./base/results.vue */ 1275));};var _default = { data: function data() {return { /* plate_num:'',
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   model:'',
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   issue_date:null,
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   jsonId1:{},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   jsonId2:{},
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   front:'',
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   behind:'',
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  state:false, */goods_name: "", refuse_desc: "", car_info: {}, introduction: '', img_list: [] };}, onLoad: function onLoad(option) {var _this = this;var toKen = uni.getStorageSync('token');if (toKen !== '') {
-      //_this.judge();
-      _this.getData(option.id);
-    } else {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  state:false, */goods_name: "", refuse_desc: "", car_info: {}, introduction: '', img_list: [], img_array: [], posRes: {}, description: "", goods_id: 0 };}, onLoad: function onLoad(option) {var _this = this;var toKen = uni.getStorageSync('token');if (toKen !== '') {//_this.judge();
+      _this.getData(option.id);} else {
       (0, _navigate.goWindow)('/pages/common/login');
     }
 
@@ -217,15 +227,17 @@ var Upload = function Upload() {return Promise.all(/*! import() | other_pages/re
 
       then(function (res) {
         var data = res.data;
-
+        console.log(data);
         _this2.car_info = data.car_info.car_info;
-        console.log(res);
         var description = data.description; // 描述
         _this2.goods_name = data.goods_name; // 名字
         var goods_id = data.goods_id;
         _this2.introduction = data.introduction; // 地址
         _this2.refuse_desc = data.refuse_desc;
         _this2.img_list = data.img_list;
+        _this2.img_array = data.img_id_array.split(",");
+        _this2.description = data.description;
+        _this2.goods_id = data.goods_id;
 
       });
     },
@@ -237,25 +249,26 @@ var Upload = function Upload() {return Promise.all(/*! import() | other_pages/re
           _this3.state = true;
         }
       });
-    },
-    //行驶证正面数据
-    clickPos: function clickPos(pos, imgUrl) {
-      this.jsonId1 = pos;
-      this.plate_num = pos.plate_num;
-      this.model = pos.model;
-      var date = new Date();
-      var year = date.getFullYear();
-      var lastYear = pos.issue_date.split('').slice(0, 4).join("");
-      this.issue_date = year - lastYear;
-      this.front = imgUrl;
-
-    },
-    // 行驶证反面数据
-    clickRev: function clickRev(rev, imgUrl) {
-      this.jsonId2 = rev;
-      this.behind = imgUrl;
-      Object.assign(this.jsonId1, this.jsonId2);
     } },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   components: {
     Upload: Upload,

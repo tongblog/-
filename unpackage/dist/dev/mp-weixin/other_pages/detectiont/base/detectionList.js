@@ -196,6 +196,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
 var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/member.js */ 89));
 var PayApi = _interopRequireWildcard(__webpack_require__(/*! @/api/pay/pay.js */ 237));
@@ -260,12 +261,12 @@ var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 
 //
 //
 //
+//
 var _this;var _default = { props: { testList: { type: Array }, orderId: { type: String } }, data: function data() {return { show: false, uid: '', openid: '' };}, filters: { filterImg: function filterImg(value) {if (value) {return _config.default.domain + value;}} }, created: function created() {_this = this; // 获取会员信息
     MemberApi.getMemberInfo().then(function (res) {_this.openid = res.data.user_info.wx_openid;});}, methods: { getData: function getData() {}, handleSub: function handleSub() {var title = '信息提交成功';var font = "检测师将联系您，请保持电话通畅!";_this.$c.showLoading('创建充值订单中！'); // 创建检测师费用外部交易号 
       PayApi.getOrderTestingOutTrandeNo().then(function (res) {var out_trade = res.data;if (out_trade == null || out_trade == undefined) {_this.$c.hideLoading();_this.$c.msg('创建外部交易流水号失败');return;} // 创建检测师费用订单
         PayApi.createTestingOrder({ testing_uid: _this.uid, out_trade_no: out_trade, order_id: _this.orderId }).then(function (res) {var is_success = res.data;if (is_success == 0 || is_success == null) {_this.$c.hideLoading();_this.$c.msg('创建检测师费用订单失败');return;}_this.$c.hideLoading();_this.$c.showLoading('支付中！'); // 微信统一下单
-          PayApi.appletWechatPay({ out_trade_no: out_trade, openid: _this.openid }).then(function (res) {
-            var wx_order_data = res.data;
+          PayApi.appletWechatPay({ out_trade_no: out_trade, openid: _this.openid }).then(function (res) {var wx_order_data = res.data;
             uni.requestPayment({
               provider: 'wxpay',
               timeStamp: String(wx_order_data.timestamp),

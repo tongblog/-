@@ -2,7 +2,7 @@
 	<view class="payment">
 		<view class="pay-content">
 			<view class="pay-title">保证金金额</view>
-			<view class="price">¥2000</view>
+			<view class="price">¥{{need_money}}</view>
 			<view class="bottom">
 				<radio-group @change="tapChange" style="display: inline-block; width: 60rpx;">
 					<label class="radio"><radio value="1" style="transform: scale(0.6)" color="#0657A6"/></label>
@@ -34,6 +34,7 @@
 				openid : '',
 				goodsId : 0,
 				promotionId : 0,
+				need_money:0,
 			}
 		},
 		onLoad(option) {

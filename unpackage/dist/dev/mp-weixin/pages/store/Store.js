@@ -200,7 +200,7 @@ var _this;var StoreData = function StoreData() {return __webpack_require__.e(/*!
 
   methods: {
     getShoplist: function getShoplist() {var _this2 = this;var page_index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;var value = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : "";
-      this.shopList = [];
+
       (0, _reques.request)("/shop/getShopList", {
         page_index: page_index,
         page_size: 10,
@@ -211,6 +211,7 @@ var _this;var StoreData = function StoreData() {return __webpack_require__.e(/*!
         _this.$c.showLoading("加载中");
         _this2.search_text = "";
         if (res.data.data.data.length == 0) {
+          _this.shopList = [];
           uni.showToast({
             title: '暂无相关店铺',
             duration: 1000,

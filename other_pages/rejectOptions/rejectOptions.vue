@@ -1,13 +1,19 @@
 <template>
 	<view>
 		<results :goods_name="goods_name" :refuse_desc="refuse_desc"></results>
-		<upload :car_info="car_info" @clickPos="clickPos" @clickRev="clickRev"></upload>
+		<upload 
+			:car_info="car_info" 
+			@clickPos="clickPos" 
+			@clickRev="clickRev"></upload>
 		<!-- <identify :plate_num="plate_num" :model="model" :issue_date="issue_date"></identify> -->
 		<vehicle-data 
 			:car_info="car_info" 
 			:introduction="introduction" 
 			:goods_name="goods_name"
-			:img_list="img_list"></vehicle-data>
+			:img_list="img_list"
+			:img_array="img_array"
+			:description="description"
+			:goods_id="goods_id"></vehicle-data>
 
 	</view>
 </template>
@@ -37,6 +43,10 @@
 				car_info:{},
 				introduction:'',
 				img_list:[],
+				img_array:[],
+				posRes:{},
+				description:"",
+				goods_id:0,
 			}
 		},
 		onLoad(option) {
@@ -84,15 +94,17 @@
 				})
 				.then(res => {
 					let data = res.data;
-					
+					console.log(data)
 					this.car_info = data.car_info.car_info;
-					console.log(res)
 					let description = data.description; // 描述
 					this.goods_name = data.goods_name; // 名字
 					let goods_id = data.goods_id;
 					this.introduction = data.introduction; // 地址
 					this.refuse_desc = data.refuse_desc;
 					this.img_list = data.img_list;
+					this.img_array = data.img_id_array.split(",");
+					this.description = data.description;
+					this.goods_id = data.goods_id;
 					
 				})
 			},
@@ -106,23 +118,24 @@
 				})
 			},
 			//行驶证正面数据
-			clickPos(pos,imgUrl){
-				this.jsonId1 = pos;
-				this.plate_num = pos.plate_num
-				this.model = pos.model
-				let date = new Date();
-				let year = date.getFullYear();
-				let lastYear = pos.issue_date.split('').slice(0,4).join("");
-				this.issue_date = year - lastYear;
-				this.front = imgUrl
-				
-			},
+			// clickPos(card_1,posRes){
+			// 	this.car_info.card_1 = card_1;
+			// 	this.posRes = posRes;
+			// 	// this.jsonId1 = pos;
+			// 	// this.plate_num = pos.plate_num
+			// 	// this.model = pos.model
+			// 	// let date = new Date();
+			// 	// let year = date.getFullYear();
+			// 	// let lastYear = pos.issue_date.split('').slice(0,4).join("");
+			// 	// this.issue_date = year - lastYear;
+			// 	// this.front = imgUrl
+			// },
 			// 行驶证反面数据
-			clickRev(rev,imgUrl){
-				this.jsonId2 = rev;
-				this.behind = imgUrl;
-				Object.assign(this.jsonId1,this.jsonId2)
-			},
+			// clickRev(card_2,revRes){
+			// 	this.car_info.card_2 = card_2;
+			// 	Object.assign(this.posRes,revRes)
+			// 	console.log()
+			// },
 		},
 		components:{
 			Upload,

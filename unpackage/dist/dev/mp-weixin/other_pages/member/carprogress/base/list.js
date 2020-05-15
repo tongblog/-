@@ -201,6 +201,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
 var MemberApi = _interopRequireWildcard(__webpack_require__(/*! @/api/member/member.js */ 89));
 var PayApi = _interopRequireWildcard(__webpack_require__(/*! @/api/pay/pay.js */ 237));
@@ -265,12 +267,12 @@ var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 
 //
 //
 //
+//
+//
 // 首页商品
 var _this;var _default2 = { data: function data() {return { data_list: [], page_index: 1, page_count: 0, openid: '' };}, props: { options: { type: Object, default: function _default() {return {};} }, status: { type: String, default: -1 }, shopId: { type: Number } }, watch: { status: function status(e) {var _this = this;_this.page_idnex = 1;_this.status = e;_this.getData(_this.page_idnex);} }, filters: { transferTime: function transferTime(time) {var date = new Date(parseInt(time) * 1000);var y = date.getFullYear();var m = date.getMonth() + 1;m = m < 10 ? '0' + m : m;var d = date.getDate();d = d < 10 ? '0' + d : d;var h = date.getHours();h = h < 10 ? '0' + h : h;var min = date.getMinutes();min = min < 10 ? '0' + min : min;var newDate = y + "-" + m + "-" + d + " " + h + ":" + min;return newDate;}, filiterImg: function filiterImg(value) {if (value) {return _config.default.domain + value;}} }, created: function created() {_this = this; // 获取会员信息
     MemberApi.getMemberInfo().then(function (res) {_this.openid = res.data.user_info.wx_openid;});}, methods: { // 页面跳转
-    handlePric: function handlePric(order_id, shop_id) {
-      (0, _navigate.goWindow)("/other_pages/shopDetail/index?order_id=".concat(order_id, "&shop_id=").concat(shop_id));
-    },
+    handlePric: function handlePric(order_id, shop_id) {(0, _navigate.goWindow)("/other_pages/shopDetail/index?order_id=".concat(order_id, "&shop_id=").concat(shop_id));},
 
     getData: function getData(page_index) {var _this2 = this;
       var _this = this;
@@ -295,6 +297,7 @@ var _this;var _default2 = { data: function data() {return { data_list: [], page_
           _this2.data_list = data;
           _this2.page_count = res.data.page_count;
           uni.hideLoading();
+          console.log(_this2.data_list);
         }, 500);
       });
     },
@@ -335,14 +338,7 @@ var _this;var _default2 = { data: function data() {return { data_list: [], page_
             } });
 
         } else {
-          uni.showToast({
-            title: '预约失败',
-            duration: 2000,
-            icon: "none",
-            success: function success() {
-
-            } });
-
+          _this.$c.msg(res.message);
         }
       });
     },

@@ -153,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       carId: 0,
-      brandId: 0,
+      brandObj: {},
       page: 1,
       count: 1 };
 
@@ -161,8 +161,7 @@ __webpack_require__.r(__webpack_exports__);
   // 下拉刷新
   onPullDownRefresh: function onPullDownRefresh() {
     this.page = 1;
-    this.carId = 0,
-    this.brandId = 0,
+    this.brandObj = {},
     this.$children[2].getGoodsList(this.page);
     setTimeout(function () {
       uni.stopPullDownRefresh();
@@ -189,8 +188,8 @@ __webpack_require__.r(__webpack_exports__);
       this.carId = parseInt(index);
     },
     // 品牌筛选
-    handleBrands: function handleBrands(brandId) {
-      this.brandId = parseInt(brandId);
+    handleBrands: function handleBrands(brandObj) {
+      this.brandObj = brandObj;
     },
     // 刷新数据
     changePage: function changePage(page, count) {

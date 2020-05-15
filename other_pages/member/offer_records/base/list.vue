@@ -41,14 +41,13 @@
 					</view>
 					<view class="price" v-if="status == -1">
 						<text>申请优惠车价:</text>{{$c.changePrice(item.offer_price)}} 万
-						
 					</view>
 					<!-- <view class="cancel-fav" v-on:click="cancelFavorites(item.fav_id)">取消收藏</view> -->
 				</view>
 				<view 
 					class="accept" 
-					v-if="status == -1" 
-					@tap.stop="placeOrder(item.goods_id,item.group_id,item.id,item.offer_price)">我要看车</view>
+					v-if="status == -1 && item.status == 1" 
+					@tap.stop="placeOrder(item.goods_id,item.group_id,item.id,item.offer_price,index)">我要看车</view>
 			</view>
 		</view>
 		<view class="data-none" v-else>暂无相关数据!</view>
@@ -145,7 +144,7 @@ export default {
 				}
 				setTimeout(() => {
 					this.data_list = data;
-					//console.log(this.data_list)
+					console.log(this.data_list)
 					this.page_count = res.data.page_count;
 					uni.hideLoading();
 				}, 500);
@@ -170,7 +169,7 @@ export default {
 			_this.$c.goUrl(url)
 		},
 		// 议价我要看车
-		placeOrder(goods_id,group_id,id,offer_price){
+		placeOrder(goods_id,group_id,id,offer_price,index){
 			let _this = this;
 			_this.order_time = true;
 			_this.goodsJson.goods_id = goods_id;
@@ -199,9 +198,10 @@ export default {
 			.then(res => {
 				if(res.code >= 0){
 					uni.hideLoading();
+					_this.getData(_this.page_index)
 					_this.$c.msg("下单成功");
 				}else {
-					_this.$c.msg("商家暂未同意议价");
+					_this.$c.msg(res.message);
 				}
 				//console.log(res)
 			})

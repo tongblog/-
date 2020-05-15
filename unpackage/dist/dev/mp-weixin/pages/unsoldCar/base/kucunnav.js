@@ -171,7 +171,7 @@ var _brand = _interopRequireDefault(__webpack_require__(/*! @/pages/common/brand
 //
 //
 var _this;var LetterList = function LetterList() {return Promise.all(/*! import() | pages/common/letterList */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/common/letterList")]).then(__webpack_require__.bind(null, /*! @/pages/common/letterList.vue */ 583));};var _default = { data: function data() {return { show1: false, show2: false, car_type: [] // 车型
-    };}, created: function created() {this.getSearchCondition();_this = this;}, watch: { "$store.state.cars": function $storeStateCars(v) {_this.handleBrands(v.brandId);} }, methods: { handleModels: function handleModels() {this.show1 = !this.show1;}, handleBrand: function handleBrand() {this.show2 = !this.show2;(0, _navigate.goWindow)("/pages/common/brand");},
+    };}, created: function created() {this.getSearchCondition();_this = this;}, watch: { "$store.state.kucars": function $storeStateKucars(v) {_this.handleBrands(v);} }, methods: { handleModels: function handleModels() {this.show1 = !this.show1;}, handleBrand: function handleBrand() {this.show2 = !this.show2;(0, _navigate.goWindow)("/pages/common/brand?mark=2");},
     // 获取车型,排放,驱动
     getSearchCondition: function getSearchCondition() {var _this2 = this;
       (0, _reques.request)("/index/getSearchCondition", {}, "GET").
@@ -187,8 +187,8 @@ var _this;var LetterList = function LetterList() {return Promise.all(/*! import(
       this.show1 = false;
     },
     // 根据品牌筛选
-    handleBrands: function handleBrands(brandId) {
-      this.$emit('handleBrands', brandId);
+    handleBrands: function handleBrands(brandObj) {
+      this.$emit('handleBrands', brandObj);
       this.show2 = false;
     } },
 
@@ -461,7 +461,7 @@ var _reques = __webpack_require__(/*! @/api/reques.js */ 41);function _interopRe
 //
 //
 //下拉选择品牌页面
-var LetterList = function LetterList() {return Promise.all(/*! import() | pages/common/letterList */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/common/letterList")]).then(__webpack_require__.bind(null, /*! @/pages/common/letterList.vue */ 583));};var _this;var _default = { data: function data() {return { hot: [], cars: [], letter: '', off: false, series: [], model: {}, mark: false };}, filters: { filterImg: function filterImg(value) {if (value) {return _config.default.domain + value;}} }, components: { LetterList: LetterList }, created: function created() {this.getBrand();_this = this;}, onLoad: function onLoad(option) {this.mark = option.bool == "true" ? true : "";}, watch: { "$store.state.letter": function $storeStateLetter(v) {_this.letter = 'letter' + v;} }, methods: { // 获取品牌列表
+var LetterList = function LetterList() {return Promise.all(/*! import() | pages/common/letterList */[__webpack_require__.e("common/vendor"), __webpack_require__.e("pages/common/letterList")]).then(__webpack_require__.bind(null, /*! @/pages/common/letterList.vue */ 583));};var _this;var _default = { data: function data() {return { hot: [], cars: [], letter: '', off: false, series: [], model: {}, mark: 0 };}, filters: { filterImg: function filterImg(value) {if (value) {return _config.default.domain + value;}} }, components: { LetterList: LetterList }, created: function created() {this.getBrand();_this = this;}, onLoad: function onLoad(option) {this.mark = parseInt(option.mark);}, watch: { "$store.state.letter": function $storeStateLetter(v) {_this.letter = 'letter' + v;} }, methods: { // 获取品牌列表
     getBrand: function getBrand() {var _this2 = this;(0, _reques.request)('/index/getBrandsList', {}, "POST").then(function (res) {_this2.hot = res.data.data.is_hot;_this2.cars = res.data.data; //console.log(this.hot)
       });}, // 获取车系
     handleCategory: function handleCategory(id, value) {var _this3 = this;this.model = value;(0, _reques.request)('/index/getBrandsList', { brands_id: id }, "POST").then(function (res) {_this3.series = res.data.data;
@@ -475,9 +475,13 @@ var LetterList = function LetterList() {return Promise.all(/*! import() | pages/
         categoryId: item.category_id,
         categoryName: item.category_name };
 
-      this.$store.commit("changeCars", carType);
+      if (this.mark == 2) {
+        this.$store.commit("changeKcCars", carType);
+      } else {
+        this.$store.commit("changeCars", carType);
+      }
+
       this.off = false;
-      console.log(2);
       uni.navigateBack({
         delta: 1 });
 

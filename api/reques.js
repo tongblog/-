@@ -1,4 +1,4 @@
-const baseUrl = 'https://beta.api.chinartn.cn/api.php?s=';
+const baseUrl = 'https://api.chinartn.cn/api.php?s=';
 // 'https://beta.api.chinartn.cn/api.php?s='
 import {goWindow} from '@/api/navigate.js'  // 页面跳转
 // request 封装

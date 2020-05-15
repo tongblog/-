@@ -84,15 +84,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   var l0 = _vm.__map(_vm.data_list, function(item, index) {
-    var f0 = _vm._f("filiterImg")(item.buyer_info.user_headimg)
-
-    var f1 = _vm._f("transferTime")(item.reserv_time)
+    var f0 = _vm._f("transferTime")(item.reserv_time)
 
     var g0 = _vm.$c.changePrice(item.order_money)
     return {
       $orig: _vm.__get_orig(item),
       f0: f0,
-      f1: f1,
       g0: g0
     }
   })
@@ -139,6 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
 
 
 
@@ -265,18 +266,14 @@ var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 
 //
 //
 //
+//
+//
+//
+//
 // 首页商品
-var _this;var _default2 = { data: function data() {return { data_list: [], page_index: 1, page_count: 0, openid: '' };}, props: { options: { type: Object, default: function _default() {return {};} }, status: { type: String, default: -1 }, shopId: { type: Number } }, watch: { status: function status(e) {var _this = this;_this.page_idnex = 1;_this.status = e;_this.getData(_this.page_idnex);} }, filters: { transferTime: function transferTime(time) {var date = new Date(parseInt(time) * 1000);var y = date.getFullYear();var m = date.getMonth() + 1;m = m < 10 ? '0' + m : m;var d = date.getDate();d = d < 10 ? '0' + d : d;var h = date.getHours();h = h < 10 ? '0' + h : h;var min = date.getMinutes();min = min < 10 ? '0' + min : min;var newDate = y + "-" + m + "-" + d + " " + h + ":" + min;return newDate;}, filiterImg: function filiterImg(value) {if (value) {return _config.default.domain + value;}} }, created: function created() {_this = this; // 获取会员信息
+var _this;var _default2 = { data: function data() {return { data_list: [], page_index: 1, page_count: 0, openid: '' };}, props: { options: { type: Object, default: function _default() {return {};} }, status: { type: String, default: -1 }, shopId: { type: Number } }, watch: { status: function status(e) {var _this = this;_this.page_idnex = 1;_this.status = e;_this.getData(_this.page_idnex);} }, filters: { transferTime: function transferTime(time) {var date = new Date(parseInt(time) * 1000);var y = date.getFullYear();var m = date.getMonth() + 1;m = m < 10 ? '0' + m : m;var d = date.getDate();d = d < 10 ? '0' + d : d;var h = date.getHours();h = h < 10 ? '0' + h : h;var min = date.getMinutes();min = min < 10 ? '0' + min : min;var newDate = y + "-" + m + "-" + d + " " + h + ":" + min;return newDate;} }, created: function created() {_this = this; // 获取会员信息
     MemberApi.getMemberInfo().then(function (res) {_this.openid = res.data.user_info.wx_openid;});}, methods: { // 页面跳转
-    handlePric: function handlePric(order_id, shop_id) {
-      (0, _navigate.goWindow)("/other_pages/shopDetail/index?order_id=".concat(order_id, "&shop_id=").concat(shop_id));
-    },
-
-    getData: function getData(page_index) {var _this2 = this;
-      var _this = this;
-      MemberApi.getOrderList({
-        page_index: page_index,
-        order_status: _this.status == -1 ? 'all' : _this.status,
+    handlePric: function handlePric(order_id, shop_id) {console.log(order_id, shop_id);(0, _navigate.goWindow)("/other_pages/shopDetail/index?order_id=".concat(order_id, "&shop_id=").concat(shop_id));}, getData: function getData(page_index) {var _this2 = this;var _this = this;MemberApi.getOrderList({ page_index: page_index, order_status: _this.status == -1 ? 'all' : _this.status,
         shop_id: _this.shopId,
         get_type: 2 }).
       then(function (res) {
@@ -285,6 +282,9 @@ var _this;var _default2 = { data: function data() {return { data_list: [], page_
 
         var data = res.data.data;
         for (var index in data) {
+          if (data[index].buyer_info) {
+            data[index].buyer_info.user_headimg = _config.default.domain + data[index].buyer_info.user_headimg;
+          }
           for (var index2 in data[index].order_item_list) {
             data[index].order_item_list[index2].picture.pic_cover = _config.default.domain + data[index].order_item_list[index2].picture.pic_cover;}
         }
@@ -293,6 +293,7 @@ var _this;var _default2 = { data: function data() {return { data_list: [], page_
         }
         setTimeout(function () {
           _this2.data_list = data;
+          console.log(_this2.data_list);
           _this2.page_count = res.data.page_count;
           uni.hideLoading();
         }, 500);
@@ -335,14 +336,15 @@ var _this;var _default2 = { data: function data() {return { data_list: [], page_
             } });
 
         } else {
-          uni.showToast({
-            title: '预约失败',
-            duration: 2000,
-            icon: "none",
-            success: function success() {
+          _this.$c.msg(res.message);
+          // uni.showToast({
+          // 	title: '预约失败',
+          // 	duration: 2000,
+          // 	icon: "none",
+          // 	success: () => {
 
-            } });
-
+          // 	}
+          // });
         }
       });
     },

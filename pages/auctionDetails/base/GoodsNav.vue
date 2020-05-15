@@ -74,7 +74,7 @@
 					backgroundColor: '#FF7E1F',
 					color: '#fff'
 				}],
-				flag:true,
+				flag:new Date(),
 			}
 		},
 		created() {
@@ -158,7 +158,9 @@
 				}
 			},
 			buttonClick(e) {
-				if(!this.flag)return
+				let now = new Date();
+				if(now - this.flag <= 1000)return
+				this.flag = now
 				let date = new Date();
 				let newDate = new Date(this.end_time * 1000);
 				if(date > newDate && this.state != 1){
@@ -169,7 +171,6 @@
 				let prices = _this.records[0] == undefined ? (_this.price*10000) + _this.add_price : +_this.records[0].offer_price + _this.add_price;
 				let jsonData = JSON.stringify(_this.jsonData)
 				let toKen = uni.getStorageSync('token');
-				_this.flag = false;
 				if (e.index == 0 && this.show == false && toKen !== '') {
 					request("/member/isbindmobile", {
 							token: uni.getStorageSync('token'),
@@ -188,9 +189,7 @@
 											promotion_id: _this.action_id, 
 										}
 										if (res.data.data > 0) {
-											setTimeout(()=>{
-												_this.flag = true;
-											},1000)
+											
 											goWindow("/pages/payDeposit/payment?json=",JSON.stringify(jsonId))
 										} else {
 											uni.showModal({

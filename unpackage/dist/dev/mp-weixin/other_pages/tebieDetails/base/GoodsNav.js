@@ -262,7 +262,7 @@ var start = new Date();var _this;var uniGoodsNav = function uniGoodsNav() {retur
                   uni.hideLoading();
                 }, 300);
               } else {
-                _this2.$c.msg("咨询失败,请联系客服");
+                _this2.$c.msg(res.data.message);
                 uni.hideLoading();
               }
 

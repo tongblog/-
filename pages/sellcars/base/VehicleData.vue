@@ -49,10 +49,17 @@
 			<view class="horsepower on flex-item" @tap="clickSlider">
 				<text>马力</text>
 				<icon class="iconfont icon-jiantou"></icon>
-				<input type="text" disabled="true" placeholder="请选择" :value="sliderData + '匹'" name="ml_num"/>
-				<view class="slider">
-					<slider v-if="slider" value="600"  activeColor="#0657A6" show-value="true" min="0" max="600" @change="sliderChange" />
-				</view>
+				<input 
+					type="text" 
+					@blur="sliderChange" 
+					placeholder="请填写" 
+					:value="sliderData" 
+					name="ml_num"
+					placeholder-style="color:#222222"/>
+				<!-- <input type="text" disabled="true" placeholder="请选择"  name="ml_num"/> -->
+				<!-- <view class="slider">
+					<slider v-if="slider" value="600" step="1"  activeColor="#0657A6" show-value="true" min="0" max="600" @change="sliderChange" />
+				</view> -->
 			</view>
 			<view class="horsepower one flex-item">
 				<picker @change="bindPickerChange1" :value="index1" :range="array1">
@@ -198,7 +205,7 @@
 				date: currentDate,
 				vehicleDate: xszDate,
 				slider: false,
-				sliderData:0, // 马力值
+				sliderData:"", // 马力值
 				multiArray:[[],["台湾省"]],
 				multiindex:[0,0],
 				provList:[],
@@ -329,8 +336,8 @@
 			},
 			// 马力值
 			sliderChange(e) {
-				this.sliderData =  e.detail.value;
-				this.slider = false
+				this.sliderData =  e.detail.value + "匹";
+				//this.slider = false
 			},
 			// 保险
 			changeCheck(e){
@@ -416,6 +423,7 @@
 			},
 			
 			validata(data){
+				console.log(data)
 				let msg = '';
 				let _this = this;
 				if(data.cat_type == '' && msg == ''){
@@ -484,6 +492,7 @@
 			pageJump(){
 				Object.assign(this._data,this._props)
 				let jsonObj = this._data;
+				jsonObj.sliderData.replace(/匹/, "");
 				delete jsonObj.array;
 				delete jsonObj.array1;
 				delete jsonObj.array2;

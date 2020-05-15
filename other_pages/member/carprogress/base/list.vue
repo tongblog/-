@@ -7,7 +7,7 @@
 						<image class="touxiang" :src="item.buyer_info.user_headimg | filiterImg" mode="scaleToFill"></image>
 						<text>{{item.buyer_info.nick_name}}</text>
 					</view>
-					<view class="title-right">
+					<view v-if="item.status_name" class="title-right">
 						{{item.status_name}}
 					</view>
 				</view>
@@ -33,22 +33,24 @@
 						
 					</view>
 				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 101 ">
-					<view class="action-close action-testing" @tap="handleConfirm(item.order_id,index)">
-						确认
+				<view v-if="item.group_id == 3">
+					<view class="list-action clearfix" v-if="item.order_status == 101 ? true : item.order_status == 0 ? true : false ">
+						<view class="action-close action-testing" @tap="handleConfirm(item.order_id,index)">
+							确认
+						</view>
+						<view class="action-close" @tap="handleRefused(item.order_id,index)">
+							拒绝
+						</view>
 					</view>
-					<view class="action-close" @tap="handleRefused(item.order_id,index)">
-						拒绝
+					<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1302 ? true : false">
+						<view class="action-close action-testing" @tap="handleDeal(item.order_id,index)">
+							已过户
+						</view>
 					</view>
-				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1302 ? true : false">
-					<view class="action-close action-testing" @tap="handleDeal(item.order_id,index)">
-						已过户
-					</view>
-				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 4 ">
-					<view class="action-close action-testing" @tap="handleSub(item.order_id)">
-						支付服务费
+					<view class="list-action clearfix" v-if="item.order_status == 4 ? true : item.order_status == 1401 ? true : false">
+						<view class="action-close action-testing" @tap="handleSub(item.order_id)">
+							支付服务费
+						</view>
 					</view>
 				</view>
 			</view>
@@ -155,6 +157,7 @@ export default {
 					this.data_list = data;
 					this.page_count = res.data.page_count;
 					uni.hideLoading();
+					console.log(this.data_list)
 				}, 500);
 			});
 		},
@@ -195,14 +198,7 @@ export default {
 						}
 					});
 				}else{
-					uni.showToast({
-						title: '预约失败',
-						duration: 2000,
-						icon: "none",
-						success: () => {
-							
-						}
-					});
+					_this.$c.msg(res.message)
 				}
 			})
 		},

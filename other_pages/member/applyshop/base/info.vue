@@ -77,9 +77,9 @@
 						</checkbox-group>
 					</view>
 				</view>
-				<view class="info-item">
-					<view class="item-left">门店简介</view>
-					<view class="item-right">
+				<view class="area-item">
+					<view class="area-left">门店简介</view>
+					<view class="area-right">
 						<!-- <input
 							class="uni-input"
 							name="shop_desc"
@@ -90,6 +90,7 @@
 						<textarea 
 							class="tarea"
 							name="shop_desc"
+							
 							placeholder="请输入门店简介"
 							maxlength="50"
 							:value="getDataValue('shop_desc')"/>
@@ -474,7 +475,8 @@ export default {
 			text
 				color #FF2E1A
 				font-size 28rpx
-		
+.content .info .area-item  
+	border-bottom 1px solid #F4F4F4
 .content .info .info-item
 	display flex
 	width 100%
@@ -485,20 +487,18 @@ export default {
 	font-size 28rpx
 	color #444444
 	line-height 87rpx
+.content .info .area-item .area-right
+	height 100rpx
 .content .info .info-item .item-right
 	width 70%
 	font-size 26rpx
 	color #222222
 	line-height 87rpx
 	text-align right
-.content .info .info-item .item-right .tarea
-	width 92%
-	height 40rpx
-	padding 25rpx
+.content .info .area-item .area-right .tarea
+	height 100rpx
 	line-height 32px
 	font-size 28rpx
-	background #FFF
-	flex 1
 
 .content .info .info-item .item-right .check
 	text-align center

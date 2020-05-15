@@ -54,7 +54,7 @@
 							class="list list-ul" 
 							v-if="show2" 
 							@tap="handleDetail(item.goods_id,item.group_id_array,promotion_id)">
-							<view class="list-imgs"><image style="width: 100%; height: 100%;" :src="item.pic_cover" @error="handleErr($event, index)"  mode="scaleToFill"></image></view>
+							<view class="list-imgs list-images"><image style="width: 100%; height: 100%;" :src="item.pic_cover" @error="handleErr($event, index)"  mode="scaleToFill"></image></view>
 							<view class="list-content list-con">
 								<view class="list-title">
 									<text v-if="show2">荐</text>
@@ -470,6 +470,8 @@ export default {
 			height 229rpx
 			border-radius 10rpx
 			vertical-align middle
+		.list-images
+			height 250rpx
 		.list-con
 			width 365rpx !important
 		.list-content
@@ -480,13 +482,14 @@ export default {
 			vertical-align middle
 			.list-title
 				color #222222
+				line-height 40rpx
 				text
-					padding 0 8rpx
-					margin-right 10rpx
+					padding 0 6rpx
+					margin-right 8rpx
 					display inline-block
 					border-radius 5rpx
 					background-color #FF2F2F
-					font-size 24rpx
+					font-size 22rpx
 					color #FFFFFF
 			.date
 				font-size 22rpx

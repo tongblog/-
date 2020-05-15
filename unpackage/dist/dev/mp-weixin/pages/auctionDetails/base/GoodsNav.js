@@ -195,7 +195,7 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
         backgroundColor: '#FF7E1F',
         color: '#fff' }],
 
-      flag: true };
+      flag: new Date() };
 
   },
   created: function created() {
@@ -279,7 +279,9 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
       }
     },
     buttonClick: function buttonClick(e) {
-      if (!this.flag) return;
+      var now = new Date();
+      if (now - this.flag <= 1000) return;
+      this.flag = now;
       var date = new Date();
       var newDate = new Date(this.end_time * 1000);
       if (date > newDate && this.state != 1) {
@@ -290,7 +292,6 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
       var prices = _this.records[0] == undefined ? _this.price * 10000 + _this.add_price : +_this.records[0].offer_price + _this.add_price;
       var jsonData = JSON.stringify(_this.jsonData);
       var toKen = uni.getStorageSync('token');
-      _this.flag = false;
       if (e.index == 0 && this.show == false && toKen !== '') {
         (0, _reques.request)("/member/isbindmobile", {
           token: uni.getStorageSync('token') },
@@ -309,9 +310,7 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
                 promotion_id: _this.action_id };
 
               if (res.data.data > 0) {
-                setTimeout(function () {
-                  _this.flag = true;
-                }, 1000);
+
                 (0, _navigate.goWindow)("/pages/payDeposit/payment?json=", JSON.stringify(jsonId));
               } else {
                 uni.showModal({

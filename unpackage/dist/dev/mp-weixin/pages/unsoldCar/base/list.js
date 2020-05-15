@@ -202,7 +202,15 @@ var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);function _inter
 //
 //
 var _this; // 页面跳转
-var _default = { props: { carId: { type: Number }, brandId: { type: Number } }, data: function data() {return { goodsList: [], page_count: 0 };}, watch: { carId: function carId(id) {_this.getGoodsList();}, brandId: function brandId(id) {_this.getGoodsList();} }, created: function created() {this.getGoodsList();_this = this;}, filters: { filterImg: function filterImg(src) {if (src) {
+var _default = { props: { carId: { type: Number }, brandObj: { type: Object } }, data: function data() {return { goodsList: [], page_count: 0, brandId: 0, systemId: 0 };}, watch: { carId: function carId(id) {_this.getGoodsList();}, brandObj: { handler: function handler(obj) {_this.brandId = obj.brandId;_this.systemId = obj.categoryId;_this.getGoodsList();}, deep: true } },
+
+  created: function created() {
+    this.getGoodsList();
+    _this = this;
+  },
+  filters: {
+    filterImg: function filterImg(src) {
+      if (src) {
         return _config.default.domain + src;
       }
     } },
@@ -226,7 +234,8 @@ var _default = { props: { carId: { type: Number }, brandId: { type: Number } }, 
         page_index: page_index,
         page_size: 10,
         car_type: _this.carId,
-        brands_id: _this.brandId },
+        brands_id: _this.brandId,
+        system_id: _this.systemId },
       "GET").
       then(function (res) {
         var data = res.data.data.data;

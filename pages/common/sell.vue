@@ -157,11 +157,11 @@
 						num:3,
 						icon:"icon--jiageyoudidaogao",
 						text:"价格由低到高",
-					},{
-						num:4,
-						icon:"icon--zuixinshangxian",
-						text:"最新上线",
-					}
+					}// ,{
+					// 	num:4,
+					// 	icon:"icon--zuixinshangxian",
+					// 	text:"最新上线",
+					// }
 				],
 				priceData:[{
 					text:"20万以上",
@@ -202,7 +202,7 @@
 		},
 		watch:{
 			"$store.state.cars":(v)=>{
-				_this.handleBrands(v.brandId,v.brandName)
+				_this.handleBrands(v)
 			},
 			status(num){
 				if(num == 1){
@@ -286,10 +286,13 @@
 				this.show6 = true;
 			},
 			// 根据品牌筛选
-			handleBrands(brandId,brandName){
+			handleBrands(brandObj){
+				if(Object.keys(brandObj).length == 0)return
 				this.brandName = [];
-				this.$emit('handleBrands',brandId);
-				this.brandName.push(brandName);
+				this.$emit('handleBrands',brandObj);
+				let brand = brandObj.brandName + brandObj.categoryName;
+				this.brandName.push(brand);
+				
 				this.show6 = true;
 				//this.$EventBus.$emit('handleBrands',brandData,brandId)
 			},

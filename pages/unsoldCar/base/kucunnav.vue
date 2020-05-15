@@ -42,8 +42,8 @@
 			_this = this
 		},
 		watch:{
-			"$store.state.cars":(v)=>{
-				_this.handleBrands(v.brandId)
+			"$store.state.kucars":(v)=>{
+				_this.handleBrands(v)
 			}
 		},
 		methods:{
@@ -52,7 +52,7 @@
 			},
 			handleBrand(){
 				this.show2 = !this.show2
-				goWindow("/pages/common/brand")
+				goWindow("/pages/common/brand?mark=2")
 			},
 			// 获取车型,排放,驱动
 			getSearchCondition(){
@@ -69,8 +69,8 @@
 				this.show1 = false;
 			},
 			// 根据品牌筛选
-			handleBrands(brandId){
-				this.$emit('handleBrands',brandId);
+			handleBrands(brandObj){
+				this.$emit('handleBrands',brandObj);
 				this.show2 = false;
 			},
 		},

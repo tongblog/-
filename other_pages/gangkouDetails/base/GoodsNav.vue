@@ -6,10 +6,10 @@
 		<view style="border-top:16rpx #F4F4F4 solid;">
 			<uni-goods-nav :fill="false"  :options="options" :button-group="buttonGroup" @click="handleSrc" @buttonClick="buttonClick"></uni-goods-nav>
 		</view>
-		<orderTime
+		<!-- <orderTime
 			v-if="order_time" 
 			@handleClose="handleClose"
-			@handleDate="handleDate"></orderTime>
+			@handleDate="handleDate"></orderTime> -->
 	</view>
 </template>
 
@@ -20,7 +20,7 @@
 	import {request} from '@/api/reques.js'
 	import {shoucang,quxiaosc} from "@/api/shoucang/shoucang.js"
 	import uniGoodsNav from "@/components/uni-goods-nav/uni-goods-nav.vue"
-	import orderTime from "@/pages/common/orderTime.vue"
+	//import orderTime from "@/pages/common/orderTime.vue"
 	export default{
 		props:{
 			goodsId:{
@@ -42,7 +42,7 @@
 		data(){
 			return{
 				mark:false,
-				order_time:false,
+				//order_time:false,
 				options: [{
 				        icon: '/static/images/dianpu.png',
 				        text: '店铺'
@@ -67,7 +67,7 @@
 		},
 		components:{
 			uniGoodsNav,
-			orderTime
+			//orderTime
 		},
 		created() {
 			_this = this
@@ -135,8 +135,8 @@
 						},"POST")
 						.then((res)=>{
 							if(res.data.data === 1){
-								this.order_time = true;
-									
+								//this.order_time = true;
+								_this.handleDate()
 							}else{
 								goWindow('/pages/common/phonenumber?id=',_this.goodsId)
 							}
@@ -145,34 +145,36 @@
 					goWindow("/pages/common/login?id=",_this.goodsId)
 				};
 			},
-			handleClose(bool){
-				this.order_time = bool;
-			},
-			handleDate(date){
+			// handleClose(bool){
+			// 	this.order_time = bool;
+			// },
+			handleDate(){
 				let toKen = uni.getStorageSync('token');
-				this.order_time = false;
+				//this.order_time = false;
 				this.$c.showLoading("加载中")
 				request("/order/carOrderCreate",{
 					token:toKen,
 					goods_id:this.goodsId,
 					group_id:4,
 					payment_type:8,
-					reserv_date:date,
+					// reserv_date:date,
 				},"POST")
 				.then((res)=>{
-					//console.log(res)
-					if(res.data.code >= 0){
+					let code = Number(res.data.code);
+					if(code >= 0){
 						setTimeout(() => {
 							uni.redirectTo({
 							    url: '/pages/common/appointment'
 							});
 							uni.hideLoading();
-						}, 300);
-						
+						}, 300);	
 					}else{
-						this.$c.msg("系统错误,请联系客服")
+						this.$c.msg(res.data.message)
 						uni.hideLoading();
 					}
+				})
+				.catch(err => {
+					console.log(err)
 				})
 			}
 		}

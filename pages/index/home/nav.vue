@@ -1,13 +1,13 @@
 <template>
 	<view class="nav">
-		<swiper class="swiper">
-			<swiper-item class="swiper-box" @click="pageJump(item)" v-for="(item,index) in navcontent" :key="index" :id="item.id">
+		<view class="swiper">
+			<view class="swiper-box" @click="pageJump(item)" v-for="(item,index) in navcontent" :key="index" :id="item.id">
 				<view class="nav-scroll">
 					<img style="width: 82rpx;height: 82rpx;" :src="item.imgsrc" alt="">
-					<text>{{item.navstr}}</text>
+					<text class="text">{{item.navstr}}</text>
 				</view>
-			</swiper-item>
-		</swiper>
+			</view>
+		</view>
 		
 		<view class="service" @tap="clickService" v-if="scrollS">
 			联系客服
@@ -96,22 +96,22 @@
 		color #FFFFFF
 		
 	.swiper
+		display flex
 		overflow hidden
-		width 100vw
-		height 150rpx
 		padding 16rpx 0rpx
 		.swiper-box
-			width 19.5% !important
+			width 20% !important
 			height 150rpx
 			text-align center
 			.nav-scroll
 				display flex
 				flex-wrap wrap
+				flex-direction column
 				justify-content center
+				align-items center
 				padding-top 10rpx
 				text
 					color #333333
 					font-size 24rpx
-					margin-top 10rpx
-		
+			
 </style>

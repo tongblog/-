@@ -9,7 +9,7 @@
 						<text>{{item.belong_name}}</text>
 						<icon v-if="item.belong_type == 2" class="iconfont icon-jiantou"></icon>
 					</view>
-					<view class="title-right">
+					<view v-if="item.status_name" class="title-right">
 						{{item.status_name}}
 					</view>
 				</view>
@@ -32,43 +32,50 @@
 						
 					</view>
 				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 0 ? true : item.order_status == 101 ? true : false">
-					<view class="action-close " @tap="action_close(item.order_id, index)">
-						取消预约
+				
+				
+				<view v-if="item.group_id == 3">
+					<view
+						class="list-action clearfix" 
+						v-if="item.order_status == 0 ? true : item.order_status == 101 ? true : false">
+						<view class="action-close " @tap="action_close(item.order_id, index)">
+							取消预约
+						</view>
 					</view>
-				</view>
-				<view class="list-action clearfix" v-if="item.order_status === 1 ">
-					<view class="action-detection" v-if="item.testing_status == 0" @tap="handleDetection(item.order_id)">
-						【专业检测】
-					</view> 
-					<view class="action-close action-testing" @tap="handleCheckcar(item.order_id,index)">
-						已验车
+					<view class="list-action clearfix" v-if="item.order_status === 1 ">
+						<view class="action-detection" v-if="item.testing_status == 0" @tap="handleDetection(item.order_id)">
+							【专业检测】
+						</view> 
+						<view class="action-close action-testing" @tap="handleCheckcar(item.order_id,index)">
+							已验车
+						</view>
+						<view class="action-close" @tap="handleShow(item.order_id, index)">
+							停止交易
+						</view>
 					</view>
-					<view class="action-close" @tap="handleShow(item.order_id, index)">
-						停止交易
-					</view>
-				</view>
-				<view 
-					class="list-action clearfix" 
-					v-if="item.order_status == 2 ? true : item.order_status == 1202 ? true :false">
 					<view 
-						class="action-detection" 
-						@tap="handlePayment(item.order_id)" 
-						v-if="item.order_status == 1201 ? true : item.order_status == 1202 ? true :false">
-						【分期付款】
-					</view> 
-					<view class="action-close action-testing" @tap="downaPyment(item.order_id,index)">
-						已付款
+						class="list-action clearfix" 
+						v-if="item.order_status == 2 ? true : item.order_status == 1202 ? true :false">
+						<view 
+							class="action-detection" 
+							@tap="handlePayment(item.order_id)" 
+							v-if="item.order_status == 1201 ? true : item.order_status == 1202 ? true :false">
+							【分期付款】
+						</view> 
+						<view class="action-close action-testing" @tap="downaPyment(item.order_id,index)">
+							已付款
+						</view>
+					</view>
+					<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1301 ? true :false">
+						<view class="action-detection" @tap="handleSub(item.order_id)" v-if="item.order_status !== 1301">
+							【手续代办】
+						</view> 
+						<view class="action-close action-testing" @tap="changeName(item.order_id,index)">
+							已过户
+						</view>
 					</view>
 				</view>
-				<view class="list-action clearfix" v-if="item.order_status == 3 ? true : item.order_status == 1301 ? true :false">
-					<view class="action-detection" @tap="handleSub(item.order_id)" v-if="item.order_status !== 1301">
-						【手续代办】
-					</view> 
-					<view class="action-close action-testing" @tap="changeName(item.order_id,index)">
-						已过户
-					</view>
-				</view>
+				
 			</view>
 		</view>
 		<view class="data-none" v-else>暂无相关数据!</view>

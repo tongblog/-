@@ -271,7 +271,7 @@ var _reques = __webpack_require__(/*! @/api/reques.js */ 41);function _interopRe
             uni.hideLoading();
           }, 300);
         } else {
-          _this4.$c.msg("系统错误,请联系客服");
+          _this4.$c.msg(res.data.message);
           uni.hideLoading();
         }
       });

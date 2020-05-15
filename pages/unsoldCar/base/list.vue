@@ -37,23 +37,31 @@
 			carId:{
 				type:Number
 			},
-			brandId:{
-				type:Number
-			}
+			brandObj:{
+				type:Object
+			},
 		},
 		data() {
 			return {
 				goodsList: [],
 				page_count:0,
+				brandId:0,
+				systemId:0,
 			}
 		},
 		watch:{
 			carId(id){
 				_this.getGoodsList();
 			},
-			brandId(id){
-				_this.getGoodsList();
+			brandObj:{
+				handler(obj) {
+					_this.brandId = obj.brandId;
+					_this.systemId = obj.categoryId;
+					_this.getGoodsList();
+				},
+				deep: true
 			}
+			
 		},
 		created() {
 			this.getGoodsList();
@@ -85,7 +93,8 @@
 						page_index: page_index,
 						page_size: 10,
 						car_type: _this.carId,
-						brands_id: _this.brandId
+						brands_id: _this.brandId,
+						system_id: _this.systemId,
 					}, "GET")
 					.then((res) => {
 						let data = res.data.data.data

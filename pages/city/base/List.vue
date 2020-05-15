@@ -185,7 +185,7 @@
 			margin 15rpx 0
 			text-align center
 	.national
-		padding 0 20rpx
+		padding 0 28rpx
 		line-height 80rpx
 		.national-item
 			width 190rpx

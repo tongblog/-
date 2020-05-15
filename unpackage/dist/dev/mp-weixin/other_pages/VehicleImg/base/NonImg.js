@@ -451,6 +451,8 @@ var _default = { props: { newJson: { type: Object }, imgId1: { type: String }, i
               uni.reLaunch({
                 url: '/pages/common/release' });
 
+            } else {
+              _this.$c.msg(res.data.message);
             }
           });
         });
@@ -476,6 +478,8 @@ var _default = { props: { newJson: { type: Object }, imgId1: { type: String }, i
               uni.reLaunch({
                 url: '/pages/common/release' });
 
+            } else {
+              _this.$c.msg(res.data.message);
             }
           });
         });

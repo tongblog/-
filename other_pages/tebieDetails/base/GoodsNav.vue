@@ -141,7 +141,7 @@
 											uni.hideLoading();
 										}, 300);
 									}else{
-										this.$c.msg("咨询失败,请联系客服")
+										this.$c.msg(res.data.message)
 										uni.hideLoading();
 									}
 									

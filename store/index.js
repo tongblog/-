@@ -9,6 +9,7 @@ const store = new Vuex.Store({
 		history:'',
 		search:'',
 		cars:{},
+		kucars:{},
 		group:0,
 	},
     mutations: {
@@ -31,6 +32,10 @@ const store = new Vuex.Store({
 		// 获取车系数据
 		changeCars(state,cars){
 			state.cars = cars
+		},
+		// 获取库存车系数据
+		changeKcCars(state,cars){
+			state.kucars = cars
 		},
 		// 活动id
 		changeGroup(state,group){

@@ -191,6 +191,7 @@ var _this;var _default =
       num: "",
       carId: "",
       brandId: "",
+      categoryId: "",
       priceIndex: "",
       max: "",
       min: "",
@@ -222,7 +223,6 @@ var _this;var _default =
     setTimeout(function () {
       _this.gzh = false;
     }, 10000);
-    console.log(111111111);
   },
   onShow: function onShow() {
     this.$store.commit("changeGroup", 3);
@@ -237,6 +237,7 @@ var _this;var _default =
     this.num = "";
     this.carId = "";
     this.brandId = "";
+    this.categoryId = "",
     this.priceIndex = "";
     this.min = "";
     this.max = "";
@@ -309,6 +310,7 @@ var _this;var _default =
       _this.num = "";
       _this.carId = "";
       _this.brandId = "";
+      _this.categoryId = "",
       _this.priceIndex = "";
       _this.min = "";
       _this.max = "";
@@ -369,6 +371,7 @@ var _this;var _default =
         ai_sort: this.num,
         car_type: this.carId,
         brands_id: this.brandId,
+        system_id: this.categoryId,
         min_price: this.min,
         max_price: this.max,
         pf_id: this.pfId,
@@ -411,8 +414,11 @@ var _this;var _default =
       this.carId = parseInt(index);
     },
     // 品牌筛选
-    handleBrands: function handleBrands(brandId) {
-      _this.brandId = brandId;
+    handleBrands: function handleBrands(obj) {
+      _this.brandId = obj.brandId;
+      _this.categoryId = obj.categoryId;
+      _this.page_index = 1;
+      _this.getGoodsList(_this.page_index);
     },
     // 价格筛选
     handlePrice: function handlePrice(index, max, min) {
@@ -447,6 +453,7 @@ var _this;var _default =
         this.num = "";
         this.carId = "";
         this.brandId = "";
+        this.categoryId = "";
         this.priceIndex = "";
         this.min = "";
         this.max = "";
@@ -461,6 +468,7 @@ var _this;var _default =
         this.num = "";
         this.carId = "";
         this.brandId = "";
+        this.categoryId = "",
         this.priceIndex = "";
         this.min = "";
         this.max = "";

@@ -154,8 +154,8 @@ var _shoucang = __webpack_require__(/*! @/api/shoucang/shoucang.js */ 736); //
 //
 //
 //
-var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e(/*! import() | components/uni-goods-nav/uni-goods-nav */ "components/uni-goods-nav/uni-goods-nav").then(__webpack_require__.bind(null, /*! @/components/uni-goods-nav/uni-goods-nav.vue */ 1311));};var orderTime = function orderTime() {return __webpack_require__.e(/*! import() | pages/common/orderTime */ "pages/common/orderTime").then(__webpack_require__.bind(null, /*! @/pages/common/orderTime.vue */ 907));};var _default = { props: { goodsId: { type: Number }, price: { type: String }, storeId: { type: Number }, state: { type: Number },
-
+var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e(/*! import() | components/uni-goods-nav/uni-goods-nav */ "components/uni-goods-nav/uni-goods-nav").then(__webpack_require__.bind(null, /*! @/components/uni-goods-nav/uni-goods-nav.vue */ 1311));}; //import orderTime from "@/pages/common/orderTime.vue"
+var _default = { props: { goodsId: { type: Number }, price: { type: String }, storeId: { type: Number }, state: { type: Number },
     fav_goods: {
       type: Number } },
 
@@ -163,7 +163,7 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
   data: function data() {
     return {
       mark: false,
-      order_time: false,
+      //order_time:false,
       options: [{
         icon: '/static/images/dianpu.png',
         text: '店铺' },
@@ -187,9 +187,9 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
 
   },
   components: {
-    uniGoodsNav: uniGoodsNav,
-    orderTime: orderTime },
-
+    uniGoodsNav: uniGoodsNav
+    //orderTime
+  },
   created: function created() {
     _this = this;
   },
@@ -239,7 +239,7 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
 
       }
     },
-    buttonClick: function buttonClick(e) {var _this2 = this;
+    buttonClick: function buttonClick(e) {
       //console.log(e)
       var now = new Date();
       if (now - this.start <= 1000) return;
@@ -256,8 +256,8 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
         "POST").
         then(function (res) {
           if (res.data.data === 1) {
-            _this2.order_time = true;
-
+            //this.order_time = true;
+            _this.handleDate();
           } else {
             (0, _navigate.goWindow)('/pages/common/phonenumber?id=', _this.goodsId);
           }
@@ -266,34 +266,36 @@ var _this;var uniGoodsNav = function uniGoodsNav() {return __webpack_require__.e
         (0, _navigate.goWindow)("/pages/common/login?id=", _this.goodsId);
       };
     },
-    handleClose: function handleClose(bool) {
-      this.order_time = bool;
-    },
-    handleDate: function handleDate(date) {var _this3 = this;
+    // handleClose(bool){
+    // 	this.order_time = bool;
+    // },
+    handleDate: function handleDate() {var _this2 = this;
       var toKen = uni.getStorageSync('token');
-      this.order_time = false;
+      //this.order_time = false;
       this.$c.showLoading("加载中");
       (0, _reques.request)("/order/carOrderCreate", {
         token: toKen,
         goods_id: this.goodsId,
         group_id: 4,
-        payment_type: 8,
-        reserv_date: date },
-      "POST").
+        payment_type: 8
+        // reserv_date:date,
+      }, "POST").
       then(function (res) {
-        //console.log(res)
-        if (res.data.code >= 0) {
+        var code = Number(res.data.code);
+        if (code >= 0) {
           setTimeout(function () {
             uni.redirectTo({
               url: '/pages/common/appointment' });
 
             uni.hideLoading();
           }, 300);
-
         } else {
-          _this3.$c.msg("系统错误,请联系客服");
+          _this2.$c.msg(res.data.message);
           uni.hideLoading();
         }
+      }).
+      catch(function (err) {
+        console.log(err);
       });
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
