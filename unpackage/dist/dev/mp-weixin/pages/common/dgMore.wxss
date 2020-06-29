@@ -1,22 +1,22 @@
-.uni-flex.data-v-5e11af41 {
+.uni-flex.data-v-777c86dc {
   padding: 0 20rpx;
 }
-.uni-flex .flex-item.data-v-5e11af41:nth-child(6) {
+.uni-flex .flex-item.data-v-777c86dc:nth-child(6) {
   border-bottom: 20rpx #f4f4f4 solid;
 }
-.uni-flex .flex-item.data-v-5e11af41 {
+.uni-flex .flex-item.data-v-777c86dc {
   border-bottom: 1rpx #eee solid;
   line-height: 75rpx;
   font-size: 26rpx;
   color: #333;
 }
-.uni-flex .flex-item .iconfont.data-v-5e11af41 {
+.uni-flex .flex-item .iconfont.data-v-777c86dc {
   float: right;
   padding-left: 20rpx;
   font-size: 24rpx;
   color: #333;
 }
-.uni-flex .flex-item .right.data-v-5e11af41 {
+.uni-flex .flex-item .right.data-v-777c86dc {
   float: right;
 }
 

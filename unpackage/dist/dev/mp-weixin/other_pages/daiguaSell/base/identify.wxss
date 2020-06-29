@@ -1,20 +1,20 @@
-.identify.data-v-b5c9d8e4 {
+.identify.data-v-53a5f55a {
   border-bottom: 9rpx #eee solid;
 }
-.identify .uni-flex.data-v-b5c9d8e4 {
+.identify .uni-flex.data-v-53a5f55a {
   padding: 0 20rpx;
 }
-.identify .uni-flex .flex-item.data-v-b5c9d8e4 {
+.identify .uni-flex .flex-item.data-v-53a5f55a {
   border-bottom: 1rpx solid #eee;
   font-size: 26rpx;
   color: #444;
 }
-.identify .uni-flex .flex-item text.data-v-b5c9d8e4 {
+.identify .uni-flex .flex-item text.data-v-53a5f55a {
   display: inline-block;
   line-height: 81rpx;
   vertical-align: middle;
 }
-.identify .uni-flex .flex-item input.data-v-b5c9d8e4 {
+.identify .uni-flex .flex-item input.data-v-53a5f55a {
   float: right;
   display: inline-block;
   vertical-align: middle;

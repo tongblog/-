@@ -1,89 +1,92 @@
-.refund.data-v-4c7685f6 {
+.refund.data-v-7f261811 {
   padding: 30rpx 24rpx;
   height: 95vh;
 }
-.refund .man-header.data-v-4c7685f6 {
-  border-radius: 5rpx;
+.refund .man-header.data-v-7f261811 {
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
 }
-.refund .man-header .top.data-v-4c7685f6 {
+.refund .man-header .top.data-v-7f261811 {
   height: 244rpx;
   text-align: center;
 }
-.refund .man-header .top .left.data-v-4c7685f6 {
+.refund .man-header .top .left.data-v-7f261811 {
   padding-top: 20rpx;
   font-size: 30rpx;
   color: #222;
 }
-.refund .man-header .top .right.data-v-4c7685f6 {
+.refund .man-header .top .right.data-v-7f261811 {
   font-size: 90rpx;
   color: #ccc;
 }
-.refund .man-header .top .right text.data-v-4c7685f6 {
+.refund .man-header .top .right text.data-v-7f261811 {
   font-size: 30rpx;
 }
-.refund .man-header .bottom.data-v-4c7685f6 {
+.refund .man-header .bottom.data-v-7f261811 {
   border-top: 1rpx #eee solid;
   padding: 0 5rpx;
 }
-.refund .man-header .bottom icon.data-v-4c7685f6 {
+.refund .man-header .bottom icon.data-v-7f261811 {
   color: #444;
 }
-.refund .man-header .bottom .txt.data-v-4c7685f6 {
+.refund .man-header .bottom .txt.data-v-7f261811 {
   display: inline-block;
   margin-left: 15rpx;
   color: #444;
   font-size: 26rpx;
   line-height: 80rpx;
 }
-.refund .uni-list-cell.data-v-4c7685f6::after {
+.refund .uni-list-cell.data-v-7f261811::after {
   position: relative;
 }
-.refund .content.data-v-4c7685f6 {
+.refund .content.data-v-7f261811 {
   padding-top: 35rpx;
 }
-.refund .content .con-title.data-v-4c7685f6 {
+.refund .content .con-title.data-v-7f261811 {
   padding-bottom: 20rpx;
   font-size: 28rpx;
   color: #222;
   font-weight: bold;
 }
-.refund .content .con-list.data-v-4c7685f6 {
+.refund .content .con-list.data-v-7f261811 {
   overflow: hidden;
   display: inline-block;
   padding: 20rpx 23rpx;
   width: 100%;
-  box-shadow: 0 0 10rpx 0 #ccc;
-  border-radius: 10rpx;
+  -webkit-box-shadow: 0 0 10rpx 0 #ccc;
+          box-shadow: 0 0 10rpx 0 #ccc;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
 }
-.refund .content .con-list .on text.data-v-4c7685f6 {
+.refund .content .con-list .on text.data-v-7f261811 {
   font-size: 24rpx;
   color: #ccc;
 }
-.refund .content .con-list .down.data-v-4c7685f6 {
+.refund .content .con-list .down.data-v-7f261811 {
   overflow: hidden;
 }
-.refund .content .con-list .down .goods-name.data-v-4c7685f6 {
+.refund .content .con-list .down .goods-name.data-v-7f261811 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 26rpx;
   color: #222;
 }
-.refund .content .con-list .down .goods-price.data-v-4c7685f6 {
+.refund .content .con-list .down .goods-price.data-v-7f261811 {
   font-size: 26rpx;
   color: #222;
 }
-.refund .content .con-list .down .goods-price text.data-v-4c7685f6 {
+.refund .content .con-list .down .goods-price text.data-v-7f261811 {
   color: #ff7e1f;
 }
-.refund .btn.data-v-4c7685f6 {
+.refund .btn.data-v-7f261811 {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 25rpx;
   padding: 0 25rpx;
 }
-.refund .btn button.data-v-4c7685f6 {
+.refund .btn button.data-v-7f261811 {
   background-color: #ff7e1f;
 }
 

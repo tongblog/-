@@ -1,1 +1,1 @@
-<view class="pricing data-v-76929b24"><info vue-id="3cda3e14-1" order_id="{{order_id}}" shop_id="{{shop_id}}" class="data-v-76929b24" bind:__l="__l"></info></view>
+<view class="pricing data-v-2a3dbc2e"><info vue-id="3cda3e14-1" order_id="{{order_id}}" shop_id="{{shop_id}}" class="data-v-2a3dbc2e" bind:__l="__l"></info></view>

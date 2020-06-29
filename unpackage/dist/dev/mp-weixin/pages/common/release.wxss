@@ -1,23 +1,23 @@
-.release.data-v-1d110f0e {
+.release.data-v-31012ad3 {
   padding: 0 35rpx;
 }
-.release .succes.data-v-1d110f0e {
+.release .succes.data-v-31012ad3 {
   text-align: center;
 }
-.release .succes .img.data-v-1d110f0e {
+.release .succes .img.data-v-31012ad3 {
   margin: 170rpx auto 46rpx;
   width: 280rpx;
   height: 295rpx;
 }
-.release .succes .img image.data-v-1d110f0e {
+.release .succes .img image.data-v-31012ad3 {
   width: 100%;
   height: 100%;
 }
-.release .succes .font.data-v-1d110f0e {
+.release .succes .font.data-v-31012ad3 {
   font-size: 36rpx;
   color: #666;
 }
-.release button.data-v-1d110f0e {
+.release button.data-v-31012ad3 {
   margin-top: 215rpx;
   background-color: #0657a6;
 }

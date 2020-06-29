@@ -1,27 +1,28 @@
 
-.detail-list.data-v-2fde325e{
+.detail-list.data-v-779a6e16{
 	padding: 24rpx;
 	height: 140;
 	border-bottom: 10rpx #F4F4F4 solid;
 }
-.detail-list .list-imgs.data-v-2fde325e{
+.detail-list .list-imgs.data-v-779a6e16{
 	overflow: hidden;
 	display: inline-block;
 	width: 256rpx;
 	height: 218rpx;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
-.detail-list .list-content.data-v-2fde325e{
+.detail-list .list-content.data-v-779a6e16{
 	display: inline-block;
 	width: 418rpx;
 	height: 100%;
 	margin-left: 3%;
 }
-.list-content .con-name.data-v-2fde325e{
+.list-content .con-name.data-v-779a6e16{
 	height:100rpx;
 	color: #222222;
 }
-.list-content .date.data-v-2fde325e{
+.list-content .date.data-v-779a6e16{
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap;
@@ -29,19 +30,20 @@
 	font-size: 22rpx;
 	color: #888888;
 }
-.list-content .uni-flex.data-v-2fde325e{
+.list-content .uni-flex.data-v-779a6e16{
 	height: 40rpx;
 }
-.list-content .flex-item.data-v-2fde325e{
+.list-content .flex-item.data-v-779a6e16{
 	padding:0 8rpx;
 	margin-right:20rpx;
 	border:1rpx #0657A6 solid;
-	border-radius:10rpx;
+	-webkit-border-radius:10rpx;
+	        border-radius:10rpx;
 	font-size:20rpx;
 	color:#0657A6;
 	text-align:center;
 }
-.list-content .price.data-v-2fde325e{
+.list-content .price.data-v-779a6e16{
 	font-size: 30rpx;
 	color: #FF1A1A;
 	font-weight: bold;

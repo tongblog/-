@@ -1,4 +1,4 @@
-.header.data-v-0bedc3a5 {
+.header.data-v-3e9d55c0 {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,19 +6,19 @@
   z-index: 200;
   background-color: #007aff;
 }
-.header .place.data-v-0bedc3a5 {
+.header .place.data-v-3e9d55c0 {
   line-height: 60rpx;
   background-color: #0657a6;
   padding: 0 24rpx;
 }
-.header .place .city.data-v-0bedc3a5 {
+.header .place .city.data-v-3e9d55c0 {
   display: inline-block;
 }
-.header .place .city icon.data-v-0bedc3a5 {
+.header .place .city icon.data-v-3e9d55c0 {
   color: #fff;
   font-size: 40rpx;
 }
-.header .place .city .city-name.data-v-0bedc3a5 {
+.header .place .city .city-name.data-v-3e9d55c0 {
   display: inline-block;
   overflow: hidden;
   width: 100rpx;
@@ -28,7 +28,7 @@
   text-overflow: ellipsis;
   color: #fff;
 }
-.header .place .search.data-v-0bedc3a5 {
+.header .place .search.data-v-3e9d55c0 {
   position: absolute;
   display: inline-block;
   top: 0;
@@ -39,14 +39,15 @@
   width: 516rpx;
   padding-left: 15rpx;
   background-color: rgba(255,255,255,0.5);
-  border-radius: 40rpx;
+  -webkit-border-radius: 40rpx;
+          border-radius: 40rpx;
 }
-.header .place .search icon.data-v-0bedc3a5 {
+.header .place .search icon.data-v-3e9d55c0 {
   margin-top: -4%;
   color: #1e71c3;
   font-size: 28rpx;
 }
-.header .place .search text.data-v-0bedc3a5 {
+.header .place .search text.data-v-3e9d55c0 {
   display: inline-block;
   padding-left: 10px;
   line-height: 56rpx;

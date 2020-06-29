@@ -1,14 +1,14 @@
-.goods-nav.data-v-02e11b37 {
+.goods-nav.data-v-0b54b77c {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
-.bomNav.data-v-02e11b37 {
+.bomNav.data-v-0b54b77c {
   -webkit-filter: grayscale(50%);
           filter: grayscale(50%);
 }
-.bomNav .failure.data-v-02e11b37 {
+.bomNav .failure.data-v-0b54b77c {
   background-color: rgba(0,0,0,0.5);
   color: #fff;
   text-align: center;

@@ -1,29 +1,29 @@
-.formalities.data-v-30f62d9e {
+.formalities.data-v-fb665a94 {
   border-top: 16rpx solid #f4f4f4;
   border-bottom: 16rpx solid #f4f4f4;
   padding: 28rpx;
 }
-.formalities .flt-title.data-v-30f62d9e {
+.formalities .flt-title.data-v-fb665a94 {
   width: 105rpx;
   border-bottom: 2rpx #0657a6 solid;
   font-size: 26rpx;
   line-height: 26rpx;
   color: #222;
 }
-.formalities .flt-list.data-v-30f62d9e {
+.formalities .flt-list.data-v-fb665a94 {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.formalities .flt-list .flex-item.data-v-30f62d9e {
+.formalities .flt-list .flex-item.data-v-fb665a94 {
   width: 33%;
   margin-top: 35rpx;
 }
-.formalities .flt-list .flex-item .on.data-v-30f62d9e {
+.formalities .flt-list .flex-item .on.data-v-fb665a94 {
   font-size: 22rpx;
   line-height: 22rpx;
   color: #777;
 }
-.formalities .flt-list .flex-item .down.data-v-30f62d9e {
+.formalities .flt-list .flex-item .down.data-v-fb665a94 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

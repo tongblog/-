@@ -1,50 +1,52 @@
-.plan.data-v-f7dec662 {
+.plan.data-v-1ed88654 {
   padding: 0;
 }
-.plan .plan-title.data-v-f7dec662 {
+.plan .plan-title.data-v-1ed88654 {
   padding: 0 24rpx;
   background-color: #f4f4f4;
   line-height: 66rpx;
   color: #222;
 }
-.plan .plan-title text.data-v-f7dec662 {
+.plan .plan-title text.data-v-1ed88654 {
   font-size: 24rpx;
   color: #444;
 }
-.plan .plan-item.data-v-f7dec662 {
+.plan .plan-item.data-v-1ed88654 {
   padding: 22rpx 22rpx 0 22rpx;
 }
-.plan .plan-item .category.data-v-f7dec662 {
+.plan .plan-item .category.data-v-1ed88654 {
   margin-bottom: 20rpx;
-  border-radius: 15rpx;
-  box-shadow: 0 0 10rpx #ccc;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  -webkit-box-shadow: 0 0 10rpx #ccc;
+          box-shadow: 0 0 10rpx #ccc;
 }
-.plan .plan-item .category .plan-category.data-v-f7dec662 {
+.plan .plan-item .category .plan-category.data-v-1ed88654 {
   width: 25%;
   padding: 10rpx 0;
   text-align: center;
   color: #777;
   font-size: 23rpx;
 }
-.plan .plan-item .category .plan-category .on.data-v-f7dec662 {
+.plan .plan-item .category .plan-category .on.data-v-1ed88654 {
   margin: 20rpx 0;
 }
-.plan .plan-item .category .plan-category .item-con.data-v-f7dec662 {
+.plan .plan-item .category .plan-category .item-con.data-v-1ed88654 {
   color: #ff2727;
   font-weight: bold;
   font-size: 30rpx;
 }
-.plan .plan-item .category .plan-category .radio.data-v-f7dec662 {
+.plan .plan-item .category .plan-category .radio.data-v-1ed88654 {
   line-height: 155rpx;
   font-size: 28rpx;
   font-weight: bold;
   color: #222;
 }
-.plan .btn.data-v-f7dec662 {
+.plan .btn.data-v-1ed88654 {
   padding: 0 22rpx;
   margin-top: 100rpx;
 }
-.plan .btn button.data-v-f7dec662 {
+.plan .btn button.data-v-1ed88654 {
   background-color: #006bb3;
 }
 

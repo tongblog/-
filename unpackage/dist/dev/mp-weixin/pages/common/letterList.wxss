@@ -1,11 +1,11 @@
-.letters.data-v-73979c2d {
+.letters.data-v-b371a370 {
   position: fixed;
   right: 0;
   top: 18%;
   margin: auto;
   color: #333;
 }
-.letters .flex-item.data-v-73979c2d {
+.letters .flex-item.data-v-b371a370 {
   padding-right: 20rpx;
   line-height: 40rpx;
   text-align: center;

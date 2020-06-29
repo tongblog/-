@@ -1,19 +1,19 @@
 
-scroll-view.data-v-5e8e844c {
+scroll-view.data-v-7c35f696 {
 	height: 100vh;
 }
-.data-none.data-v-5e8e844c {
+.data-none.data-v-7c35f696 {
 	text-align: center;
 	height: 100rpx;
 	line-height: 100rpx;
 }
-button[size=mini].data-v-5e8e844c {
+button[size=mini].data-v-7c35f696 {
 display: inline-block;
 line-height: 1.8;
 font-size: 13px;
 padding: 0 1em;
 }
-.check-all.data-v-5e8e844c{
+.check-all.data-v-7c35f696{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -25,61 +25,63 @@ padding: 0 1em;
 	-webkit-justify-content: space-between;
 	        justify-content: space-between;
 }
-.check-all .shelves.data-v-5e8e844c{
+.check-all .shelves.data-v-7c35f696{
 	width: 20%;
 }
-.check-all .shelves-btn.data-v-5e8e844c{
+.check-all .shelves-btn.data-v-7c35f696{
 	width: 16%;
 }
-.list.data-v-5e8e844c {
+.list.data-v-7c35f696 {
 	background: #fff;
 	border-bottom: 10rpx solid #F4F4F4;
 	padding: 20rpx 20rpx 0 20rpx;
 }
-.list .check.data-v-5e8e844c{
+.list .check.data-v-7c35f696{
 	display: inline-block;
 	width: 60rpx;
 	vertical-align: middle;
 }
-.list .list-imgs.data-v-5e8e844c {
+.list .list-imgs.data-v-7c35f696 {
 	overflow: hidden;
 	display: inline-block;
 	width: 256rpx;
 	height: 218rpx;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 	vertical-align: middle;
 }
-.list .list-images.data-v-5e8e844c{
+.list .list-images.data-v-7c35f696{
 	width: 218rpx !important;
 }
-.list .borderBom.data-v-5e8e844c{
+.list .borderBom.data-v-7c35f696{
 	border-bottom: 1rpx #CCCCCC solid;
 }
-.list .check-detail .detail.data-v-5e8e844c{
+.list .check-detail .detail.data-v-7c35f696{
 	padding: 5rpx 10rpx;
 	text-align: right;
 	color: #006BB3;
 }
-.list .btns.data-v-5e8e844c{
+.list .btns.data-v-7c35f696{
 	overflow:hidden;
 	padding: 10rpx;
 }
-.list .btns .refuse.data-v-5e8e844c{
+.list .btns .refuse.data-v-7c35f696{
 	float: right;
 	display: inline-block;
 	width: 120rpx;
 	border: 1px solid #006BB3;
-	border-radius: 20rpx;
+	-webkit-border-radius: 20rpx;
+	        border-radius: 20rpx;
 	color: #006BB3;
 	font-size: 22rpx;
 	text-align: center;
 }
-.list .btns .accept.data-v-5e8e844c{
+.list .btns .accept.data-v-7c35f696{
 	margin-right: 20rpx;
 	border: 1px solid #FF1A1A !important;
 	color: #FF1A1A !important;
 }
-.list .list-content.data-v-5e8e844c {
+.list .list-content.data-v-7c35f696 {
 	position: relative;
 	display: inline-block;
 	width: 418rpx;
@@ -87,51 +89,54 @@ padding: 0 1em;
 	margin-left: 3%;
 	vertical-align: middle;
 }
-.list .list-con.data-v-5e8e844c{
+.list .list-con.data-v-7c35f696{
 	width: 410rpx !important;
 }
-.list-content .title.data-v-5e8e844c {
+.list-content .title.data-v-7c35f696 {
 	height: 100rpx;
 	color: #222222;
 }
-.list-content .date.data-v-5e8e844c {
+.list-content .date.data-v-7c35f696 {
 	font-size: 22rpx;
 	color: #888888;
 }
-.list-content .uni-flex .flex-item.data-v-5e8e844c {
+.list-content .uni-flex .flex-item.data-v-7c35f696 {
 	padding: 0 10rpx;
 	margin-right: 25rpx;
 	border: 1rpx #0657a6 solid;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 	font-size: 20rpx;
 	color: #0657a6;
 	text-align: center;
 }
-.list-content .price1.data-v-5e8e844c{
+.list-content .price1.data-v-7c35f696{
 	position: absolute;
 	bottom: 18%;
 	right: 0;
 }
-.list-content .price.data-v-5e8e844c {
+.list-content .price.data-v-7c35f696 {
 	font-size: 24rpx;
 	color: #666;
 	text-align: right;
 	font-weight: bold;
 }
-.list-content .price text.data-v-5e8e844c{
+.list-content .price text.data-v-7c35f696{
 	color: #FF1A1A;
 }
-.price .fixed-price.data-v-5e8e844c {
+.price .fixed-price.data-v-7c35f696 {
 	padding: 5rpx 8rpx;
 	margin-right: 10rpx;
 	background-color: #ff2727;
-	border-radius: 4rpx;
+	-webkit-border-radius: 4rpx;
+	        border-radius: 4rpx;
 	font-size: 22rpx;
 	color: #ffffff;
 }
-.list-content .cancel-fav.data-v-5e8e844c {
+.list-content .cancel-fav.data-v-7c35f696 {
 	border: 1px solid #ccc;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 	padding: 4rpx 12rpx;
 	position: absolute;
 	right: 0;
@@ -139,13 +144,14 @@ padding: 0 1em;
 	font-size: 21rpx;
 	color: #ccc;
 }
-.list .list-action.data-v-5e8e844c{
+.list .list-action.data-v-7c35f696{
 	width: 100%;
 }
-.list .list-action .action-close.data-v-5e8e844c{
+.list .list-action .action-close.data-v-7c35f696{
 	border: 1px solid #ccc;
 	color: #ccc;
-	border-radius: 50rpx;
+	-webkit-border-radius: 50rpx;
+	        border-radius: 50rpx;
 	font-size: 24rpx;
 	margin-left: 78%;
 	width: 20%;

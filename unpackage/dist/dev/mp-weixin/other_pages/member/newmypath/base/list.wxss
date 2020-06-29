@@ -1,19 +1,19 @@
 
-scroll-view.data-v-3d8d1efa{
+scroll-view.data-v-15960508{
 	height:100vh
 }
-.data-none.data-v-3d8d1efa {
+.data-none.data-v-15960508 {
 	text-align: center;
 	height: 100rpx;
 	line-height: 100rpx;
 }
-.list.data-v-3d8d1efa {
+.list.data-v-15960508 {
 	position: relative;
 	padding: 24rpx;
 	height: 140;
 	border-bottom: 10rpx #f4f4f4 solid;
 }
-.list .img.data-v-3d8d1efa{
+.list .img.data-v-15960508{
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -23,14 +23,15 @@ scroll-view.data-v-3d8d1efa{
 	width: 150rpx;
 	height: 80rpx;
 }
-.list .list-imgs.data-v-3d8d1efa {
+.list .list-imgs.data-v-15960508 {
 	overflow: hidden;
 	display: inline-block;
 	width: 256rpx;
 	height: 218rpx;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
-.list .list-content.data-v-3d8d1efa {
+.list .list-content.data-v-15960508 {
 	display: inline-block;
 	width: 418rpx;
 	height: 100%;
@@ -38,39 +39,42 @@ scroll-view.data-v-3d8d1efa{
 	position: relative;
 	vertical-align: top;
 }
-.list-content .title.data-v-3d8d1efa {
+.list-content .title.data-v-15960508 {
 	height: 100rpx;
 	color: #222222;
 }
-.list-content .date.data-v-3d8d1efa {
+.list-content .date.data-v-15960508 {
 	font-size: 22rpx;
 	color: #888888;
 }
-.list-content .uni-flex .flex-item.data-v-3d8d1efa {
+.list-content .uni-flex .flex-item.data-v-15960508 {
 	padding: 0 10rpx;
 	margin-right: 25rpx;
 	border: 1rpx #0657a6 solid;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 	font-size: 20rpx;
 	color: #0657a6;
 	text-align: center;
 }
-.list-content .price.data-v-3d8d1efa {
+.list-content .price.data-v-15960508 {
 	font-size: 30rpx;
 	color: #ff1a1a;
 	font-weight: bold;
 }
-.price .fixed-price.data-v-3d8d1efa {
+.price .fixed-price.data-v-15960508 {
 	padding: 5rpx 8rpx;
 	margin-right: 10rpx;
 	background-color: #ff2727;
-	border-radius: 4rpx;
+	-webkit-border-radius: 4rpx;
+	        border-radius: 4rpx;
 	font-size: 22rpx;
 	color: #ffffff;
 }
-.list-content .cancel-fav.data-v-3d8d1efa {
+.list-content .cancel-fav.data-v-15960508 {
 	border: 1px solid #ccc;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 	padding: 4rpx 12rpx;
 	position: absolute;
 	right: 0;

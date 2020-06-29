@@ -1,56 +1,57 @@
-.brand.data-v-ed44bb64 {
+.brand.data-v-8888295a {
   position: absolute;
   width: 100%;
   background-color: #fff;
 }
-.brand .secon.data-v-ed44bb64 {
+.brand .secon.data-v-8888295a {
   width: 60% !important;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.brand .secondary.data-v-ed44bb64 {
+.brand .secondary.data-v-8888295a {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 20;
-  box-shadow: 0 0 20rpx 0 #ccc;
+  -webkit-box-shadow: 0 0 20rpx 0 #ccc;
+          box-shadow: 0 0 20rpx 0 #ccc;
   width: 0;
   height: 100%;
   background: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.brand .secondary .sec-title.data-v-ed44bb64 {
+.brand .secondary .sec-title.data-v-8888295a {
   padding: 0 20rpx;
   background-color: #f4f4f4;
   color: #222;
   line-height: 70rpx;
 }
-.brand .secondary .sec-scroll.data-v-ed44bb64 {
+.brand .secondary .sec-scroll.data-v-8888295a {
   height: 95vh;
 }
-.brand .secondary .sec-scroll .sec-list.data-v-ed44bb64 {
+.brand .secondary .sec-scroll .sec-list.data-v-8888295a {
   padding: 0 30rpx;
   border-bottom: 1rpx solid #f4f4f4;
   font-size: 26rpx;
   line-height: 70rpx;
   color: #444;
 }
-.brand .scroll-view.data-v-ed44bb64 {
+.brand .scroll-view.data-v-8888295a {
   height: 100vh;
 }
-.brand .scroll-view .brand-title.data-v-ed44bb64 {
+.brand .scroll-view .brand-title.data-v-8888295a {
   padding-left: 26rpx;
   background-color: #e6e6e6;
   font-size: 26rpx;
   color: #ff2929;
 }
-.brand .scroll-view .brand-content.data-v-ed44bb64 {
+.brand .scroll-view .brand-content.data-v-8888295a {
   padding: 30rpx;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.brand .scroll-view .brand-content .flex-item.data-v-ed44bb64 {
+.brand .scroll-view .brand-content .flex-item.data-v-8888295a {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -63,11 +64,11 @@
           align-items: center;
   width: 20%;
 }
-.brand .scroll-view .brand-content .flex-item image.data-v-ed44bb64 {
+.brand .scroll-view .brand-content .flex-item image.data-v-8888295a {
   width: 90rpx;
   height: 60rpx;
 }
-.brand .scroll-view .brand-content .flex-item .text.data-v-ed44bb64 {
+.brand .scroll-view .brand-content .flex-item .text.data-v-8888295a {
   overflow: hidden;
   width: 100%;
   text-align: center;
@@ -77,13 +78,13 @@
   color: #222;
   font-size: 24rpx;
 }
-.brand .scroll-view .brand-list .letter.data-v-ed44bb64 {
+.brand .scroll-view .brand-list .letter.data-v-8888295a {
   padding-left: 26rpx;
   background-color: #e6e6e6;
   font-size: 26rpx;
   color: #444;
 }
-.brand .scroll-view .brand-list .letter-car .flex-item.data-v-ed44bb64 {
+.brand .scroll-view .brand-list .letter-car .flex-item.data-v-8888295a {
   padding: 15rpx 20rpx;
   border-bottom: 1rpx #e6e6e6 solid;
   color: #333;

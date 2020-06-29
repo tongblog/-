@@ -1,68 +1,73 @@
-.explain.data-v-590dc56d {
+.explain.data-v-1854a21c {
   padding: 0 20rpx;
 }
-.explain button.data-v-590dc56d {
+.explain button.data-v-1854a21c {
   margin-top: 30rpx;
   background-color: #ff2727;
 }
-.explain .explain-middle text.data-v-590dc56d {
+.explain .explain-middle text.data-v-1854a21c {
   color: #ff2727;
 }
-.explain .explain-bto.data-v-590dc56d {
+.explain .explain-bto.data-v-1854a21c {
   padding: 0 24rpx;
   margin-top: 20rpx;
-  border-radius: 15rpx;
-  box-shadow: 0 0 10rpx 0 #ccc;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  -webkit-box-shadow: 0 0 10rpx 0 #ccc;
+          box-shadow: 0 0 10rpx 0 #ccc;
 }
-.explain .explain-bto .explain-title.data-v-590dc56d {
+.explain .explain-bto .explain-title.data-v-1854a21c {
   text-align: center;
   font-size: 34rpx;
   line-height: 80rpx;
   color: #ff2727;
   font-weight: bold;
 }
-.explain .explain-bto .uni-flex.data-v-590dc56d {
+.explain .explain-bto .uni-flex.data-v-1854a21c {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.explain .explain-bto .uni-flex .flex-item.data-v-590dc56d {
+.explain .explain-bto .uni-flex .flex-item.data-v-1854a21c {
   width: 48%;
   height: 152rpx;
   margin-bottom: 20rpx;
 }
-.explain .explain-bto .uni-flex .flex-item image.data-v-590dc56d {
+.explain .explain-bto .uni-flex .flex-item image.data-v-1854a21c {
   width: 100%;
   height: 100%;
 }
-.plan.data-v-590dc56d {
+.plan.data-v-1854a21c {
   padding: 24rpx;
 }
-.plan .plan-item.data-v-590dc56d {
+.plan .plan-item.data-v-1854a21c {
   padding: 22rpx 22rpx 0 22rpx;
-  border-radius: 15rpx;
-  box-shadow: 0 0 10rpx 0 #ccc;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  -webkit-box-shadow: 0 0 10rpx 0 #ccc;
+          box-shadow: 0 0 10rpx 0 #ccc;
 }
-.plan .plan-item .category.data-v-590dc56d {
+.plan .plan-item .category.data-v-1854a21c {
   margin-bottom: 20rpx;
-  border-radius: 15rpx;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
   background-color: #f4f4f4;
 }
-.plan .plan-item .category .plan-category.data-v-590dc56d {
+.plan .plan-item .category .plan-category.data-v-1854a21c {
   width: 25%;
   padding: 10rpx 0;
   text-align: center;
   color: #777;
   font-size: 23rpx;
 }
-.plan .plan-item .category .plan-category text.data-v-590dc56d {
+.plan .plan-item .category .plan-category text.data-v-1854a21c {
   color: #ff2727;
   font-weight: bold;
   font-size: 27rpx;
 }
-.plan .plan-item .category .plan-category .radio.data-v-590dc56d {
+.plan .plan-item .category .plan-category .radio.data-v-1854a21c {
   line-height: 100rpx;
   font-size: 26rpx;
 }

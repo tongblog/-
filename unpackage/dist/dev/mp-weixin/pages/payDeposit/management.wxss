@@ -1,14 +1,16 @@
-.management.data-v-3c41437e {
+.management.data-v-2ff26adc {
   position: relative;
   padding: 30rpx 24rpx;
   height: 95vh;
 }
-.management .man-header.data-v-3c41437e {
-  box-shadow: 0 0 5rpx 0 #ccc;
+.management .man-header.data-v-2ff26adc {
+  -webkit-box-shadow: 0 0 5rpx 0 #ccc;
+          box-shadow: 0 0 5rpx 0 #ccc;
   background-color: #ff7e1f;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
 }
-.management .man-header .top.data-v-3c41437e {
+.management .man-header .top.data-v-2ff26adc {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -18,60 +20,60 @@
           justify-content: space-between;
   text-align: center;
 }
-.management .man-header .top .left.data-v-3c41437e {
+.management .man-header .top .left.data-v-2ff26adc {
   width: 45%;
   font-size: 38rpx;
   line-height: 244rpx;
   color: #fff;
 }
-.management .man-header .top .right.data-v-3c41437e {
+.management .man-header .top .right.data-v-2ff26adc {
   width: 45%;
   font-size: 90rpx;
   line-height: 244rpx;
   color: #fff;
 }
-.management .man-header .top .right text.data-v-3c41437e {
+.management .man-header .top .right text.data-v-2ff26adc {
   font-size: 32rpx;
 }
-.management .man-header .content.data-v-3c41437e {
+.management .man-header .content.data-v-2ff26adc {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   border-top: 1rpx #fff solid;
 }
-.management .man-header .content .frozen.data-v-3c41437e:nth-child(1) {
+.management .man-header .content .frozen.data-v-2ff26adc:nth-child(1) {
   border-right: 1rpx #fff solid;
 }
-.management .man-header .content .frozen.data-v-3c41437e {
+.management .man-header .content .frozen.data-v-2ff26adc {
   width: 50%;
   padding: 10rpx 0;
   text-align: center;
 }
-.management .man-header .content .frozen .on.data-v-3c41437e {
+.management .man-header .content .frozen .on.data-v-2ff26adc {
   color: #fff;
   font-size: 24rpx;
 }
-.management .man-header .content .frozen .down.data-v-3c41437e {
+.management .man-header .content .frozen .down.data-v-2ff26adc {
   color: #fff;
   font-size: 40rpx;
   line-height: 50rpx;
 }
-.management .bottom.data-v-3c41437e {
+.management .bottom.data-v-2ff26adc {
   padding: 8rpx 5rpx;
 }
-.management .bottom icon.data-v-3c41437e {
+.management .bottom icon.data-v-2ff26adc {
   color: #ff7e1f;
 }
-.management .bottom .txt.data-v-3c41437e {
+.management .bottom .txt.data-v-2ff26adc {
   display: inline-block;
   margin-left: 15rpx;
   color: #444;
   font-size: 28rpx;
 }
-.management .bottom .txt text.data-v-3c41437e {
+.management .bottom .txt text.data-v-2ff26adc {
   color: #2579cb;
 }
-.management .btn.data-v-3c41437e {
+.management .btn.data-v-2ff26adc {
   position: absolute;
   display: -webkit-box;
   display: -webkit-flex;
@@ -83,7 +85,7 @@
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.management .btn button.data-v-3c41437e {
+.management .btn button.data-v-2ff26adc {
   width: 45%;
   background-color: #ff7e1f;
 }

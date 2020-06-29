@@ -1,19 +1,19 @@
-.release.data-v-82585da6 {
+.release.data-v-5a78261c {
   padding: 0 35rpx;
 }
-.release .succes.data-v-82585da6 {
+.release .succes.data-v-5a78261c {
   text-align: center;
 }
-.release .succes .img.data-v-82585da6 {
+.release .succes .img.data-v-5a78261c {
   margin: 158rpx auto 46rpx;
   width: 544rpx;
   height: 604rpx;
 }
-.release .succes .img image.data-v-82585da6 {
+.release .succes .img image.data-v-5a78261c {
   width: 100%;
   height: 100%;
 }
-.release button.data-v-82585da6 {
+.release button.data-v-5a78261c {
   margin-top: 215rpx;
   background-color: #f1652e;
 }

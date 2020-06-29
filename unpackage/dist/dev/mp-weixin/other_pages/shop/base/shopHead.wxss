@@ -1,28 +1,30 @@
-.shop-head.data-v-43687695 {
+.shop-head.data-v-439f3fcc {
   position: relative;
 }
-.shop-head .shop-bj.data-v-43687695 {
+.shop-head .shop-bj.data-v-439f3fcc {
   width: 100vw;
   height: 170rpx;
 }
-.shop-head .shop-bj image.data-v-43687695 {
+.shop-head .shop-bj image.data-v-439f3fcc {
   width: 100%;
   height: 100%;
 }
-.shop-head .abstract.data-v-43687695 {
+.shop-head .abstract.data-v-439f3fcc {
   position: absolute;
   left: 0;
   right: 0;
   bottom: -83rpx;
   padding: 0 24rpx;
 }
-.shop-head .abstract .abstract-con.data-v-43687695 {
+.shop-head .abstract .abstract-con.data-v-439f3fcc {
   height: 166rpx;
-  border-radius: 15rpx;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
   background-color: #fff;
-  box-shadow: 0 0 10rpx #ccc;
+  -webkit-box-shadow: 0 0 10rpx #ccc;
+          box-shadow: 0 0 10rpx #ccc;
 }
-.shop-head .abstract .abstract-con .shop-log.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-log.data-v-439f3fcc {
   position: absolute;
   overflow: hidden;
   left: 0;
@@ -31,33 +33,35 @@
   margin: auto;
   width: 100rpx;
   height: 100rpx;
-  border-radius: 50%;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
 }
-.shop-head .abstract .abstract-con .shop-log image.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-log image.data-v-439f3fcc {
   width: 100%;
   height: 100%;
 }
-.shop-head .abstract .abstract-con .shop-name.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-name.data-v-439f3fcc {
   padding-top: 50rpx;
   font-size: 28rpx;
   color: #222;
   text-align: center;
   font-weight: bold;
 }
-.shop-head .abstract .abstract-con .shop-label.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-label.data-v-439f3fcc {
   width: 308rpx;
   margin: auto;
 }
-.shop-head .abstract .abstract-con .shop-label .nature.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-label .nature.data-v-439f3fcc {
   display: inline-block;
   padding: 0 10rpx;
   margin-right: 15rpx;
   background-color: #fff2c5;
   color: #ff8d28;
   font-size: 20rpx;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
 }
-.shop-head .abstract .abstract-con .shop-label .rate.data-v-43687695 {
+.shop-head .abstract .abstract-con .shop-label .rate.data-v-439f3fcc {
   display: inline-block;
 }
 

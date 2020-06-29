@@ -1,4 +1,4 @@
-.newcar-title.data-v-4a234608 {
+.newcar-title.data-v-cdb8b7d2 {
   background-color: #f4f4f4;
   line-height: 77rpx;
   font-size: 29rpx;
@@ -6,37 +6,37 @@
   color: #222 !important;
   text-align: center;
 }
-.btn.data-v-4a234608 {
+.btn.data-v-cdb8b7d2 {
   padding: 40rpx 25rpx;
 }
-.btn button.data-v-4a234608 {
+.btn button.data-v-cdb8b7d2 {
   background-color: #0657a6;
 }
-.uni-flex.data-v-4a234608 {
+.uni-flex.data-v-cdb8b7d2 {
   padding: 0 20rpx;
 }
-.uni-flex .flex-item.data-v-4a234608 {
+.uni-flex .flex-item.data-v-cdb8b7d2 {
   border-bottom: 1rpx solid #eee;
 }
-.uni-flex .flex-item text.data-v-4a234608 {
+.uni-flex .flex-item text.data-v-cdb8b7d2 {
   display: inline-block;
   line-height: 81rpx;
   vertical-align: middle;
 }
-.uni-flex .flex-item input.data-v-4a234608 {
+.uni-flex .flex-item input.data-v-cdb8b7d2 {
   float: right;
   width: 60%;
   display: inline-block;
   vertical-align: middle;
   text-align: right;
 }
-.uni-flex .flex-item icon.data-v-4a234608 {
+.uni-flex .flex-item icon.data-v-cdb8b7d2 {
   float: right;
   vertical-align: middle;
   font-size: 21rpx;
   color: #999;
 }
-.brand.data-v-4a234608 {
+.brand.data-v-cdb8b7d2 {
   position: absolute;
   top: 0;
   left: 0;

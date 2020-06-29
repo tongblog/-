@@ -1,44 +1,46 @@
-.security.data-v-29ca812d {
+.security.data-v-a0fe7a70 {
   padding: 0 22rpx;
   background-color: #fff1f3;
   font-size: 26rpx;
   line-height: 74rpx;
   color: #761f2b;
 }
-.abstract.data-v-29ca812d {
+.abstract.data-v-a0fe7a70 {
   padding: 25rpx 22rpx;
 }
-.abstract .title.data-v-29ca812d {
+.abstract .title.data-v-a0fe7a70 {
   color: #222;
   font-size: 30rpx;
   line-height: 40rpx;
   font-weight: bold;
 }
-.abstract .shelves.data-v-29ca812d {
+.abstract .shelves.data-v-a0fe7a70 {
   display: inline-block;
   font-size: 26rpx;
   color: #aaa;
   line-height: 50rpx;
 }
-.abstract .deadline.data-v-29ca812d {
+.abstract .deadline.data-v-a0fe7a70 {
   padding-left: 20rpx;
 }
-.abstract .label.data-v-29ca812d {
+.abstract .label.data-v-a0fe7a70 {
   display: inline-block;
   margin-left: 25rpx;
   font-size: 22rpx;
 }
-.abstract .label .install.data-v-29ca812d {
+.abstract .label .install.data-v-a0fe7a70 {
   padding: 8rpx 12rpx;
   background-color: #fff2c5;
-  border-radius: 8rpx;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
   color: #ff8d28;
 }
-.abstract .label .rules.data-v-29ca812d {
+.abstract .label .rules.data-v-a0fe7a70 {
   padding: 10rpx 15rpx;
   margin-left: 85rpx;
   border: 1rpx #0657a6 solid;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #0657a6;
 }
 

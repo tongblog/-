@@ -1,5 +1,5 @@
 
-.header.data-v-51d08530 {
+.header.data-v-f7a26396 {
         margin: 90rpx 0 90rpx 50rpx;
         border-bottom: 1px solid #ccc;
         text-align: center;
@@ -7,35 +7,37 @@
         height: 300rpx;
         line-height: 450rpx;
 }
-.header image.data-v-51d08530 {
+.header image.data-v-f7a26396 {
         width: 200rpx;
         height: 200rpx;
 }
-.content.data-v-51d08530 {
+.content.data-v-f7a26396 {
         margin-left: 50rpx;
         margin-bottom: 90rpx;
 }
-.content text.data-v-51d08530 {
+.content text.data-v-f7a26396 {
         display: block;
         color: #9d9d9d;
         margin-top: 40rpx;
 }
-.denglu.data-v-51d08530 {
+.denglu.data-v-f7a26396 {
 		margin: 70rpx 50rpx;
 }
-button.data-v-51d08530::after {
+button.data-v-f7a26396::after {
 	 border: none;
 }
-.btmleft.data-v-51d08530{
+.btmleft.data-v-f7a26396{
 		margin-top: 20rpx;
 		background-color: #FFFFFF;
 		font-size: 30rpx;
-		border-radius: 80rpx;
+		-webkit-border-radius: 80rpx;
+		        border-radius: 80rpx;
 		color: #0657A6;
 }
-.bottom.data-v-51d08530 {
+.bottom.data-v-f7a26396 {
 		background-color: #0657A6;
-		border-radius: 80rpx;
+		-webkit-border-radius: 80rpx;
+		        border-radius: 80rpx;
         font-size: 30rpx;
 }
 

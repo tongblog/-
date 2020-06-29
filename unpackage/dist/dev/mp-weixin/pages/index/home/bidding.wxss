@@ -1,17 +1,18 @@
-.bidding.data-v-5229a393 {
+.bidding.data-v-756c54d8 {
   width: 702rpx;
   height: 288rpx;
   margin: 0 auto 30rpx;
-  box-shadow: 0 0 10rpx 0 #ccc;
+  -webkit-box-shadow: 0 0 10rpx 0 #ccc;
+          box-shadow: 0 0 10rpx 0 #ccc;
 }
-.bidding .bidding-right.data-v-5229a393 {
+.bidding .bidding-right.data-v-756c54d8 {
   width: 49%;
 }
-.bidding .bidding-right .flex-item.data-v-5229a393 {
+.bidding .bidding-right .flex-item.data-v-756c54d8 {
   width: 100%;
   padding: 8rpx 0 0 10rpx;
 }
-.bidding .bidding-right .flex-item .right-title.data-v-5229a393 {
+.bidding .bidding-right .flex-item .right-title.data-v-756c54d8 {
   display: inline-block;
   padding-left: 8rpx;
   margin-right: 10rpx;
@@ -19,73 +20,75 @@
   font-size: 32rpx;
   color: #111;
 }
-.bidding .bidding-right .flex-item .assess.data-v-5229a393 {
+.bidding .bidding-right .flex-item .assess.data-v-756c54d8 {
   display: inline-block;
   padding: 0 10rpx 0 10rpx;
   border: 1px solid #967b53;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   vertical-align: middle;
   font-size: 20rpx;
   line-height: 30rpx;
   color: #967b53;
 }
-.bidding .bidding-right .flex-item .assess icon.data-v-5229a393 {
+.bidding .bidding-right .flex-item .assess icon.data-v-756c54d8 {
   font-size: 20rpx;
   margin-left: 5rpx;
   margin-top: -35%;
 }
-.bidding .bidding-right .flex-item .slogan.data-v-5229a393 {
+.bidding .bidding-right .flex-item .slogan.data-v-756c54d8 {
   display: inline-block;
   padding-left: 8rpx;
   font-size: 25rpx;
   color: #967b53;
 }
-.bidding .bidding-right .flex-item .img.data-v-5229a393 {
+.bidding .bidding-right .flex-item .img.data-v-756c54d8 {
   float: right;
   width: 120rpx;
   height: 80rpx;
 }
-.bidding .bidding-left.data-v-5229a393 {
+.bidding .bidding-left.data-v-756c54d8 {
   width: 45%;
   padding: 18rpx;
   border-right: 1rpx #f4f4f4 solid;
 }
-.bidding .bidding-left .left-title.data-v-5229a393 {
+.bidding .bidding-left .left-title.data-v-756c54d8 {
   display: inline-block;
   margin-right: 10rpx;
   font-size: 32rpx;
   color: #111;
 }
-.bidding .bidding-left .countdown.data-v-5229a393 {
+.bidding .bidding-left .countdown.data-v-756c54d8 {
   display: inline-block;
   padding: 2rpx 2rpx 0rpx 10rpx;
   border: 1px solid #ff2530;
-  border-radius: 20rpx;
+  -webkit-border-radius: 20rpx;
+          border-radius: 20rpx;
   font-size: 20rpx;
   line-height: 30rpx;
   color: #ff2530;
 }
-.bidding .bidding-left .countdown icon.data-v-5229a393 {
+.bidding .bidding-left .countdown icon.data-v-756c54d8 {
   font-size: 20rpx;
   margin-left: 5rpx;
   margin-top: -23%;
   line-height: 0;
 }
-.bidding .bidding-left .slogan.data-v-5229a393 {
+.bidding .bidding-left .slogan.data-v-756c54d8 {
   font-size: 25rpx;
   color: #ff2530;
 }
-.bidding .bidding-left .bidding-img.data-v-5229a393 {
+.bidding .bidding-left .bidding-img.data-v-756c54d8 {
   margin-top: 15rpx;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
   text-align: center;
 }
-.bidding .bidding-left .bidding-img .flex-item.data-v-5229a393 {
+.bidding .bidding-left .bidding-img .flex-item.data-v-756c54d8 {
   width: 46%;
 }
-.bidding .bidding-left .bidding-img .flex-item view.data-v-5229a393 {
+.bidding .bidding-left .bidding-img .flex-item view.data-v-756c54d8 {
   font-size: 24rpx;
   color: #333;
 }

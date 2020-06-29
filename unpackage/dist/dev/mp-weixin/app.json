@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/h5_pay/h5_pay",
     "pages/index/index",
     "pages/pricing/index",
     "pages/city/City",

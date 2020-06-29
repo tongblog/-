@@ -1,0 +1,1 @@
+<view class="data-v-376dd26f"><block wx:if="{{isShow}}"><view class="wrap data-v-376dd26f"><view class="dialog data-v-376dd26f"><view class="text data-v-376dd26f">{{isSuccess?'订单支付成功':'订单付款失败'}}</view><view class="back data-v-376dd26f">返回APP<button class="btn data-v-376dd26f" open-type="launchApp" plain="{{true}}"></button></view></view></view></block></view>

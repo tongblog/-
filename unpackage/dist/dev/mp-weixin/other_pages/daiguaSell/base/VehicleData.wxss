@@ -1,63 +1,63 @@
-.brand.data-v-62c9b778 {
+.brand.data-v-25d1205f {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 3;
 }
-.btn.data-v-62c9b778 {
+.btn.data-v-25d1205f {
   background-color: #f4f4f4;
   padding: 40rpx 25rpx;
 }
-.btn button.data-v-62c9b778 {
+.btn button.data-v-25d1205f {
   background-color: #0657a6;
 }
-.uni-flex.data-v-62c9b778 {
+.uni-flex.data-v-25d1205f {
   padding: 0 20rpx;
 }
-.uni-flex .flex-item.data-v-62c9b778 {
+.uni-flex .flex-item.data-v-25d1205f {
   border-bottom: 1rpx solid #eee;
   font-size: 26rpx;
   color: #222;
 }
-.uni-flex .flex-item .radio.data-v-62c9b778 {
+.uni-flex .flex-item .radio.data-v-25d1205f {
   display: inline-block;
   float: right;
   line-height: 90rpx;
   width: auto;
 }
-.uni-flex .flex-item .check.data-v-62c9b778 {
+.uni-flex .flex-item .check.data-v-25d1205f {
   display: inline-block;
   width: auto;
   float: right;
   line-height: 90rpx;
 }
-.uni-flex .flex-item .check label.data-v-62c9b778 {
+.uni-flex .flex-item .check label.data-v-25d1205f {
   padding: 0 20rpx;
 }
-.uni-flex .flex-item text.data-v-62c9b778 {
+.uni-flex .flex-item text.data-v-25d1205f {
   display: inline-block;
   line-height: 91rpx;
   vertical-align: middle;
 }
-.uni-flex .flex-item input.data-v-62c9b778 {
+.uni-flex .flex-item input.data-v-25d1205f {
   float: right;
   display: inline-block;
   padding: 18rpx 25rpx;
   vertical-align: middle;
   text-align: right;
 }
-.uni-flex .flex-item icon.data-v-62c9b778 {
+.uni-flex .flex-item icon.data-v-25d1205f {
   float: right;
   vertical-align: middle;
   line-height: 90rpx;
   font-size: 21rpx;
   color: #999;
 }
-.uni-flex .flex-item .one.data-v-62c9b778 {
+.uni-flex .flex-item .one.data-v-25d1205f {
   padding-left: 10rpx;
 }
-.uni-flex .flex-item .on.data-v-62c9b778 {
+.uni-flex .flex-item .on.data-v-25d1205f {
   padding-right: 10rpx;
 }
 

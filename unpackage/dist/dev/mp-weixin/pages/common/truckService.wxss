@@ -1,13 +1,13 @@
-.truck-service.data-v-172b6e5f {
+.truck-service.data-v-5c3ee5ba {
   width: 100vw;
   height: 80vh;
 }
-.truck-service .service.data-v-172b6e5f {
+.truck-service .service.data-v-5c3ee5ba {
   width: 60vw;
   height: 45vh;
   margin: 200rpx auto 0;
 }
-.truck-service .service image.data-v-172b6e5f {
+.truck-service .service image.data-v-5c3ee5ba {
   width: 100%;
   height: 100%;
 }

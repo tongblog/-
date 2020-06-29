@@ -1,4 +1,4 @@
-.security.data-v-0354154a {
+.security.data-v-cdc44240 {
   padding: 0 22rpx;
   border-top: 20rpx #f4f4f4 solid;
   border-bottom: 20rpx #f4f4f4 solid;
@@ -6,22 +6,22 @@
   line-height: 60rpx;
   color: #777;
 }
-.security text.data-v-0354154a {
+.security text.data-v-cdc44240 {
   display: inline-block;
   margin-left: 30rpx;
   font-size: 25rpx;
   color: #444;
 }
-.abstract.data-v-0354154a {
+.abstract.data-v-cdc44240 {
   padding: 25rpx 22rpx;
 }
-.abstract .title.data-v-0354154a {
+.abstract .title.data-v-cdc44240 {
   color: #222;
   font-size: 30rpx;
   line-height: 40rpx;
   font-weight: bold;
 }
-.abstract .place.data-v-0354154a {
+.abstract .place.data-v-cdc44240 {
   display: inline-block;
   max-width: 70%;
   overflow: hidden;
@@ -30,34 +30,36 @@
   font-size: 26rpx;
   color: #444;
 }
-.abstract .score.data-v-0354154a {
+.abstract .score.data-v-cdc44240 {
   display: inline-block;
   overflow: hidden;
   margin-left: 30rpx;
   font-size: 26rpx;
   color: #444;
 }
-.abstract .shelves.data-v-0354154a {
+.abstract .shelves.data-v-cdc44240 {
   display: inline-block;
   font-size: 26rpx;
   color: #444;
 }
-.abstract .label.data-v-0354154a {
+.abstract .label.data-v-cdc44240 {
   display: inline-block;
   margin-left: 30rpx;
   font-size: 22rpx;
 }
-.abstract .label .install.data-v-0354154a {
+.abstract .label .install.data-v-cdc44240 {
   padding: 8rpx 12rpx;
   background-color: #fff2c5;
-  border-radius: 8rpx;
+  -webkit-border-radius: 8rpx;
+          border-radius: 8rpx;
   color: #ff8d28;
 }
-.abstract .label .rules.data-v-0354154a {
+.abstract .label .rules.data-v-cdc44240 {
   padding: 10rpx 15rpx;
   margin-left: 155rpx;
   border: 1rpx #0657a6 solid;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   color: #0657a6;
 }
 

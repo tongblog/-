@@ -1,39 +1,40 @@
-.security.data-v-6351afc4 {
+.security.data-v-80f9220e {
   padding: 0 22rpx;
   border-top: 20rpx #f4f4f4 solid;
   font-size: 26rpx;
   line-height: 60rpx;
   color: #777;
 }
-.security text.data-v-6351afc4 {
+.security text.data-v-80f9220e {
   display: inline-block;
   margin-left: 30rpx;
   font-size: 25rpx;
   color: #444;
 }
-.abstract.data-v-6351afc4 {
+.abstract.data-v-80f9220e {
   padding: 25rpx 22rpx;
 }
-.abstract .title.data-v-6351afc4 {
+.abstract .title.data-v-80f9220e {
   color: #222;
   font-size: 30rpx;
   line-height: 40rpx;
   font-weight: bold;
 }
-.abstract .uni-flex.data-v-6351afc4 {
+.abstract .uni-flex.data-v-80f9220e {
   padding: 10rpx 0;
 }
-.abstract .uni-flex .flex-item.data-v-6351afc4 {
+.abstract .uni-flex .flex-item.data-v-80f9220e {
   padding: 0 8rpx;
   margin-right: 25rpx;
   border: 1rpx #0657a6 solid;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   font-size: 20rpx;
   line-height: 32rpx;
   color: #0657a6;
   text-align: center;
 }
-.abstract .label.data-v-6351afc4 {
+.abstract .label.data-v-80f9220e {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -44,40 +45,41 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.abstract .label .priclor.data-v-6351afc4 {
+.abstract .label .priclor.data-v-80f9220e {
   color: #aaa !important;
 }
-.abstract .label .price.data-v-6351afc4 {
+.abstract .label .price.data-v-80f9220e {
   font-size: 26rpx;
   color: #ff7e1f;
   line-height: 72rpx;
 }
-.abstract .label .price text.data-v-6351afc4 {
+.abstract .label .price text.data-v-80f9220e {
   font-size: 62rpx;
   font-weight: bold;
 }
-.abstract .label .rules.data-v-6351afc4 {
+.abstract .label .rules.data-v-80f9220e {
   height: 42rpx;
   padding: 0rpx 15rpx;
   border: 1rpx #0657a6 solid;
   line-height: 42rpx;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   font-size: 20rpx;
   color: #0657a6;
 }
-.abstract .flex-list.data-v-6351afc4 {
+.abstract .flex-list.data-v-80f9220e {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.abstract .flex-list .item.data-v-6351afc4 {
+.abstract .flex-list .item.data-v-80f9220e {
   width: 33%;
   color: #444;
   font-size: 26rpx;
   text-align: center;
   line-height: 30rpx;
 }
-.abstract .flex-list .item text.data-v-6351afc4 {
+.abstract .flex-list .item text.data-v-80f9220e {
   padding-left: 15rpx;
 }
 

@@ -1,1 +1,1 @@
-<view class="pricing data-v-6ead8440"><pric-nav vue-id="cb3b0510-1" class="data-v-6ead8440" bind:__l="__l"></pric-nav><list vue-id="cb3b0510-2" olds="{{olds}}" higt="{{higt}}" low="{{low}}" latest="{{latest}}" class="data-v-6ead8440" bind:__l="__l"></list></view>
+<view class="pricing data-v-0391e8f6"><pric-nav vue-id="cb3b0510-1" class="data-v-0391e8f6" bind:__l="__l"></pric-nav><list vue-id="cb3b0510-2" olds="{{olds}}" higt="{{higt}}" low="{{low}}" latest="{{latest}}" class="data-v-0391e8f6" bind:__l="__l"></list></view>

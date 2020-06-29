@@ -1,65 +1,66 @@
-.shop-title.data-v-c9e02f3e {
+.shop-title.data-v-20c629fc {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   padding: 34rpx 25rpx;
   border-bottom: 20rpx #f4f4f4 solid;
 }
-.shop-title .shop-img.data-v-c9e02f3e {
+.shop-title .shop-img.data-v-20c629fc {
   overflow: hidden;
   width: 106rpx;
   height: 106rpx;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
 }
-.shop-title .shop-img image.data-v-c9e02f3e {
+.shop-title .shop-img image.data-v-20c629fc {
   width: 100%;
   height: 100%;
 }
-.shop-title .shop-name.data-v-c9e02f3e {
+.shop-title .shop-name.data-v-20c629fc {
   padding-left: 35rpx;
 }
-.shop-title .shop-name text.data-v-c9e02f3e {
+.shop-title .shop-name text.data-v-20c629fc {
   font-size: 32rpx;
   color: #222;
   font-weight: bold;
 }
-.shop-title .shop-name .level.data-v-c9e02f3e {
+.shop-title .shop-name .level.data-v-20c629fc {
   font-size: 21rpx;
   color: #444;
 }
-.shop-title .shop-name .level uni-rate.data-v-c9e02f3e {
+.shop-title .shop-name .level uni-rate.data-v-20c629fc {
   display: inline-block;
 }
-.stores-data.data-v-c9e02f3e {
+.stores-data.data-v-20c629fc {
   padding: 0 25rpx 10rpx 25rpx;
   border-bottom: 20rpx #f4f4f4 solid;
 }
-.stores-data .flex-item.data-v-c9e02f3e {
+.stores-data .flex-item.data-v-20c629fc {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.stores-data .flex-item .item-left.data-v-c9e02f3e {
+.stores-data .flex-item .item-left.data-v-20c629fc {
   width: 24%;
   color: #444;
 }
-.stores-data .flex-item .item-left icon.data-v-c9e02f3e {
+.stores-data .flex-item .item-left icon.data-v-20c629fc {
   font-size: 22rpx;
 }
-.stores-data .flex-item .item-left text.data-v-c9e02f3e {
+.stores-data .flex-item .item-left text.data-v-20c629fc {
   padding-left: 15rpx;
   font-size: 26rpx;
 }
-.stores-data .flex-item .item-right.data-v-c9e02f3e {
+.stores-data .flex-item .item-right.data-v-20c629fc {
   width: 76%;
   font-size: 26rpx;
   line-height: 70rpx;
   color: #222;
 }
-.business.data-v-c9e02f3e {
+.business.data-v-20c629fc {
   padding: 0 24rpx;
 }
-.business .flex-item.data-v-c9e02f3e {
+.business .flex-item.data-v-20c629fc {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -67,16 +68,16 @@
   line-height: 90rpx;
   font-size: 26rpx;
 }
-.business .flex-item .bus-left.data-v-c9e02f3e {
+.business .flex-item .bus-left.data-v-20c629fc {
   width: 25%;
   color: #222;
 }
-.business .flex-item .bus-right.data-v-c9e02f3e {
+.business .flex-item .bus-right.data-v-20c629fc {
   width: 75%;
   text-align: right;
   color: #444;
 }
-.business .flex-item .bus-right text.data-v-c9e02f3e {
+.business .flex-item .bus-right text.data-v-20c629fc {
   padding-left: 15rpx;
   line-height: 90rpx;
   font-size: 26rpx;

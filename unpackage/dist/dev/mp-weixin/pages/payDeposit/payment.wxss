@@ -1,46 +1,48 @@
-.payment.data-v-4227fe78 {
+.payment.data-v-656aafbd {
   position: relative;
   padding: 30rpx 33rpx;
   height: 95vh;
 }
-.payment .pay-content.data-v-4227fe78 {
-  box-shadow: 0 0 5rpx 0 #ccc;
-  border-radius: 5rpx;
+.payment .pay-content.data-v-656aafbd {
+  -webkit-box-shadow: 0 0 5rpx 0 #ccc;
+          box-shadow: 0 0 5rpx 0 #ccc;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
   text-align: center;
 }
-.payment .pay-content .pay-title.data-v-4227fe78 {
+.payment .pay-content .pay-title.data-v-656aafbd {
   padding-top: 30rpx;
   font-size: 32rpx;
   color: #444;
   font-weight: 600;
 }
-.payment .pay-content .price.data-v-4227fe78 {
+.payment .pay-content .price.data-v-656aafbd {
   margin: 0 35rpx;
   border-bottom: 2rpx #87c4ff dashed;
   color: #ff943e;
   font-size: 90rpx;
 }
-.payment .pay-content .bottom.data-v-4227fe78 {
+.payment .pay-content .bottom.data-v-656aafbd {
   padding: 10rpx;
 }
-.payment .pay-content .bottom .txt.data-v-4227fe78 {
+.payment .pay-content .bottom .txt.data-v-656aafbd {
   display: inline-block;
   font-size: 24rpx;
   color: #333;
 }
-.payment .pay-content .bottom .txt text.data-v-4227fe78 {
+.payment .pay-content .bottom .txt text.data-v-656aafbd {
   color: #0657a6;
 }
-.payment .btn.data-v-4227fe78 {
+.payment .btn.data-v-656aafbd {
   position: absolute;
   left: 35rpx;
   right: 35rpx;
   bottom: 30rpx;
 }
-.payment .btn .button.data-v-4227fe78 {
+.payment .btn .button.data-v-656aafbd {
   background-color: #0657a6;
 }
-.payment .btn button.data-v-4227fe78 {
+.payment .btn button.data-v-656aafbd {
   background-color: #cdcdcd;
 }
 

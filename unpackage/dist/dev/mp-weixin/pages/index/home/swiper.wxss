@@ -1,18 +1,18 @@
-.swiper-list.data-v-9c8cc7e0 {
+.swiper-list.data-v-372da3aa {
   background-color: #8a6de9;
   margin-top: 70rpx;
 }
-.swiper-list .swiper-box.data-v-9c8cc7e0 {
+.swiper-list .swiper-box.data-v-372da3aa {
   position: relative;
   width: 100vw;
   height: 314rpx;
   background-color: #f4f4f4;
 }
-.swiper-list .swiper-box .img.data-v-9c8cc7e0 {
+.swiper-list .swiper-box .img.data-v-372da3aa {
   width: 100%;
   height: 60%;
 }
-.swiper-list .swiper-box .swiper-content.data-v-9c8cc7e0 {
+.swiper-list .swiper-box .swiper-content.data-v-372da3aa {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -22,16 +22,17 @@
   margin: auto;
   width: 94%;
   height: 90%;
-  border-radius: 30rpx;
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
 }
-.swiper-list .swiper-box .swiper-content .swiper.data-v-9c8cc7e0 {
+.swiper-list .swiper-box .swiper-content .swiper.data-v-372da3aa {
   height: 100%;
 }
-.swiper-list .swiper-box .swiper-content .swiper .swiper-item.data-v-9c8cc7e0 {
+.swiper-list .swiper-box .swiper-content .swiper .swiper-item.data-v-372da3aa {
   width: 100%;
   height: 100%;
 }
-.swiper-list .swiper-box .swiper-content .swiper .swiper-item image.data-v-9c8cc7e0 {
+.swiper-list .swiper-box .swiper-content .swiper .swiper-item image.data-v-372da3aa {
   width: 100%;
   height: 100%;
 }

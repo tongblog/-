@@ -1,22 +1,22 @@
-.detail-swiper.data-v-8db789b8 {
+.detail-swiper.data-v-ab5efc02 {
   position: relative;
 }
-.detail-swiper .swiper.data-v-8db789b8 {
+.detail-swiper .swiper.data-v-ab5efc02 {
   width: 100%;
   height: 373rpx;
 }
-.detail-swiper .swiper .swiper-item.data-v-8db789b8 {
+.detail-swiper .swiper .swiper-item.data-v-ab5efc02 {
   height: 100%;
 }
-.detail-swiper .swiper .swiper-item image.data-v-8db789b8 {
+.detail-swiper .swiper .swiper-item image.data-v-ab5efc02 {
   width: 100%;
   height: 100%;
 }
-.detail-swiper .swiper .swiper-item video.data-v-8db789b8 {
+.detail-swiper .swiper .swiper-item video.data-v-ab5efc02 {
   width: 100%;
   height: 100%;
 }
-.detail-swiper .num.data-v-8db789b8 {
+.detail-swiper .num.data-v-ab5efc02 {
   position: absolute;
   bottom: 15rpx;
   right: 24rpx;

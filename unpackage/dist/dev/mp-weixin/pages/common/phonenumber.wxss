@@ -1,5 +1,5 @@
 
-.header.data-v-29b98dbe {
+.header.data-v-4cfc3f03 {
         margin: 90rpx 0 90rpx 50rpx;
         border-bottom: 1px solid #ccc;
         text-align: center;
@@ -7,22 +7,23 @@
         height: 300rpx;
         line-height: 450rpx;
 }
-.header image.data-v-29b98dbe {
+.header image.data-v-4cfc3f03 {
         width: 200rpx;
         height: 200rpx;
 }
-.content.data-v-29b98dbe {
+.content.data-v-4cfc3f03 {
         margin-left: 50rpx;
         margin-bottom: 90rpx;
 }
-.content text.data-v-29b98dbe {
+.content text.data-v-4cfc3f03 {
         display: block;
         color: #9d9d9d;
         margin-top: 40rpx;
 }
-.bottom.data-v-29b98dbe {
+.bottom.data-v-4cfc3f03 {
 		background-color: #0657A6;
-        border-radius: 80rpx;
+        -webkit-border-radius: 80rpx;
+                border-radius: 80rpx;
         margin: 70rpx 50rpx;
         font-size: 35rpx;
 }

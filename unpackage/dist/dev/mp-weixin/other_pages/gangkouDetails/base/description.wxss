@@ -1,14 +1,14 @@
-.description.data-v-a3d7e2c2 {
+.description.data-v-4368853a {
   padding: 28rpx;
 }
-.description .dpt-title.data-v-a3d7e2c2 {
+.description .dpt-title.data-v-4368853a {
   width: 105rpx;
   border-bottom: 2rpx #0657a6 solid;
   font-size: 26rpx;
   line-height: 26rpx;
   color: #222;
 }
-.description .dpt-content.data-v-a3d7e2c2 {
+.description .dpt-content.data-v-4368853a {
   padding-top: 10px;
   font-size: 26rpx;
   color: #444;

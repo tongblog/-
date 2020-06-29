@@ -1,8 +1,8 @@
-.notice.data-v-1d9af6df {
+.notice.data-v-b95d8f0c {
   height: 100vh;
   background-color: #f4f4f4;
 }
-.notice .tarea.data-v-1d9af6df {
+.notice .tarea.data-v-b95d8f0c {
   width: 100%;
   padding: 10rpx 15rpx;
   border-top: 10rpx #f4f4f4 solid;

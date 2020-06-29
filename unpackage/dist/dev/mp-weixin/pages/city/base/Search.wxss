@@ -1,41 +1,42 @@
-.current-title.data-v-48e3670d,
-.hot-city.data-v-48e3670d {
+.current-title.data-v-213ba592,
+.hot-city.data-v-213ba592 {
   width: 100%;
   background-color: #f4f4f4;
   color: #444;
   line-height: 50rpx;
   padding-left: 20rpx;
 }
-.current-list.data-v-48e3670d {
+.current-list.data-v-213ba592 {
   padding: 0 20rpx;
   line-height: 80rpx;
 }
-.current-list .current-city.data-v-48e3670d {
+.current-list .current-city.data-v-213ba592 {
   display: inline-block;
   vertical-align: middle;
 }
-.current-list .positioning.data-v-48e3670d {
+.current-list .positioning.data-v-213ba592 {
   display: inline-block;
   float: right;
   margin-top: 5rpx;
   font-size: 26rpx;
 }
-.current-list .positioning icon.iconft.data-v-48e3670d {
+.current-list .positioning icon.iconft.data-v-213ba592 {
   -webkit-transform: rotate(1080deg);
           transform: rotate(1080deg);
   -webkit-transition: 2s;
   transition: 2s;
 }
-.hot-list.data-v-48e3670d {
+.hot-list.data-v-213ba592 {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-justify-content: space-around;
           justify-content: space-around;
 }
-.hot-list .flex-item.data-v-48e3670d {
+.hot-list .flex-item.data-v-213ba592 {
   width: 25%;
   border: 1px #ccc solid;
-  border-radius: 5rpx;
+  -webkit-border-radius: 5rpx;
+          border-radius: 5rpx;
   margin: 15rpx 0;
   text-align: center;
 }

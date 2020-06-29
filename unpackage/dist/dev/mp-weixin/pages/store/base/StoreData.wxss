@@ -1,26 +1,27 @@
-.store-data.data-v-7c4dfe26 {
+.store-data.data-v-4cad1baa {
   position: relative;
   height: 75rpx;
 }
-.store-data image.data-v-7c4dfe26 {
+.store-data image.data-v-4cad1baa {
   width: 100%;
   height: 100%;
 }
-.store-data .search.data-v-7c4dfe26 {
+.store-data .search.data-v-4cad1baa {
   position: absolute;
   top: 0;
   padding: 0 24rpx;
 }
-.store-data .search input.data-v-7c4dfe26 {
+.store-data .search input.data-v-4cad1baa {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
   padding: 8rpx 0 8rpx 60rpx;
   width: 85vw;
   background-color: rgba(255,255,255,0.3);
-  border-radius: 35rpx;
+  -webkit-border-radius: 35rpx;
+          border-radius: 35rpx;
 }
-.store-data .search icon.data-v-7c4dfe26 {
+.store-data .search icon.data-v-4cad1baa {
   position: absolute;
   left: 45rpx;
   color: #1e71c3;

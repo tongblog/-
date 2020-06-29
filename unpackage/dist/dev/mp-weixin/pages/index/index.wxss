@@ -1,4 +1,4 @@
-.test.data-v-22b8903a {
+.test.data-v-2c9a9295 {
   position: fixed;
   top: 70rpx;
   width: 100%;
@@ -7,7 +7,7 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-.uni-title.data-v-22b8903a {
+.uni-title.data-v-2c9a9295 {
   padding: 15rpx 30rpx;
   font-size: 28rpx;
   background-color: #f4f4f4;

@@ -1,69 +1,72 @@
 
-.data-none.data-v-3d37093c{
+.data-none.data-v-52b95b17{
 	padding: 10rpx 0;
 	border-bottom: 10rpx #F4F4F4 solid;
 	text-align: center;
 	color: #222;
 }
-.data-none .txt.data-v-3d37093c{
+.data-none .txt.data-v-52b95b17{
 	color: #0657A6;
 }
-.data-none .img.data-v-3d37093c{
+.data-none .img.data-v-52b95b17{
 	width: 40%;
 }
-.list.data-v-3d37093c{
+.list.data-v-52b95b17{
 	padding: 24rpx;
 	height: 140;
 	border-bottom: 10rpx #F4F4F4 solid;
 }
-.list .list-imgs.data-v-3d37093c{
+.list .list-imgs.data-v-52b95b17{
 	overflow: hidden;
 	display: inline-block;
 	width: 256rpx;
 	height: 218rpx;
 	vertical-align: middle;
-	border-radius: 10rpx;
+	-webkit-border-radius: 10rpx;
+	        border-radius: 10rpx;
 }
-.list .list-content.data-v-3d37093c{
+.list .list-content.data-v-52b95b17{
 	display: inline-block;
 	width: 418rpx;
 	height: 100%;
 	vertical-align: middle;
 	margin-left: 3%;
 }
-.list-content .title.data-v-3d37093c{
+.list-content .title.data-v-52b95b17{
 	line-height: 42rpx;
 	color: #222222;
 }
-.list-content .date.data-v-3d37093c{
+.list-content .date.data-v-52b95b17{
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap;
 	font-size: 22rpx;
 	color: #888888;
 }
-.list-content .uni-flex.data-v-3d37093c{
+.list-content .uni-flex.data-v-52b95b17{
 	margin-top: 10rpx;
 }
-.list-content .uni-flex .flex-item.data-v-3d37093c{
+.list-content .uni-flex .flex-item.data-v-52b95b17{
 	padding:0 10rpx;
 	margin-right:25rpx;
 	border:1rpx #0657A6 solid;
-	border-radius:10rpx;
+	-webkit-border-radius:10rpx;
+	        border-radius:10rpx;
 	font-size:20rpx;
 	color:#0657A6;
 	text-align:center;
 }
-.list-content .price.data-v-3d37093c{
+.list-content .price.data-v-52b95b17{
 	font-size: 30rpx;
 	color: #FF1A1A;
 	font-weight: bold;
 }
-.price .fixed-price.data-v-3d37093c{
+.price .fixed-price.data-v-52b95b17{
 	padding: 5rpx 8rpx;
 	margin-right: 10rpx;
 	background-color: #FF2727;
-	border-radius: 4rpx;
+	-webkit-border-radius: 4rpx;
+	        border-radius: 4rpx;
 	font-size: 22rpx;
 	color: #FFFFFF;
 }	

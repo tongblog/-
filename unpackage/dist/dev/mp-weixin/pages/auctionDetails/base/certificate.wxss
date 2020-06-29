@@ -1,39 +1,39 @@
-.certificate.data-v-f37ff564 {
+.certificate.data-v-776c4c29 {
   padding: 28rpx 28rpx 20rpx 28rpx;
 }
-.certificate .cfc-title.data-v-f37ff564 {
+.certificate .cfc-title.data-v-776c4c29 {
   width: 160rpx;
   border-bottom: 2rpx #0657a6 solid;
   font-size: 26rpx;
   line-height: 26rpx;
   color: #222;
 }
-.certificate .look-all.data-v-f37ff564 {
+.certificate .look-all.data-v-776c4c29 {
   text-align: center;
   font-size: 22rpx;
   color: #777;
 }
-.certificate .look-all icon.data-v-f37ff564 {
+.certificate .look-all icon.data-v-776c4c29 {
   margin-left: 10rpx;
   font-size: 18rpx;
   color: #777;
 }
-.certificate .cfc-list.data-v-f37ff564 {
+.certificate .cfc-list.data-v-776c4c29 {
   padding-top: 30rpx;
   border-bottom: 1rpx #eee solid;
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.certificate .cfc-list .flex-item.data-v-f37ff564 {
+.certificate .cfc-list .flex-item.data-v-776c4c29 {
   width: 33%;
   margin-bottom: 35rpx;
 }
-.certificate .cfc-list .flex-item .on.data-v-f37ff564 {
+.certificate .cfc-list .flex-item .on.data-v-776c4c29 {
   font-size: 22rpx;
   line-height: 22rpx;
   color: #777;
 }
-.certificate .cfc-list .flex-item .down.data-v-f37ff564 {
+.certificate .cfc-list .flex-item .down.data-v-776c4c29 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

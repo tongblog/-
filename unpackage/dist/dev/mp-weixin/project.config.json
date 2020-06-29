@@ -7,7 +7,22 @@
 		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
-		"minified": true
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.9.2",
@@ -41,9 +56,15 @@
 			"list": [
 				{
 					"id": -1,
+					"name": "pages/h5_pay/h5_pay",
+					"pathName": "pages/h5_pay/h5_pay",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
-					"query": "",
 					"scene": null
 				}
 			]

@@ -1,39 +1,41 @@
-.explain.data-v-896488ee {
+.explain.data-v-2740a564 {
   padding: 0 20rpx;
 }
-.explain button.data-v-896488ee {
+.explain button.data-v-2740a564 {
   margin-top: 30rpx;
   background-color: #ff2727;
 }
-.explain .explain-middle text.data-v-896488ee {
+.explain .explain-middle text.data-v-2740a564 {
   color: #ff2727;
 }
-.explain .explain-bto.data-v-896488ee {
+.explain .explain-bto.data-v-2740a564 {
   padding: 0 24rpx;
   margin-top: 20rpx;
-  border-radius: 15rpx;
-  box-shadow: 0 0 10rpx 0 #ccc;
+  -webkit-border-radius: 15rpx;
+          border-radius: 15rpx;
+  -webkit-box-shadow: 0 0 10rpx 0 #ccc;
+          box-shadow: 0 0 10rpx 0 #ccc;
 }
-.explain .explain-bto .explain-title.data-v-896488ee {
+.explain .explain-bto .explain-title.data-v-2740a564 {
   text-align: center;
   font-size: 34rpx;
   line-height: 80rpx;
   color: #ff2727;
   font-weight: bold;
 }
-.explain .explain-bto .uni-flex.data-v-896488ee {
+.explain .explain-bto .uni-flex.data-v-2740a564 {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.explain .explain-bto .uni-flex .flex-item.data-v-896488ee {
+.explain .explain-bto .uni-flex .flex-item.data-v-2740a564 {
   width: 48%;
   height: 152rpx;
   margin-bottom: 20rpx;
 }
-.explain .explain-bto .uni-flex .flex-item image.data-v-896488ee {
+.explain .explain-bto .uni-flex .flex-item image.data-v-2740a564 {
   width: 100%;
   height: 100%;
 }

@@ -1,7 +1,7 @@
-.dection-list.data-v-afffdbb0 {
+.dection-list.data-v-42c7fbad {
   padding: 0 25rpx;
 }
-.dection-list .uni-flex .flex-item.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item.data-v-42c7fbad {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -10,41 +10,41 @@
           justify-content: space-between;
   border-bottom: 1rpx #eee solid;
 }
-.dection-list .uni-flex .flex-item .list-item.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item.data-v-42c7fbad {
   display: inline-block;
 }
-.dection-list .uni-flex .flex-item .list-item icon.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item icon.data-v-42c7fbad {
   color: #aaa;
   font-size: 22rpx;
 }
-.dection-list .uni-flex .flex-item text.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item text.data-v-42c7fbad {
   display: inline-block;
   line-height: 80rpx;
   color: #222;
   font-size: 26rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .risk.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .risk.data-v-42c7fbad {
   display: inline-block;
   padding: 0 15rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .risk text.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .risk text.data-v-42c7fbad {
   color: #222;
   font-size: 26rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .risk icon.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .risk icon.data-v-42c7fbad {
   margin-left: 10rpx;
   color: #ff2323;
   font-size: 26rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .confirm.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .confirm.data-v-42c7fbad {
   display: inline-block;
   padding: 0 15rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .confirm text.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .confirm text.data-v-42c7fbad {
   color: #222;
   font-size: 26rpx;
 }
-.dection-list .uni-flex .flex-item .list-item .confirm icon.data-v-afffdbb0 {
+.dection-list .uni-flex .flex-item .list-item .confirm icon.data-v-42c7fbad {
   margin-left: 10rpx;
   color: #4bc44b;
   font-size: 26rpx;

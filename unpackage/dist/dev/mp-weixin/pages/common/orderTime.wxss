@@ -1,4 +1,4 @@
-.order-time.data-v-de9c36fc {
+.order-time.data-v-690a2307 {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -7,10 +7,10 @@
   z-index: 910;
   background-color: rgba(0,0,0,0.5);
 }
-.order-time .orderHeight.data-v-de9c36fc {
+.order-time .orderHeight.data-v-690a2307 {
   height: 600rpx !important;
 }
-.order-time .order-content.data-v-de9c36fc {
+.order-time .order-content.data-v-690a2307 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -20,49 +20,49 @@
   transition: 0.3s;
   background-color: #fff;
 }
-.order-time .order-content .order-title.data-v-de9c36fc {
+.order-time .order-content .order-title.data-v-690a2307 {
   position: relative;
   border-bottom: 1rpx solid #f4f4f4;
   text-align: center;
   line-height: 80rpx;
 }
-.order-time .order-content .order-title text.data-v-de9c36fc {
+.order-time .order-content .order-title text.data-v-690a2307 {
   font-size: 30rpx;
   color: #333;
 }
-.order-time .order-content .order-title icon.data-v-de9c36fc {
+.order-time .order-content .order-title icon.data-v-690a2307 {
   position: absolute;
   right: 0;
   padding-right: 25rpx;
   font-size: 26rpx;
   color: #666;
 }
-.order-time .order-content .fiveday.data-v-de9c36fc {
+.order-time .order-content .fiveday.data-v-690a2307 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   border-bottom: 1rpx solid #f4f4f4;
 }
-.order-time .order-content .fiveday .oneday.data-v-de9c36fc {
+.order-time .order-content .fiveday .oneday.data-v-690a2307 {
   background-color: rgba(6,87,166,0.1);
 }
-.order-time .order-content .fiveday .day-list.data-v-de9c36fc {
+.order-time .order-content .fiveday .day-list.data-v-690a2307 {
   width: 20%;
   padding: 10rpx 0;
   text-align: center;
 }
-.order-time .order-content .fiveday .day-list .one.data-v-de9c36fc {
+.order-time .order-content .fiveday .day-list .one.data-v-690a2307 {
   color: #0657a6 !important;
 }
-.order-time .order-content .fiveday .day-list .on.data-v-de9c36fc {
+.order-time .order-content .fiveday .day-list .on.data-v-690a2307 {
   font-size: 26rpx;
   color: #666;
 }
-.order-time .order-content .fiveday .day-list .down.data-v-de9c36fc {
+.order-time .order-content .fiveday .day-list .down.data-v-690a2307 {
   font-size: 26rpx;
   color: #666;
 }
-.order-time .order-content .timer.data-v-de9c36fc {
+.order-time .order-content .timer.data-v-690a2307 {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -73,27 +73,28 @@
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.order-time .order-content .timer .scroll.data-v-de9c36fc {
+.order-time .order-content .timer .scroll.data-v-690a2307 {
   width: 100%;
   height: 200rpx;
   text-align: center;
   color: #fff;
 }
-.order-time .order-content .timer .scroll .hour.data-v-de9c36fc {
+.order-time .order-content .timer .scroll .hour.data-v-690a2307 {
   line-height: 68rpx;
 }
-.order-time .order-content .prompt.data-v-de9c36fc {
+.order-time .order-content .prompt.data-v-690a2307 {
   text-align: center;
   font-size: 26rpx;
   color: #333;
 }
-.order-time .order-content .btn.data-v-de9c36fc {
+.order-time .order-content .btn.data-v-690a2307 {
   padding: 20rpx 25rpx 0;
 }
-.order-time .order-content .btn .ensure.data-v-de9c36fc {
+.order-time .order-content .btn .ensure.data-v-690a2307 {
   width: 680rpx;
   margin: auto;
-  border-radius: 10rpx;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
   background-color: #0657a6;
   color: #fff;
   text-align: center;

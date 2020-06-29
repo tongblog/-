@@ -24,7 +24,7 @@
 /* 垂直间距 */
 /* 透明度 */
 /* 文章场景相关 */
-.flex.data-v-a0bb35d4 {
+.flex.data-v-38020cca {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -33,7 +33,7 @@
   -webkit-flex-direction: row;
           flex-direction: row;
 }
-.uni-goods-nav.data-v-a0bb35d4 {
+.uni-goods-nav.data-v-38020cca {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -45,7 +45,7 @@
   -webkit-flex-direction: row;
           flex-direction: row;
 }
-.uni-tab__cart-box.data-v-a0bb35d4 {
+.uni-tab__cart-box.data-v-38020cca {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -53,18 +53,19 @@
   background-color: #fff;
   z-index: 900;
 }
-.uni-tab__cart-sub-box.data-v-a0bb35d4 {
+.uni-tab__cart-sub-box.data-v-38020cca {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
 }
-.uni-tab__right.data-v-a0bb35d4 {
+.uni-tab__right.data-v-38020cca {
   margin: 5px 0;
   margin-right: 10px;
-  border-radius: 100px;
+  -webkit-border-radius: 100px;
+          border-radius: 100px;
   overflow: hidden;
 }
-.uni-tab__cart-button-left.data-v-a0bb35d4 {
+.uni-tab__cart-button-left.data-v-38020cca {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -83,19 +84,19 @@
   -webkit-flex-direction: column;
           flex-direction: column;
 }
-.uni-tab__icon.data-v-a0bb35d4 {
+.uni-tab__icon.data-v-38020cca {
   width: 40rpx;
   height: 40rpx;
 }
-.image.data-v-a0bb35d4 {
+.image.data-v-38020cca {
   width: 40rpx;
   height: 40rpx;
 }
-.uni-tab__text.data-v-a0bb35d4 {
+.uni-tab__text.data-v-38020cca {
   font-size: 20rpx;
   color: #444;
 }
-.uni-tab__cart-button-right.data-v-a0bb35d4 {
+.uni-tab__cart-button-right.data-v-38020cca {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -103,7 +104,8 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
           flex-direction: column;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+          border-radius: 0;
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
@@ -114,14 +116,14 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.uni-tab__cart-button-right-text.data-v-a0bb35d4 {
+.uni-tab__cart-button-right-text.data-v-38020cca {
   font-size: 28rpx;
   color: #fff;
 }
-.uni-tab__cart-button-right.data-v-a0bb35d4:active {
+.uni-tab__cart-button-right.data-v-38020cca:active {
   opacity: 0.7;
 }
-.uni-tab__dot-box.data-v-a0bb35d4 {
+.uni-tab__dot-box.data-v-38020cca {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -139,23 +141,25 @@
   -webkit-align-items: center;
           align-items: center;
 }
-.uni-tab__dot.data-v-a0bb35d4 {
+.uni-tab__dot.data-v-38020cca {
   padding: 0 8rpx;
   line-height: 30rpx;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
   background-color: #ff0000;
-  border-radius: 30rpx;
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
 }
-.uni-tab__dots.data-v-a0bb35d4 {
+.uni-tab__dots.data-v-38020cca {
   padding: 0 8rpx;
-  border-radius: 30rpx;
+  -webkit-border-radius: 30rpx;
+          border-radius: 30rpx;
 }
-.uni-tab__color-y.data-v-a0bb35d4 {
+.uni-tab__color-y.data-v-38020cca {
   background-color: #ffa200;
 }
-.uni-tab__color-r.data-v-a0bb35d4 {
+.uni-tab__color-r.data-v-38020cca {
   background-color: #ff0000;
 }
 

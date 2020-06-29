@@ -1,11 +1,11 @@
-.uni-flex.data-v-f945bafa {
+.uni-flex.data-v-3d5ac188 {
   padding: 20rpx;
   background-color: #f4f4f4;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
 }
-.uni-flex .flex-item.data-v-f945bafa {
+.uni-flex .flex-item.data-v-3d5ac188 {
   position: relative;
   width: 48%;
   height: 180rpx;
@@ -14,22 +14,22 @@
   color: #0657a6;
   text-align: center;
 }
-.uni-flex .flex-item image.data-v-f945bafa {
+.uni-flex .flex-item image.data-v-3d5ac188 {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.uni-flex .flex-item .add.data-v-f945bafa {
+.uni-flex .flex-item .add.data-v-3d5ac188 {
   padding-top: 30rpx;
   font-size: 30rpx;
   font-weight: bold;
 }
-.uni-flex .flex-item .front.data-v-f945bafa {
+.uni-flex .flex-item .front.data-v-3d5ac188 {
   font-size: 25rpx;
 }
-.uni-flex .flex-item .front text.data-v-f945bafa {
+.uni-flex .flex-item .front text.data-v-3d5ac188 {
   color: #ff3232;
 }
 

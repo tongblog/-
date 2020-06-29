@@ -8,7 +8,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr, i) {var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter) {if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) {for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {arr2[i] = arr[i];}return arr2;}}
+Object.defineProperty(exports, "__esModule", { value: true });exports.createApp = createApp;exports.createComponent = createComponent;exports.createPage = createPage;exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _slicedToArray(arr, i) {return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest();}function _nonIterableRest() {throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _iterableToArrayLimit(arr, i) {if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return;var _arr = [];var _n = true;var _d = false;var _e = undefined;try {for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) {_arr.push(_s.value);if (i && _arr.length === i) break;}} catch (err) {_d = true;_e = err;} finally {try {if (!_n && _i["return"] != null) _i["return"]();} finally {if (_d) throw _e;}}return _arr;}function _arrayWithHoles(arr) {if (Array.isArray(arr)) return arr;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(n);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 
 var _toString = Object.prototype.toString;
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -241,17 +241,23 @@ var promiseInterceptor = {
 
 
 var SYNC_API_RE =
-/^\$|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
+/^\$|sendNativeEvent|restoreGlobal|getCurrentSubNVue|getMenuButtonBoundingClientRect|^report|interceptors|Interceptor$|getSubNVueById|requireNativePlugin|upx2px|hideKeyboard|canIUse|^create|Sync$|Manager$|base64ToArrayBuffer|arrayBufferToBase64/;
 
 var CONTEXT_API_RE = /^create|Manager$/;
 
-var CALLBACK_API_RE = /^on/;
+// Context例外情况
+var CONTEXT_API_RE_EXC = ['createBLEConnection'];
+
+// 同步例外情况
+var ASYNC_API = ['createBLEConnection'];
+
+var CALLBACK_API_RE = /^on|^off/;
 
 function isContextApi(name) {
-  return CONTEXT_API_RE.test(name);
+  return CONTEXT_API_RE.test(name) && CONTEXT_API_RE_EXC.indexOf(name) === -1;
 }
 function isSyncApi(name) {
-  return SYNC_API_RE.test(name);
+  return SYNC_API_RE.test(name) && ASYNC_API.indexOf(name) === -1;
 }
 
 function isCallbackApi(name) {
@@ -276,6 +282,19 @@ function shouldPromise(name) {
   return true;
 }
 
+/* eslint-disable no-extend-native */
+if (!Promise.prototype.finally) {
+  Promise.prototype.finally = function (callback) {
+    var promise = this.constructor;
+    return this.then(
+    function (value) {return promise.resolve(callback()).then(function () {return value;});},
+    function (reason) {return promise.resolve(callback()).then(function () {
+        throw reason;
+      });});
+
+  };
+}
+
 function promisify(name, api) {
   if (!shouldPromise(name)) {
     return api;
@@ -289,18 +308,6 @@ function promisify(name, api) {
         success: resolve,
         fail: reject })].concat(
       params));
-      /* eslint-disable no-extend-native */
-      if (!Promise.prototype.finally) {
-        Promise.prototype.finally = function (callback) {
-          var promise = this.constructor;
-          return this.then(
-          function (value) {return promise.resolve(callback()).then(function () {return value;});},
-          function (reason) {return promise.resolve(callback()).then(function () {
-              throw reason;
-            });});
-
-        };
-      }
     })));
   };
 }
@@ -351,14 +358,12 @@ var interceptors = {
   promiseInterceptor: promiseInterceptor };
 
 
-
-
 var baseApi = /*#__PURE__*/Object.freeze({
   __proto__: null,
   upx2px: upx2px,
-  interceptors: interceptors,
   addInterceptor: addInterceptor,
-  removeInterceptor: removeInterceptor });
+  removeInterceptor: removeInterceptor,
+  interceptors: interceptors });
 
 
 var previewImage = {
@@ -601,8 +606,6 @@ var eventApi = /*#__PURE__*/Object.freeze({
   $emit: $emit });
 
 
-
-
 var api = /*#__PURE__*/Object.freeze({
   __proto__: null });
 
@@ -717,10 +720,10 @@ function initVueComponent(Vue, vueOptions) {
   var VueComponent;
   if (isFn(vueOptions)) {
     VueComponent = vueOptions;
-    vueOptions = VueComponent.extendOptions;
   } else {
     VueComponent = Vue.extend(vueOptions);
   }
+  vueOptions = VueComponent.options;
   return [VueComponent, vueOptions];
 }
 
@@ -789,14 +792,14 @@ function createObserver(name) {
 }
 
 function initBehaviors(vueOptions, initBehavior) {
-  var vueBehaviors = vueOptions['behaviors'];
-  var vueExtends = vueOptions['extends'];
-  var vueMixins = vueOptions['mixins'];
+  var vueBehaviors = vueOptions.behaviors;
+  var vueExtends = vueOptions.extends;
+  var vueMixins = vueOptions.mixins;
 
-  var vueProps = vueOptions['props'];
+  var vueProps = vueOptions.props;
 
   if (!vueProps) {
-    vueOptions['props'] = vueProps = [];
+    vueOptions.props = vueProps = [];
   }
 
   var behaviors = [];
@@ -808,11 +811,11 @@ function initBehaviors(vueOptions, initBehavior) {
           vueProps.push('name');
           vueProps.push('value');
         } else {
-          vueProps['name'] = {
+          vueProps.name = {
             type: String,
             default: '' };
 
-          vueProps['value'] = {
+          vueProps.value = {
             type: [String, Number, Boolean, Array, Object, Date],
             default: '' };
 
@@ -881,7 +884,7 @@ function initProperties(props) {var isBehavior = arguments.length > 1 && argumen
     Object.keys(props).forEach(function (key) {
       var opts = props[key];
       if (isPlainObject(opts)) {// title:{type:String,default:''}
-        var value = opts['default'];
+        var value = opts.default;
         if (isFn(value)) {
           value = value();
         }
@@ -918,6 +921,11 @@ function wrapper$1(event) {
 
   if (!hasOwn(event, 'detail')) {
     event.detail = {};
+  }
+
+  if (hasOwn(event, 'markerId')) {
+    event.detail = typeof event.detail === 'object' ? event.detail : {};
+    event.detail.markerId = event.markerId;
   }
 
   if (isPlainObject(event.detail)) {
@@ -1072,11 +1080,11 @@ function handleEvent(event) {var _this = this;
   // [['tap',[['handle',[1,2,a]],['handle1',[1,2,a]]]]]
   var dataset = (event.currentTarget || event.target).dataset;
   if (!dataset) {
-    return console.warn("\u4E8B\u4EF6\u4FE1\u606F\u4E0D\u5B58\u5728");
+    return console.warn('事件信息不存在');
   }
   var eventOpts = dataset.eventOpts || dataset['event-opts']; // 支付宝 web-view 组件 dataset 非驼峰
   if (!eventOpts) {
-    return console.warn("\u4E8B\u4EF6\u4FE1\u606F\u4E0D\u5B58\u5728");
+    return console.warn('事件信息不存在');
   }
 
   // [['handle',[1,2,a]],['handle1',[1,2,a]]]
@@ -1335,8 +1343,8 @@ function parseBaseComponent(vueComponentOptions)
 
   {
     // 微信 multipleSlots 部分情况有 bug，导致内容顺序错乱 如 u-list，提供覆盖选项
-    if (vueOptions['mp-weixin'] && vueOptions['mp-weixin']['options']) {
-      Object.assign(options, vueOptions['mp-weixin']['options']);
+    if (vueOptions['mp-weixin'] && vueOptions['mp-weixin'].options) {
+      Object.assign(options, vueOptions['mp-weixin'].options);
     }
   }
 
@@ -1401,6 +1409,10 @@ function parseBaseComponent(vueComponentOptions)
       __e: handleEvent } };
 
 
+  // externalClasses
+  if (vueOptions.externalClasses) {
+    componentOptions.externalClasses = vueOptions.externalClasses;
+  }
 
   if (Array.isArray(vueOptions.wxsCallMethods)) {
     vueOptions.wxsCallMethods.forEach(function (callMethod) {
@@ -1552,15 +1564,15 @@ uni$1;exports.default = _default;
 
 /***/ }),
 
-/***/ 104:
-/*!*************************************************!*\
-  !*** D:/lunyunW/api/PersonalCenter/personal.js ***!
-  \*************************************************/
+/***/ 100:
+/*!**********************************************************!*\
+  !*** F:/program/used_car/api/PersonalCenter/personal.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getwechatLogin = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getwechatLogin = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /*
                                                                                                                                                                                                                                                                       
@@ -1575,15 +1587,15 @@ var getwechatLogin = function getwechatLogin() {var params = arguments.length > 
 
 /***/ }),
 
-/***/ 1130:
-/*!************************************!*\
-  !*** D:/lunyunW/api/uploadFile.js ***!
-  \************************************/
+/***/ 1134:
+/*!*********************************************!*\
+  !*** F:/program/used_car/api/uploadFile.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.upload = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 38));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.upload = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 34));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 var upload = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url, id) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
               new Promise(function (resolve, reject) {
                 var imgSrc = uni.chooseImage({
@@ -1609,20 +1621,20 @@ var upload = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__
 
                   } });
 
-              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));return function upload(_x, _x2) {return _ref.apply(this, arguments);};}();exports.upload = upload;
+              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee);}));return function upload(_x, _x2) {return _ref.apply(this, arguments);};}();exports.upload = upload;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 1131:
-/*!*************************************!*\
-  !*** D:/lunyunW/api/uploadVideo.js ***!
-  \*************************************/
+/***/ 1135:
+/*!**********************************************!*\
+  !*** F:/program/used_car/api/uploadVideo.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.uploadVideo = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 38));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.uploadVideo = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 34));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 var uploadVideo = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee(url) {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
               new Promise(function (resolve, reject) {
                 var videoSrc = uni.chooseVideo({
@@ -1648,20 +1660,149 @@ var uploadVideo = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__P
 
                   } });
 
-              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));return function uploadVideo(_x) {return _ref.apply(this, arguments);};}();exports.uploadVideo = uploadVideo;
+              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee);}));return function uploadVideo(_x) {return _ref.apply(this, arguments);};}();exports.uploadVideo = uploadVideo;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 1216:
-/*!******************************************!*\
-  !*** D:/lunyunW/api/search/hotSearch.js ***!
-  \******************************************/
+/***/ 12:
+/*!**********************************************************************************************************!*\
+  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \**********************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode, /* vue-cli only */
+  components, // fixed by xxxxxx auto components
+  renderjs // fixed by xxxxxx renderjs
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // fixed by xxxxxx auto components
+  if (components) {
+    if (!options.components) {
+      options.components = {}
+    }
+    var hasOwn = Object.prototype.hasOwnProperty
+    for (var name in components) {
+      if (hasOwn.call(components, name) && !hasOwn.call(options.components, name)) {
+        options.components[name] = components[name]
+      }
+    }
+  }
+  // fixed by xxxxxx renderjs
+  if (renderjs) {
+    (renderjs.beforeCreate || (renderjs.beforeCreate = [])).unshift(function() {
+      this[renderjs.__module] = this
+    });
+    (options.mixins || (options.mixins = [])).push(renderjs)
+  }
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functioal component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+
+/***/ 1220:
+/*!***************************************************!*\
+  !*** F:/program/used_car/api/search/hotSearch.js ***!
+  \***************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getHotSearch = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getHotSearch = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /*
                                                                                                                                                                                                                                                                     
@@ -1676,10 +1817,68 @@ var getHotSearch = function getHotSearch() {var params = arguments.length > 0 &&
 
 /***/ }),
 
-/***/ 1308:
-/*!**********************************************************!*\
-  !*** D:/lunyunW/components/uParse/src/libs/html2json.js ***!
-  \**********************************************************/
+/***/ 13:
+/*!******************************************!*\
+  !*** F:/program/used_car/store/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
+var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 14));
+var _amapWx = _interopRequireDefault(__webpack_require__(/*! @/libs/amap-wx.js */ 15));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+_vue.default.use(_vuex.default);
+var store = new _vuex.default.Store({
+  state: {
+    city:  false || "全国",
+    letter: "",
+    history: '',
+    search: '',
+    cars: {},
+    kucars: {},
+    group: 0 },
+
+  mutations: {
+    // 定位城市
+    changeCity: function changeCity(state, city) {
+      state.city = city;
+    },
+    // 获取字母 
+    changeLetter: function changeLetter(state, letter) {
+      state.letter = letter;
+    },
+    // 获取点击历史搜索字段
+    changeHistory: function changeHistory(state, history) {
+      state.history = history;
+    },
+    // 获取搜索框字段
+    changeSearch: function changeSearch(state, search) {
+      state.search = search;
+    },
+    // 获取车系数据
+    changeCars: function changeCars(state, cars) {
+      state.cars = cars;
+    },
+    // 获取库存车系数据
+    changeKcCars: function changeKcCars(state, cars) {
+      state.kucars = cars;
+    },
+    // 活动id
+    changeGroup: function changeGroup(state, group) {
+      state.group = group;
+    } },
+
+  actions: {} });var _default =
+
+store;exports.default = _default;
+
+/***/ }),
+
+/***/ 1312:
+/*!*******************************************************************!*\
+  !*** F:/program/used_car/components/uParse/src/libs/html2json.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1698,8 +1897,8 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 
 
-var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 1309));
-var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 1310));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
+var _wxDiscode = _interopRequireDefault(__webpack_require__(/*! ./wxDiscode */ 1313));
+var _htmlparser = _interopRequireDefault(__webpack_require__(/*! ./htmlparser */ 1314));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} /**
                                                                                                                                                                  * html2Json 改造来自: https://github.com/Jxck/html2json
                                                                                                                                                                  *
                                                                                                                                                                  *
@@ -1948,10 +2147,10 @@ html2json;exports.default = _default;
 
 /***/ }),
 
-/***/ 1309:
-/*!**********************************************************!*\
-  !*** D:/lunyunW/components/uParse/src/libs/wxDiscode.js ***!
-  \**********************************************************/
+/***/ 1313:
+/*!*******************************************************************!*\
+  !*** F:/program/used_car/components/uParse/src/libs/wxDiscode.js ***!
+  \*******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2153,10 +2352,10 @@ function urlToHttpUrl(url, domain) {
 
 /***/ }),
 
-/***/ 1310:
-/*!***********************************************************!*\
-  !*** D:/lunyunW/components/uParse/src/libs/htmlparser.js ***!
-  \***********************************************************/
+/***/ 1314:
+/*!********************************************************************!*\
+  !*** F:/program/used_car/components/uParse/src/libs/htmlparser.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2320,186 +2519,7 @@ HTMLParser;exports.default = _default;
 
 /***/ }),
 
-/***/ 16:
-/*!**********************************************************************************************************!*\
-  !*** ./node_modules/@dcloudio/vue-cli-plugin-uni/packages/vue-loader/lib/runtime/componentNormalizer.js ***!
-  \**********************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
-/* globals __VUE_SSR_CONTEXT__ */
-
-// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
-// This module is a runtime utility for cleaner component module output and will
-// be included in the final webpack user bundle.
-
-function normalizeComponent (
-  scriptExports,
-  render,
-  staticRenderFns,
-  functionalTemplate,
-  injectStyles,
-  scopeId,
-  moduleIdentifier, /* server only */
-  shadowMode, /* vue-cli only */
-  components, // fixed by xxxxxx auto components
-  renderjs // fixed by xxxxxx renderjs
-) {
-  // Vue.extend constructor export interop
-  var options = typeof scriptExports === 'function'
-    ? scriptExports.options
-    : scriptExports
-
-  // fixed by xxxxxx auto components
-  if (components) {
-    options.components = Object.assign(components, options.components || {})
-  }
-  // fixed by xxxxxx renderjs
-  if (renderjs) {
-    (renderjs.beforeCreate || (renderjs.beforeCreate = [])).unshift(function() {
-      this[renderjs.__module] = this
-    });
-    (options.mixins || (options.mixins = [])).push(renderjs)
-  }
-
-  // render functions
-  if (render) {
-    options.render = render
-    options.staticRenderFns = staticRenderFns
-    options._compiled = true
-  }
-
-  // functional template
-  if (functionalTemplate) {
-    options.functional = true
-  }
-
-  // scopedId
-  if (scopeId) {
-    options._scopeId = 'data-v-' + scopeId
-  }
-
-  var hook
-  if (moduleIdentifier) { // server build
-    hook = function (context) {
-      // 2.3 injection
-      context =
-        context || // cached call
-        (this.$vnode && this.$vnode.ssrContext) || // stateful
-        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
-      // 2.2 with runInNewContext: true
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__
-      }
-      // inject component styles
-      if (injectStyles) {
-        injectStyles.call(this, context)
-      }
-      // register component module identifier for async chunk inferrence
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier)
-      }
-    }
-    // used by ssr in case component is cached and beforeCreate
-    // never gets called
-    options._ssrRegister = hook
-  } else if (injectStyles) {
-    hook = shadowMode
-      ? function () { injectStyles.call(this, this.$root.$options.shadowRoot) }
-      : injectStyles
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // for template-only hot-reload because in that case the render fn doesn't
-      // go through the normalizer
-      options._injectStyles = hook
-      // register for functioal component in vue file
-      var originalRender = options.render
-      options.render = function renderWithStyleInjection (h, context) {
-        hook.call(context)
-        return originalRender(h, context)
-      }
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate
-      options.beforeCreate = existing
-        ? [].concat(existing, hook)
-        : [hook]
-    }
-  }
-
-  return {
-    exports: scriptExports,
-    options: options
-  }
-}
-
-
-/***/ }),
-
-/***/ 17:
-/*!*********************************!*\
-  !*** D:/lunyunW/store/index.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _vuex = _interopRequireDefault(__webpack_require__(/*! vuex */ 18));
-var _amapWx = _interopRequireDefault(__webpack_require__(/*! @/libs/amap-wx.js */ 19));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-_vue.default.use(_vuex.default);
-var store = new _vuex.default.Store({
-  state: {
-    city:  false || "全国",
-    letter: "",
-    history: '',
-    search: '',
-    cars: {},
-    kucars: {},
-    group: 0 },
-
-  mutations: {
-    // 定位城市
-    changeCity: function changeCity(state, city) {
-      state.city = city;
-    },
-    // 获取字母 
-    changeLetter: function changeLetter(state, letter) {
-      state.letter = letter;
-    },
-    // 获取点击历史搜索字段
-    changeHistory: function changeHistory(state, history) {
-      state.history = history;
-    },
-    // 获取搜索框字段
-    changeSearch: function changeSearch(state, search) {
-      state.search = search;
-    },
-    // 获取车系数据
-    changeCars: function changeCars(state, cars) {
-      state.cars = cars;
-    },
-    // 获取库存车系数据
-    changeKcCars: function changeKcCars(state, cars) {
-      state.kucars = cars;
-    },
-    // 活动id
-    changeGroup: function changeGroup(state, group) {
-      state.group = group;
-    } },
-
-  actions: {} });var _default =
-
-store;exports.default = _default;
-
-/***/ }),
-
-/***/ 18:
+/***/ 14:
 /*!********************************************!*\
   !*** ./node_modules/vuex/dist/vuex.esm.js ***!
   \********************************************/
@@ -3450,15 +3470,60 @@ var index_esm = {
 
 /***/ }),
 
+/***/ 15:
+/*!*******************************************!*\
+  !*** F:/program/used_car/libs/amap-wx.js ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function AMapWX(a) {this.key = a.key, this.requestConfig = { key: a.key, s: "rsx", platform: "WXJS", appname: a.key, sdkversion: "1.2.0", logversion: "2.0" };}AMapWX.prototype.getWxLocation = function (a, b) {wx.getLocation({ type: "gcj02", success: function success(a) {var c = a.longitude + "," + a.latitude;wx.setStorage({ key: "userLocation", data: c }), b(c);}, fail: function fail(c) {wx.getStorage({ key: "userLocation", success: function success(a) {a.data && b(a.data);} }), a.fail({ errCode: "0", errMsg: c.errMsg || "" });} });}, AMapWX.prototype.getRegeo = function (a) {function c(c) {var d = b.requestConfig;wx.request({ url: "https://restapi.amap.com/v3/geocode/regeo", data: { key: b.key, location: c, extensions: "all", s: d.s, platform: d.platform, appname: b.key, sdkversion: d.sdkversion, logversion: d.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var d, e, f, g, h, i, j, k, l;b.data.status && "1" == b.data.status ? (d = b.data.regeocode, e = d.addressComponent, f = [], g = "", d && d.roads[0] && d.roads[0].name && (g = d.roads[0].name + "附近"), h = c.split(",")[0], i = c.split(",")[1], d.pois && d.pois[0] && (g = d.pois[0].name + "附近", j = d.pois[0].location, j && (h = parseFloat(j.split(",")[0]), i = parseFloat(j.split(",")[1]))), e.provice && f.push(e.provice), e.city && f.push(e.city), e.district && f.push(e.district), e.streetNumber && e.streetNumber.street && e.streetNumber.number ? (f.push(e.streetNumber.street), f.push(e.streetNumber.number)) : (k = "", d && d.roads[0] && d.roads[0].name && (k = d.roads[0].name), f.push(k)), f = f.join(""), l = [{ iconPath: a.iconPath, width: a.iconWidth, height: a.iconHeight, name: f, desc: g, longitude: h, latitude: i, id: 0, regeocodeData: d }], a.success(l)) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this;a.location ? c(a.location) : b.getWxLocation(a, function (a) {c(a);});}, AMapWX.prototype.getWeather = function (a) {function d(d) {var e = "base";a.type && "forecast" == a.type && (e = "all"), wx.request({ url: "https://restapi.amap.com/v3/weather/weatherInfo", data: { key: b.key, city: d, extensions: e, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {function c(a) {var b = { city: { text: "城市", data: a.city }, weather: { text: "天气", data: a.weather }, temperature: { text: "温度", data: a.temperature }, winddirection: { text: "风向", data: a.winddirection + "风" }, windpower: { text: "风力", data: a.windpower + "级" }, humidity: { text: "湿度", data: a.humidity + "%" } };return b;}var d, e;b.data.status && "1" == b.data.status ? b.data.lives ? (d = b.data.lives, d && d.length > 0 && (d = d[0], e = c(d), e["liveData"] = d, a.success(e))) : b.data.forecasts && b.data.forecasts[0] && a.success({ forecast: b.data.forecasts[0] }) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}function e(e) {wx.request({ url: "https://restapi.amap.com/v3/geocode/regeo", data: { key: b.key, location: e, extensions: "all", s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var c, e;b.data.status && "1" == b.data.status ? (e = b.data.regeocode, e.addressComponent ? c = e.addressComponent.adcode : e.aois && e.aois.length > 0 && (c = e.aois[0].adcode), d(c)) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this,c = b.requestConfig;a.city ? d(a.city) : b.getWxLocation(a, function (a) {e(a);});}, AMapWX.prototype.getPoiAround = function (a) {function d(d) {var e = { key: b.key, location: d, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.querytypes && (e["types"] = a.querytypes), a.querykeywords && (e["keywords"] = a.querykeywords), wx.request({ url: "https://restapi.amap.com/v3/place/around", data: e, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var c, d, e, f;if (b.data.status && "1" == b.data.status) {if (b = b.data, b && b.pois) {for (c = [], d = 0; d < b.pois.length; d++) {e = 0 == d ? a.iconPathSelected : a.iconPath, c.push({ latitude: parseFloat(b.pois[d].location.split(",")[1]), longitude: parseFloat(b.pois[d].location.split(",")[0]), iconPath: e, width: 22, height: 32, id: d, name: b.pois[d].name, address: b.pois[d].address });}f = { markers: c, poisData: b.pois }, a.success(f);}} else a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this,c = b.requestConfig;a.location ? d(a.location) : b.getWxLocation(a, function (a) {d(a);});}, AMapWX.prototype.getStaticmap = function (a) {function f(b) {c.push("location=" + b), a.zoom && c.push("zoom=" + a.zoom), a.size && c.push("size=" + a.size), a.scale && c.push("scale=" + a.scale), a.markers && c.push("markers=" + a.markers), a.labels && c.push("labels=" + a.labels), a.paths && c.push("paths=" + a.paths), a.traffic && c.push("traffic=" + a.traffic);var e = d + c.join("&");a.success({ url: e });}var e,b = this,c = [],d = "https://restapi.amap.com/v3/staticmap?";c.push("key=" + b.key), e = b.requestConfig, c.push("s=" + e.s), c.push("platform=" + e.platform), c.push("appname=" + e.appname), c.push("sdkversion=" + e.sdkversion), c.push("logversion=" + e.logversion), a.location ? f(a.location) : b.getWxLocation(a, function (a) {f(a);});}, AMapWX.prototype.getInputtips = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.location && (d["location"] = a.location), a.keywords && (d["keywords"] = a.keywords), a.type && (d["type"] = a.type), a.city && (d["city"] = a.city), a.citylimit && (d["citylimit"] = a.citylimit), wx.request({ url: "https://restapi.amap.com/v3/assistant/inputtips", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.tips && a.success({ tips: b.data.tips });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getDrivingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), a.strategy && (d["strategy"] = a.strategy), a.waypoints && (d["waypoints"] = a.waypoints), a.avoidpolygons && (d["avoidpolygons"] = a.avoidpolygons), a.avoidroad && (d["avoidroad"] = a.avoidroad), wx.request({ url: "https://restapi.amap.com/v3/direction/driving", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.route && a.success({ paths: b.data.route.paths, taxi_cost: b.data.route.taxi_cost || "" });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getWalkingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), wx.request({ url: "https://restapi.amap.com/v3/direction/walking", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.route && a.success({ paths: b.data.route.paths });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getTransitRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), a.strategy && (d["strategy"] = a.strategy), a.city && (d["city"] = a.city), a.cityd && (d["cityd"] = a.cityd), wx.request({ url: "https://restapi.amap.com/v3/direction/transit/integrated", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {if (b && b.data && b.data.route) {var c = b.data.route;a.success({ distance: c.distance || "", taxi_cost: c.taxi_cost || "", transits: c.transits });}}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getRidingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), wx.request({ url: "https://restapi.amap.com/v4/direction/bicycling", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.data && a.success({ paths: b.data.data.paths });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, module.exports.AMapWX = AMapWX;
+
+/***/ }),
+
 /***/ 19:
-/*!**********************************!*\
-  !*** D:/lunyunW/libs/amap-wx.js ***!
-  \**********************************/
+/*!**********************************************!*\
+  !*** F:/program/used_car/api/index/index.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-function AMapWX(a) {this.key = a.key, this.requestConfig = { key: a.key, s: "rsx", platform: "WXJS", appname: a.key, sdkversion: "1.2.0", logversion: "2.0" };}AMapWX.prototype.getWxLocation = function (a, b) {wx.getLocation({ type: "gcj02", success: function success(a) {var c = a.longitude + "," + a.latitude;wx.setStorage({ key: "userLocation", data: c }), b(c);}, fail: function fail(c) {wx.getStorage({ key: "userLocation", success: function success(a) {a.data && b(a.data);} }), a.fail({ errCode: "0", errMsg: c.errMsg || "" });} });}, AMapWX.prototype.getRegeo = function (a) {function c(c) {var d = b.requestConfig;wx.request({ url: "https://restapi.amap.com/v3/geocode/regeo", data: { key: b.key, location: c, extensions: "all", s: d.s, platform: d.platform, appname: b.key, sdkversion: d.sdkversion, logversion: d.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var d, e, f, g, h, i, j, k, l;b.data.status && "1" == b.data.status ? (d = b.data.regeocode, e = d.addressComponent, f = [], g = "", d && d.roads[0] && d.roads[0].name && (g = d.roads[0].name + "附近"), h = c.split(",")[0], i = c.split(",")[1], d.pois && d.pois[0] && (g = d.pois[0].name + "附近", j = d.pois[0].location, j && (h = parseFloat(j.split(",")[0]), i = parseFloat(j.split(",")[1]))), e.provice && f.push(e.provice), e.city && f.push(e.city), e.district && f.push(e.district), e.streetNumber && e.streetNumber.street && e.streetNumber.number ? (f.push(e.streetNumber.street), f.push(e.streetNumber.number)) : (k = "", d && d.roads[0] && d.roads[0].name && (k = d.roads[0].name), f.push(k)), f = f.join(""), l = [{ iconPath: a.iconPath, width: a.iconWidth, height: a.iconHeight, name: f, desc: g, longitude: h, latitude: i, id: 0, regeocodeData: d }], a.success(l)) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this;a.location ? c(a.location) : b.getWxLocation(a, function (a) {c(a);});}, AMapWX.prototype.getWeather = function (a) {function d(d) {var e = "base";a.type && "forecast" == a.type && (e = "all"), wx.request({ url: "https://restapi.amap.com/v3/weather/weatherInfo", data: { key: b.key, city: d, extensions: e, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {function c(a) {var b = { city: { text: "城市", data: a.city }, weather: { text: "天气", data: a.weather }, temperature: { text: "温度", data: a.temperature }, winddirection: { text: "风向", data: a.winddirection + "风" }, windpower: { text: "风力", data: a.windpower + "级" }, humidity: { text: "湿度", data: a.humidity + "%" } };return b;}var d, e;b.data.status && "1" == b.data.status ? b.data.lives ? (d = b.data.lives, d && d.length > 0 && (d = d[0], e = c(d), e["liveData"] = d, a.success(e))) : b.data.forecasts && b.data.forecasts[0] && a.success({ forecast: b.data.forecasts[0] }) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}function e(e) {wx.request({ url: "https://restapi.amap.com/v3/geocode/regeo", data: { key: b.key, location: e, extensions: "all", s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion }, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var c, e;b.data.status && "1" == b.data.status ? (e = b.data.regeocode, e.addressComponent ? c = e.addressComponent.adcode : e.aois && e.aois.length > 0 && (c = e.aois[0].adcode), d(c)) : a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this,c = b.requestConfig;a.city ? d(a.city) : b.getWxLocation(a, function (a) {e(a);});}, AMapWX.prototype.getPoiAround = function (a) {function d(d) {var e = { key: b.key, location: d, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.querytypes && (e["types"] = a.querytypes), a.querykeywords && (e["keywords"] = a.querykeywords), wx.request({ url: "https://restapi.amap.com/v3/place/around", data: e, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {var c, d, e, f;if (b.data.status && "1" == b.data.status) {if (b = b.data, b && b.pois) {for (c = [], d = 0; d < b.pois.length; d++) {e = 0 == d ? a.iconPathSelected : a.iconPath, c.push({ latitude: parseFloat(b.pois[d].location.split(",")[1]), longitude: parseFloat(b.pois[d].location.split(",")[0]), iconPath: e, width: 22, height: 32, id: d, name: b.pois[d].name, address: b.pois[d].address });}f = { markers: c, poisData: b.pois }, a.success(f);}} else a.fail({ errCode: b.data.infocode, errMsg: b.data.info });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}var b = this,c = b.requestConfig;a.location ? d(a.location) : b.getWxLocation(a, function (a) {d(a);});}, AMapWX.prototype.getStaticmap = function (a) {function f(b) {c.push("location=" + b), a.zoom && c.push("zoom=" + a.zoom), a.size && c.push("size=" + a.size), a.scale && c.push("scale=" + a.scale), a.markers && c.push("markers=" + a.markers), a.labels && c.push("labels=" + a.labels), a.paths && c.push("paths=" + a.paths), a.traffic && c.push("traffic=" + a.traffic);var e = d + c.join("&");a.success({ url: e });}var e,b = this,c = [],d = "https://restapi.amap.com/v3/staticmap?";c.push("key=" + b.key), e = b.requestConfig, c.push("s=" + e.s), c.push("platform=" + e.platform), c.push("appname=" + e.appname), c.push("sdkversion=" + e.sdkversion), c.push("logversion=" + e.logversion), a.location ? f(a.location) : b.getWxLocation(a, function (a) {f(a);});}, AMapWX.prototype.getInputtips = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.location && (d["location"] = a.location), a.keywords && (d["keywords"] = a.keywords), a.type && (d["type"] = a.type), a.city && (d["city"] = a.city), a.citylimit && (d["citylimit"] = a.citylimit), wx.request({ url: "https://restapi.amap.com/v3/assistant/inputtips", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.tips && a.success({ tips: b.data.tips });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getDrivingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), a.strategy && (d["strategy"] = a.strategy), a.waypoints && (d["waypoints"] = a.waypoints), a.avoidpolygons && (d["avoidpolygons"] = a.avoidpolygons), a.avoidroad && (d["avoidroad"] = a.avoidroad), wx.request({ url: "https://restapi.amap.com/v3/direction/driving", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.route && a.success({ paths: b.data.route.paths, taxi_cost: b.data.route.taxi_cost || "" });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getWalkingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), wx.request({ url: "https://restapi.amap.com/v3/direction/walking", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.route && a.success({ paths: b.data.route.paths });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getTransitRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), a.strategy && (d["strategy"] = a.strategy), a.city && (d["city"] = a.city), a.cityd && (d["cityd"] = a.cityd), wx.request({ url: "https://restapi.amap.com/v3/direction/transit/integrated", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {if (b && b.data && b.data.route) {var c = b.data.route;a.success({ distance: c.distance || "", taxi_cost: c.taxi_cost || "", transits: c.transits });}}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, AMapWX.prototype.getRidingRoute = function (a) {var b = this,c = b.requestConfig,d = { key: b.key, s: c.s, platform: c.platform, appname: b.key, sdkversion: c.sdkversion, logversion: c.logversion };a.origin && (d["origin"] = a.origin), a.destination && (d["destination"] = a.destination), wx.request({ url: "https://restapi.amap.com/v4/direction/bicycling", data: d, method: "GET", header: { "content-type": "application/json" }, success: function success(b) {b && b.data && b.data.data && a.success({ paths: b.data.data.paths });}, fail: function fail(b) {a.fail({ errCode: "0", errMsg: b.errMsg || "" });} });}, module.exports.AMapWX = AMapWX;
+Object.defineProperty(exports, "__esModule", { value: true });exports.getTempIdArr = exports.getHelpContent = exports.getWebSiteTel = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+var controller = '/index/';
+
+/**
+                             * 客服中心
+                             */
+var getWebSiteTel = function getWebSiteTel() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: controller + 'getWebSiteTel',
+    method: 'POST',
+    params: params });
+
+};
+
+/**
+    * 获取帮助内容
+    */exports.getWebSiteTel = getWebSiteTel;
+var getHelpContent = function getHelpContent() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: controller + 'getHelpContent',
+    method: 'POST',
+    params: params });
+
+};exports.getHelpContent = getHelpContent;
+
+var getTempIdArr = function getTempIdArr() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+  return (0, _index.default)({
+    url: controller + 'getTempIdArr',
+    method: 'POST',
+    params: params });
+
+};exports.getTempIdArr = getTempIdArr;
 
 /***/ }),
 
@@ -8433,10 +8498,10 @@ function initMixin (Vue) {
     initEvents(vm);
     initRender(vm);
     callHook(vm, 'beforeCreate');
-    vm.mpHost !== 'mp-toutiao' && initInjections(vm); // resolve injections before data/props  
+    !vm._$fallback && initInjections(vm); // resolve injections before data/props  
     initState(vm);
-    vm.mpHost !== 'mp-toutiao' && initProvide(vm); // resolve provide after data/props
-    vm.mpHost !== 'mp-toutiao' && callHook(vm, 'created');      
+    !vm._$fallback && initProvide(vm); // resolve provide after data/props
+    !vm._$fallback && callHook(vm, 'created');      
 
     /* istanbul ignore if */
     if ( true && config.performance && mark) {
@@ -9152,7 +9217,7 @@ function mountComponent$1(
     }
   }
   
-  vm.mpHost !== 'mp-toutiao' && callHook(vm, 'beforeMount');
+  !vm._$fallback && callHook(vm, 'beforeMount');
 
   var updateComponent = function () {
     vm._update(vm._render(), hydrating);
@@ -9492,153 +9557,17 @@ internalMixin(Vue);
 
 /***/ }),
 
-/***/ 23:
-/*!*************************************!*\
-  !*** D:/lunyunW/api/index/index.js ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getTempIdArr = exports.getHelpContent = exports.getWebSiteTel = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-var controller = '/index/';
-
-/**
-                             * 客服中心
-                             */
-var getWebSiteTel = function getWebSiteTel() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: controller + 'getWebSiteTel',
-    method: 'POST',
-    params: params });
-
-};
-
-/**
-    * 获取帮助内容
-    */exports.getWebSiteTel = getWebSiteTel;
-var getHelpContent = function getHelpContent() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: controller + 'getHelpContent',
-    method: 'POST',
-    params: params });
-
-};exports.getHelpContent = getHelpContent;
-
-var getTempIdArr = function getTempIdArr() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-  return (0, _index.default)({
-    url: controller + 'getTempIdArr',
-    method: 'POST',
-    params: params });
-
-};exports.getTempIdArr = getTempIdArr;
-
-/***/ }),
-
-/***/ 237:
-/*!*********************************!*\
-  !*** D:/lunyunW/api/pay/pay.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.createServicesMoneyOrder = exports.getOrderServicesOutTrandeNo = exports.createTestingOrder = exports.getOrderTestingOutTrandeNo = exports.appletWechatPay = exports.createBailMoneyOrder = exports.getOutTrandeNo = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-var memberController = '/member/';
-var payController = '/pay/';
-var orderController = '/order/';
-
-/**
-                                  * 外部交易号
-                                  */
-var getOutTrandeNo = function getOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: memberController + 'getOutTrandeNo',
-    method: 'POST',
-    params: params });
-
-};
-
-/**
-    * 创建保证金订单
-    */exports.getOutTrandeNo = getOutTrandeNo;
-var createBailMoneyOrder = function createBailMoneyOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: memberController + 'createBailMoneyOrder',
-    method: 'POST',
-    params: params });
-
-};
-
-
-/**
-    * 微信统一下单
-    */exports.createBailMoneyOrder = createBailMoneyOrder;
-var appletWechatPay = function appletWechatPay() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: payController + 'appletWechatPay',
-    method: 'POST',
-    params: params });
-
-};
-
-// 创建检测师费用外部交易号 
-exports.appletWechatPay = appletWechatPay;var getOrderTestingOutTrandeNo = function getOrderTestingOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: orderController + 'getOrderTestingOutTrandeNo',
-    method: 'POST',
-    params: params });
-
-};
-// 创建检测师费用订单 
-exports.getOrderTestingOutTrandeNo = getOrderTestingOutTrandeNo;var createTestingOrder = function createTestingOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: orderController + 'createTestingOrder',
-    method: 'POST',
-    params: params });
-
-};
-// 创建服务费外部交易号 https://api.chinartn.cn/api.php?s=/order/getOrderServicesOutTrandeNo
-exports.createTestingOrder = createTestingOrder;var getOrderServicesOutTrandeNo = function getOrderServicesOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: orderController + 'getOrderServicesOutTrandeNo',
-    method: 'POST',
-    params: params });
-
-};
-// 创建服务费充值订单  https://api.chinartn.cn/api.php?s=/order/createServicesMoneyOrder
-exports.getOrderServicesOutTrandeNo = getOrderServicesOutTrandeNo;var createServicesMoneyOrder = function createServicesMoneyOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: orderController + 'createServicesMoneyOrder',
-    method: 'POST',
-    params: params });
-
-};exports.createServicesMoneyOrder = createServicesMoneyOrder;
-
-/***/ }),
-
-/***/ 24:
-/*!*******************************!*\
-  !*** D:/lunyunW/api/index.js ***!
-  \*******************************/
+/***/ 20:
+/*!****************************************!*\
+  !*** F:/program/used_car/api/index.js ***!
+  \****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = request;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 25));
-var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};var ownKeys = Object.keys(source);if (typeof Object.getOwnPropertySymbols === 'function') {ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {return Object.getOwnPropertyDescriptor(source, sym).enumerable;}));}ownKeys.forEach(function (key) {_defineProperty(target, key, source[key]);});}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // 页面跳转
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 21));
+var _navigate = __webpack_require__(/*! @/api/navigate.js */ 22);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;} // 页面跳转
 
 function request(cfg) {
   var options = {
@@ -9753,24 +9682,10 @@ function getToken() {
 
 /***/ }),
 
-/***/ 246:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/callphone.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.callPhone = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 38));var _reques = __webpack_require__(/*! @/api/reques.js */ 41);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
-var callPhone = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
-              (0, _reques.request)("/index/getWebSiteTel", {}, "POST"));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));return function callPhone() {return _ref.apply(this, arguments);};}();exports.callPhone = callPhone;
-
-/***/ }),
-
-/***/ 25:
-/*!********************************!*\
-  !*** D:/lunyunW/api/config.js ***!
-  \********************************/
+/***/ 21:
+/*!*****************************************!*\
+  !*** F:/program/used_car/api/config.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9779,13 +9694,13 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   baseUrl: '',
   timeout: 10000,
   domain: 'https://api.chinartn.cn/',
-  socket_url: 'wss://socket.chinartn.cn'
+  socket_url: 'wss://socket.chinartn.cn' };
 
 
-  /* 
-                                          api.chinartn.cn
-                                          beta.api.chinartn.cn
-                                          */ };
+/* 
+                                             api.chinartn.cn
+                                             beta.api.chinartn.cn
+                                             */
 var baseUrl = '';
 if (true) {
   baseUrl = "https://api.chinartn.cn/api.php?s="; // 开发环境地址
@@ -9796,10 +9711,10 @@ config;exports.default = _default;
 
 /***/ }),
 
-/***/ 26:
-/*!**********************************!*\
-  !*** D:/lunyunW/api/navigate.js ***!
-  \**********************************/
+/***/ 22:
+/*!*******************************************!*\
+  !*** F:/program/used_car/api/navigate.js ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9813,16 +9728,16 @@ config;exports.default = _default;
 
 /***/ }),
 
-/***/ 27:
-/*!********************************!*\
-  !*** D:/lunyunW/api/socket.js ***!
-  \********************************/
+/***/ 23:
+/*!*****************************************!*\
+  !*** F:/program/used_car/api/socket.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = SocketAction;var _vue = _interopRequireDefault(__webpack_require__(/*! vue */ 2));
-var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+var _config = _interopRequireDefault(__webpack_require__(/*! ./config.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 function SocketAction() {
   this.lockReconnect = false; //避免重复连接
@@ -9933,12 +9848,12 @@ SocketAction.prototype.action = {
       _this.init(_this);
       _this.lockReconnect = false;
     }, 10000);
-  }
+  } };
 
 
-  /**
-     * 心跳检测
-     */ };
+/**
+        * 心跳检测
+        */
 SocketAction.prototype.heartCheck = {
   timeout: 10000, // 心跳时间 
   timeoutObj: null,
@@ -9967,21 +9882,127 @@ SocketAction.prototype.heartCheck = {
 
 /***/ }),
 
-/***/ 28:
-/*!***********************************************!*\
-  !*** D:/lunyunW/static/iconfont/iconfont.css ***!
-  \***********************************************/
+/***/ 233:
+/*!******************************************!*\
+  !*** F:/program/used_car/api/pay/pay.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.createServicesMoneyOrder = exports.getOrderServicesOutTrandeNo = exports.createTestingOrder = exports.getOrderTestingOutTrandeNo = exports.appletWechatPay = exports.createBailMoneyOrder = exports.getOutTrandeNo = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+var memberController = '/member/';
+var payController = '/pay/';
+var orderController = '/order/';
+
+/**
+                                  * 外部交易号
+                                  */
+var getOutTrandeNo = function getOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: memberController + 'getOutTrandeNo',
+    method: 'POST',
+    params: params });
+
+};
+
+/**
+    * 创建保证金订单
+    */exports.getOutTrandeNo = getOutTrandeNo;
+var createBailMoneyOrder = function createBailMoneyOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: memberController + 'createBailMoneyOrder',
+    method: 'POST',
+    params: params });
+
+};
+
+
+/**
+    * 微信统一下单
+    */exports.createBailMoneyOrder = createBailMoneyOrder;
+var appletWechatPay = function appletWechatPay() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: payController + 'appletWechatPay',
+    method: 'POST',
+    params: params });
+
+};
+
+// 创建检测师费用外部交易号 
+exports.appletWechatPay = appletWechatPay;var getOrderTestingOutTrandeNo = function getOrderTestingOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: orderController + 'getOrderTestingOutTrandeNo',
+    method: 'POST',
+    params: params });
+
+};
+// 创建检测师费用订单 
+exports.getOrderTestingOutTrandeNo = getOrderTestingOutTrandeNo;var createTestingOrder = function createTestingOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: orderController + 'createTestingOrder',
+    method: 'POST',
+    params: params });
+
+};
+// 创建服务费外部交易号 https://api.chinartn.cn/api.php?s=/order/getOrderServicesOutTrandeNo
+exports.createTestingOrder = createTestingOrder;var getOrderServicesOutTrandeNo = function getOrderServicesOutTrandeNo() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: orderController + 'getOrderServicesOutTrandeNo',
+    method: 'POST',
+    params: params });
+
+};
+// 创建服务费充值订单  https://api.chinartn.cn/api.php?s=/order/createServicesMoneyOrder
+exports.getOrderServicesOutTrandeNo = getOrderServicesOutTrandeNo;var createServicesMoneyOrder = function createServicesMoneyOrder() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: orderController + 'createServicesMoneyOrder',
+    method: 'POST',
+    params: params });
+
+};exports.createServicesMoneyOrder = createServicesMoneyOrder;
+
+/***/ }),
+
+/***/ 24:
+/*!********************************************************!*\
+  !*** F:/program/used_car/static/iconfont/iconfont.css ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
+    if(false) { var cssReload; }
+  
 
 /***/ }),
 
-/***/ 29:
-/*!************************************!*\
-  !*** D:/lunyunW/utils/eventBus.js ***!
-  \************************************/
+/***/ 242:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/callphone.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.callPhone = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 34));var _reques = __webpack_require__(/*! @/api/reques.js */ 37);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+var callPhone = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
+              (0, _reques.request)("/index/getWebSiteTel", {}, "POST"));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee);}));return function callPhone() {return _ref.apply(this, arguments);};}();exports.callPhone = callPhone;
+
+/***/ }),
+
+/***/ 25:
+/*!*********************************************!*\
+  !*** F:/program/used_car/utils/eventBus.js ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10004,6 +10025,49 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     } }]);return EventBus;}();var _default =
 
 new EventBus();exports.default = _default;
+
+/***/ }),
+
+/***/ 26:
+/*!***********************************************!*\
+  !*** F:/program/used_car/utils/mtj-wx-sdk.js ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var mtjwxsdk = function (e) {"use strict";var o,t,n,g = { logServerUrl: "https://hmma.baidu.com/mini.gif", circleServerUrl: "https://hmma.baidu.com/mini.gif?circle=1", maxRequestRetryCount: 5, requestRetryFirstDelay: 1e3, requestRetryMultiple: 4, maxRequestDataLength: 204800, maxUserPropertyCount: 100, maxUserPropertyKeyValueLength: 256, maxUint8: 255, maxUint32: 4294967295, enabledEvents: { app: ["onShow", "onHide", "onError"], page: ["onShow", "onHide"], share: ["onShareAppMessage"], behavior: ["tap"] }, storageKeys: { uuid: "mtj_uuid", userInfo: "mtj_user", userProperty: "mtj_user_property", shareCount: "mtj_scnt" } },p = { type: 1 },h = { aso: {} },r = {},a = function a() {return "undefined" != typeof crypto && crypto.getRandomValues ? crypto.getRandomValues(new Uint32Array(1))[0] : Math.floor(Math.random() * g.maxUint32);},i = function i(e, t) {return "[object " + t + "]" === {}.toString.call(e);},c = function n(r) {return (i(r, "Object") || i(r, "Array")) && Object.keys(r).forEach(function (e) {var t = r[e];i(t, "Object") || i(t, "Array") ? r[e] = n(t) : r[e] = "" + t;}), r;},s = function s(e) {return i(e, "String") && /^\d{11}$/.test(e);},u = function u(e) {return i(e, "String") && 28 === e.length;},f = 0,l = function l(r) {return new Promise(function (t, n) {if (r.data = r.data || {}, r.data.v = "1.9.1", r.data.rqc = ++f, e = r.data, !(JSON.stringify(e).length <= g.maxRequestDataLength)) return f--, n(new Error("invalid data"));var e;r.success = function (e) {return t(e);}, r.fail = function (e) {return n(e);}, function t(n) {var r = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : g.requestRetryFirstDelay;return o.request({ url: n.url, data: n.data, header: Object.assign({ "content-type": "application/json" }, n.header), method: n.method || "POST", dataType: n.dataType || "json", success: function success(e) {delete n.data.rtc, n.success && n.success(e);}, fail: function fail(e) {n.data.rtc = (n.data.rtc || 0) + 1, n.data.rtc <= g.maxRequestRetryCount ? setTimeout(function () {return t(n, r * g.requestRetryMultiple);}, r) : (delete n.data.rtc, n.fail && n.fail(e));} });}(r);});},d = function d(e, t) {var n = i(t, "Object") ? JSON.stringify(t) : "" + t;l({ url: g.logServerUrl, dataType: "string", data: Object.assign({}, p, { et: "error", en: e, ep: { ex: n }, rid: a() }) });},y = function y(e) {e.rid = a(), e.aso = e.aso || {};var t = { url: g.logServerUrl, dataType: "string", data: Object.assign({}, p, e) };l(t), (r.circleToken || r.circleByThreeFingers) && ("page" === e.et && "show" === e.en || "behavior" === e.et && "tap" === e.en) && (t.url = g.circleServerUrl, t.data.token = r.circleToken, l(t).catch(function (e) {return console.error(e);}));},m = function m(e) {try {return o.getStorageSync(e);} catch (e) {d("getStorageSync", e);}},v = function v(e, t) {try {o.setStorageSync(e, t);} catch (e) {d("setStorageSync", e);}},b = function b() {return Promise.resolve().then(function () {var e = m(g.storageKeys.uuid);return i(e, "String") && 32 === e.length || (e = ([1e7] + 1e3 + 4e3 + 8e3 + 1e11).replace(/[018]/g, function (e) {return (e ^ ("undefined" != typeof crypto && crypto.getRandomValues ? crypto.getRandomValues(new Uint8Array(1))[0] : Math.floor(Math.random() * g.maxUint8)) & 15 >> e / 4).toString(16);}), v(g.storageKeys.uuid, e)), e;});},j = function j() {return t || (p.sid = a(), p.rqc = 0, t = Promise.all([b(), new Promise(function (t) {o.getSystemInfo({ success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), new Promise(function (t) {o.getNetworkType({ success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), Promise.resolve().then(function () {var e = m(g.storageKeys.userInfo),n = i(e, "Object") ? e : {};return new Promise(function (t) {o.getSetting({ success: function success(e) {e.authSetting && e.authSetting["scope.userInfo"] ? o.getUserInfo({ success: function success(e) {delete e.userInfo.errMsg, t(Object.assign(n, e.userInfo));}, fail: function fail() {t(n);} }) : t(n);}, fail: function fail() {t(n);} });});}), new Promise(function (t) {if (!g.getLocation) return t({});o.getLocation({ type: "wgs84", success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), Promise.resolve().then(function () {var e = m(g.storageKeys.userProperty);return i(e, "Object") ? e : {};})]).then(function (e) {p.uuid = e[0], h.system = c(e[1]), h.network = c(e[2]), 0 < Object.keys(e[3]).length && (h.user = c(e[3])), 0 < Object.keys(e[4]).length && (h.location = c(e[4])), 0 < Object.keys(e[5]).length && (h.userProperty = JSON.stringify(e[5])), h.system.platform;}));},S = function S() {return n || (n = new Promise(function (t) {o.getClipboardData({ success: function success(e) {t(e.data);}, fail: function fail() {t();} });}).then(function (e) {if (!g.disableCircling && 36 === e.length) {var t,n = e.match(/^mtj_(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})$/);return n ? (r.circleToken = "".concat(n[1], "-").concat(n[2], "-").concat(n[3], "-").concat(n[4], "-").concat(n[5]), t = "", new Promise(function (e) {o.setClipboardData({ data: t, complete: function complete() {e();} });})) : void 0;}}));},O = { onLaunch: function onLaunch() {y({ et: "app", en: "launch" });}, onShow: function onShow() {var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};return h.aso.scene = "" + (t.scene || ""), t.referrerInfo && t.referrerInfo.appId ? h.aso.referrerInfo = t.referrerInfo : delete h.aso.referrerInfo, h.aso.path = t.path || "", h.aso.query = Object.keys(t.query || {}).map(function (e) {return { key: e, value: t.query[e] };}), j().then(function () {return e = t.shareTicket, new Promise(function (t) {if (!e) return t();o.getShareInfo({ shareTicket: e, success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });});var e;}).then(function (e) {e ? h.aso.shareInfo = e : delete h.aso.shareInfo, y(Object.assign({ et: "app", en: "show" }, h));}).catch(function (e) {d("app.onShow", e);});}, onHide: function onHide() {n = null, y({ et: "app", en: "hide" });}, onError: function onError(e) {var t = i(e, "Object") ? JSON.stringify(c(e)) : "" + e;y({ et: "app", en: "error", ep: { ex: t } });} },P = -1,k = -1,w = 0,I = { onShow: function onShow() {var e = getCurrentPages(),t = e[e.length - 1];return p.path = t.route, p.query = Object.keys(t.options).map(function (e) {return { key: e, value: t.options[e] };}).filter(function (e) {return "mtj_qrid" !== e.key && "mtj_lkid" !== e.key && "mtj_shuuid" !== e.key;}), S().then(j).then(function () {y(Object.assign({ et: "page", en: "show" }, h));}).catch(function (e) {d("page.onShow", e);});}, onHide: function onHide() {var e;y({ et: "page", en: "hide", ep: e });}, onShareAppMessage: function onShareAppMessage(e) {var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : {},n = m(g.storageKeys.shareCount);n = (Number.isInteger(n) ? n : 0) + 1, v(g.storageKeys.shareCount, n);var r = { cnt: n, from: e.from, path: t.path };if (!r.path) {var o = p.query.map(function (e) {return e.key + "=" + e.value;}).join("&");r.path = p.path + (o ? "?" + o : "");}t.title && (r.title = "" + t.title), e.target && (r.target = JSON.stringify(e.target)), y(Object.assign({ et: "share", en: "action", ep: r }, h));var a = h.aso.query.filter(function (e) {return "mtj_shuuid" === e.key;}),i = a[0] ? a[0].value.split("_") : [];p.uuid !== i[i.length - 1] && i.push(p.uuid);var c,s,u,f,l = i.slice(Math.max(0, i.length - 3)).join("_");return t.path = (c = r.path, s = "mtj_shuuid", u = l, f = 0 < (c = c.replace(new RegExp(s + "=[^&]*", "g"), "").replace(/(\?|&)&/g, "$1").replace(/(\?|&)$/g, "")).indexOf("?") ? "&" : "?", c + f + s + "=" + encodeURIComponent(u)), t;}, onAction: function onAction(e, t) {if (e && e.type && e.currentTarget) if ("tap" !== e.type) {if ("touchmove" === e.type && e.touches instanceof Array) {if (-1 !== P) return;if (3 === e.touches.length) {if (w += 1, clearTimeout(k), 3 === w) return r.circleByThreeFingers = !0, r.circleToken = void 0, void y(Object.assign({ et: "page", en: "show" }, h));P = setTimeout(function () {P = -1, k = setTimeout(function () {w = 0;}, 500);}, 1e3);}}} else {var n = [{ key: "xpath", value: "#" + (e.currentTarget.id || t) }];y(Object.assign({ et: "behavior", en: "tap", ep: { data: n } }, h));}} },x = { trackEvent: function trackEvent(e) {var t,r = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : {};if (!i(t = e, "String") || !/^[a-z][a-z0-9_]{0,31}$/.test(t)) return Promise.reject(new Error("事件名称不合法"));var n = Object.keys(r).filter(function (e) {return i(n = e, "String") && /^[a-z0-9_]{1,32}$/.test(n) && (t = r[e], i(t, "String") || i(t, "Number"));var t, n;}).map(function (e) {return { key: "" + e, value: "" + r[e], type: i(r[e], "String") ? "string" : "number" };});return j().then(function () {y(Object.assign({ et: "event", en: "" + e, ep: { data: n } }, h));}).catch(function (e) {d("trackEvent", e);});}, setUserInfo: function setUserInfo() {var e = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {},n = e.tel,r = e.openId;return j().then(function () {var e = m(g.storageKeys.userInfo),t = i(e, "Object") ? e : {};s(n) && (t.tel = h.user.tel = n.substr(n.length - 11)), u(r) && (t.openId = h.user.openId = r), (t.tel || t.openId) && v(g.storageKeys.userInfo, t), i(n, "Undefined") || s(n) || console.error("手机号 ".concat(n, " 不合法")), i(r, "Undefined") || u(r) || console.error("openid ".concat(r, " 不合法"));}).catch(function (e) {d("setUserInfo", e);});}, setUserId: function setUserId(o) {return Promise.resolve().then(function () {if (!(i(o, "String") || i(o, "Number") && Number.isFinite(o))) return Promise.reject(new Error("userId只能是字符串或数字"));var e = "" + o,t = m(g.storageKeys.userProperty),n = i(t, "Object") ? t : {};if (!n.uid_ || n.uid_[0] !== e) {n.uid_ = [e, "1"], v(g.storageKeys.userProperty, n), h.userProperty = JSON.stringify(n);var r = [{ key: "uid", value: e }];return j().then(function () {y(Object.assign({ et: "api", en: "setUserId", ep: { data: r } }, h));}).catch(function (e) {d("setUserId", e);});}});}, setUserProperty: function setUserProperty(o) {return Promise.resolve().then(function () {var e = m(g.storageKeys.userProperty),n = i(e, "Object") ? e : {};if (i(o, "Null")) Object.keys(n).forEach(function (e) {"_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1) && delete n[e];});else if (!i(o, "Object")) return Promise.reject(new Error("userProperty必须是对象"));var r = Object.keys(n).filter(function (e) {return "_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1);}).length;Object.keys(o || {}).forEach(function (e) {var t = o[e];"" !== e && "_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1) && (i(t, "Null") ? n[e] && (delete n[e], r--) : !(i(t, "String") || i(t, "Number") && Number.isFinite(t)) || e.length > g.maxUserPropertyKeyValueLength || ("" + t).length > g.maxUserPropertyKeyValueLength || !n[e] && r >= g.maxUserPropertyCount || (n[e] || r++, n[e] = [t, "1"]));}), v(g.storageKeys.userProperty, n), h.userProperty = JSON.stringify(n);});} },U = App,_ = Page,E = function E(t, e, n) {var r = e[t];e[t] = function (e) {if (n.call(this, e, t), r) return r.apply(this, arguments);};},T = function T(t) {g.enabledEvents.app.forEach(function (e) {E(e, t, O[e]);}), t.mtj = x, U(t);},q = function q(a) {g.enabledEvents.page.forEach(function (e) {E(e, a, I[e]);}), g.enabledEvents.share.forEach(function (e) {var t, n, r, o;r = I[t = e], o = (n = a)[t], n[t] = function (e) {var t = o && o.apply(this, arguments);return r.call(this, e, t);};}), Object.keys(a).forEach(function (e) {"function" == typeof a[e] && -1 === g.enabledEvents.page.indexOf(e) && -1 === g.enabledEvents.share.indexOf(e) && E(e, a, I.onAction);}), _(a);},K = function K() {var e, t;e = wx, o = e;try {t = __webpack_require__(/*! ./mtj-wx-sdk.config */ 27);} catch (e) {return void console.error("请把mtj-wx-sdk.config.js文件拷贝到utils目录中");}t && t.appKey ? (p.key = t.appKey, g.getLocation = t.getLocation || !1, g.disableCircling = t.disableCircling || !1, t.hasPlugin ? module.exports = { App: T, Page: q } : (App = T, Page = q)) : console.error("请设置mtj-wx-sdk.config.js文件中的appKey字段");};return K(), e.init = K, e;}({});
+
+/***/ }),
+
+/***/ 27:
+/*!******************************************************!*\
+  !*** F:/program/used_car/utils/mtj-wx-sdk.config.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * @file 百度移动统计配置文件
+ */
+
+module.exports = {
+  /**
+                    * 从百度移动统计获取的AppKey
+                    * @type {string}
+                    */
+  appKey: '605938669e',
+
+  /**
+                         * 是否使用了插件
+                         * @type {boolean}
+                         */
+  hasPlugin: false,
+
+  /**
+                     * 是否获取当前的地理位置和速度信息
+                     * @type {boolean}
+                     */
+  getLocation: false };
 
 /***/ }),
 
@@ -10038,91 +10102,18 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 30:
-/*!**************************************!*\
-  !*** D:/lunyunW/utils/mtj-wx-sdk.js ***!
-  \**************************************/
+/***/ 34:
+/*!*********************************************************************************************!*\
+  !*** ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator/index.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-var mtjwxsdk = function (e) {"use strict";var o,t,n,g = { logServerUrl: "https://hmma.baidu.com/mini.gif", circleServerUrl: "https://hmma.baidu.com/mini.gif?circle=1", maxRequestRetryCount: 5, requestRetryFirstDelay: 1e3, requestRetryMultiple: 4, maxRequestDataLength: 204800, maxUserPropertyCount: 100, maxUserPropertyKeyValueLength: 256, maxUint8: 255, maxUint32: 4294967295, enabledEvents: { app: ["onShow", "onHide", "onError"], page: ["onShow", "onHide"], share: ["onShareAppMessage"], behavior: ["tap"] }, storageKeys: { uuid: "mtj_uuid", userInfo: "mtj_user", userProperty: "mtj_user_property", shareCount: "mtj_scnt" } },p = { type: 1 },h = { aso: {} },r = {},a = function a() {return "undefined" != typeof crypto && crypto.getRandomValues ? crypto.getRandomValues(new Uint32Array(1))[0] : Math.floor(Math.random() * g.maxUint32);},i = function i(e, t) {return "[object " + t + "]" === {}.toString.call(e);},c = function n(r) {return (i(r, "Object") || i(r, "Array")) && Object.keys(r).forEach(function (e) {var t = r[e];i(t, "Object") || i(t, "Array") ? r[e] = n(t) : r[e] = "" + t;}), r;},s = function s(e) {return i(e, "String") && /^\d{11}$/.test(e);},u = function u(e) {return i(e, "String") && 28 === e.length;},f = 0,l = function l(r) {return new Promise(function (t, n) {if (r.data = r.data || {}, r.data.v = "1.9.1", r.data.rqc = ++f, e = r.data, !(JSON.stringify(e).length <= g.maxRequestDataLength)) return f--, n(new Error("invalid data"));var e;r.success = function (e) {return t(e);}, r.fail = function (e) {return n(e);}, function t(n) {var r = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : g.requestRetryFirstDelay;return o.request({ url: n.url, data: n.data, header: Object.assign({ "content-type": "application/json" }, n.header), method: n.method || "POST", dataType: n.dataType || "json", success: function success(e) {delete n.data.rtc, n.success && n.success(e);}, fail: function fail(e) {n.data.rtc = (n.data.rtc || 0) + 1, n.data.rtc <= g.maxRequestRetryCount ? setTimeout(function () {return t(n, r * g.requestRetryMultiple);}, r) : (delete n.data.rtc, n.fail && n.fail(e));} });}(r);});},d = function d(e, t) {var n = i(t, "Object") ? JSON.stringify(t) : "" + t;l({ url: g.logServerUrl, dataType: "string", data: Object.assign({}, p, { et: "error", en: e, ep: { ex: n }, rid: a() }) });},y = function y(e) {e.rid = a(), e.aso = e.aso || {};var t = { url: g.logServerUrl, dataType: "string", data: Object.assign({}, p, e) };l(t), (r.circleToken || r.circleByThreeFingers) && ("page" === e.et && "show" === e.en || "behavior" === e.et && "tap" === e.en) && (t.url = g.circleServerUrl, t.data.token = r.circleToken, l(t).catch(function (e) {return console.error(e);}));},m = function m(e) {try {return o.getStorageSync(e);} catch (e) {d("getStorageSync", e);}},v = function v(e, t) {try {o.setStorageSync(e, t);} catch (e) {d("setStorageSync", e);}},b = function b() {return Promise.resolve().then(function () {var e = m(g.storageKeys.uuid);return i(e, "String") && 32 === e.length || (e = ([1e7] + 1e3 + 4e3 + 8e3 + 1e11).replace(/[018]/g, function (e) {return (e ^ ("undefined" != typeof crypto && crypto.getRandomValues ? crypto.getRandomValues(new Uint8Array(1))[0] : Math.floor(Math.random() * g.maxUint8)) & 15 >> e / 4).toString(16);}), v(g.storageKeys.uuid, e)), e;});},j = function j() {return t || (p.sid = a(), p.rqc = 0, t = Promise.all([b(), new Promise(function (t) {o.getSystemInfo({ success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), new Promise(function (t) {o.getNetworkType({ success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), Promise.resolve().then(function () {var e = m(g.storageKeys.userInfo),n = i(e, "Object") ? e : {};return new Promise(function (t) {o.getSetting({ success: function success(e) {e.authSetting && e.authSetting["scope.userInfo"] ? o.getUserInfo({ success: function success(e) {delete e.userInfo.errMsg, t(Object.assign(n, e.userInfo));}, fail: function fail() {t(n);} }) : t(n);}, fail: function fail() {t(n);} });});}), new Promise(function (t) {if (!g.getLocation) return t({});o.getLocation({ type: "wgs84", success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });}), Promise.resolve().then(function () {var e = m(g.storageKeys.userProperty);return i(e, "Object") ? e : {};})]).then(function (e) {p.uuid = e[0], h.system = c(e[1]), h.network = c(e[2]), 0 < Object.keys(e[3]).length && (h.user = c(e[3])), 0 < Object.keys(e[4]).length && (h.location = c(e[4])), 0 < Object.keys(e[5]).length && (h.userProperty = JSON.stringify(e[5])), h.system.platform;}));},S = function S() {return n || (n = new Promise(function (t) {o.getClipboardData({ success: function success(e) {t(e.data);}, fail: function fail() {t();} });}).then(function (e) {if (!g.disableCircling && 36 === e.length) {var t,n = e.match(/^mtj_(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})$/);return n ? (r.circleToken = "".concat(n[1], "-").concat(n[2], "-").concat(n[3], "-").concat(n[4], "-").concat(n[5]), t = "", new Promise(function (e) {o.setClipboardData({ data: t, complete: function complete() {e();} });})) : void 0;}}));},O = { onLaunch: function onLaunch() {y({ et: "app", en: "launch" });}, onShow: function onShow() {var t = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {};return h.aso.scene = "" + (t.scene || ""), t.referrerInfo && t.referrerInfo.appId ? h.aso.referrerInfo = t.referrerInfo : delete h.aso.referrerInfo, h.aso.path = t.path || "", h.aso.query = Object.keys(t.query || {}).map(function (e) {return { key: e, value: t.query[e] };}), j().then(function () {return e = t.shareTicket, new Promise(function (t) {if (!e) return t();o.getShareInfo({ shareTicket: e, success: function success(e) {delete e.errMsg, t(e);}, fail: function fail() {t({});} });});var e;}).then(function (e) {e ? h.aso.shareInfo = e : delete h.aso.shareInfo, y(Object.assign({ et: "app", en: "show" }, h));}).catch(function (e) {d("app.onShow", e);});}, onHide: function onHide() {n = null, y({ et: "app", en: "hide" });}, onError: function onError(e) {var t = i(e, "Object") ? JSON.stringify(c(e)) : "" + e;y({ et: "app", en: "error", ep: { ex: t } });} },P = -1,k = -1,w = 0,I = { onShow: function onShow() {var e = getCurrentPages(),t = e[e.length - 1];return p.path = t.route, p.query = Object.keys(t.options).map(function (e) {return { key: e, value: t.options[e] };}).filter(function (e) {return "mtj_qrid" !== e.key && "mtj_lkid" !== e.key && "mtj_shuuid" !== e.key;}), S().then(j).then(function () {y(Object.assign({ et: "page", en: "show" }, h));}).catch(function (e) {d("page.onShow", e);});}, onHide: function onHide() {var e;y({ et: "page", en: "hide", ep: e });}, onShareAppMessage: function onShareAppMessage(e) {var t = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : {},n = m(g.storageKeys.shareCount);n = (Number.isInteger(n) ? n : 0) + 1, v(g.storageKeys.shareCount, n);var r = { cnt: n, from: e.from, path: t.path };if (!r.path) {var o = p.query.map(function (e) {return e.key + "=" + e.value;}).join("&");r.path = p.path + (o ? "?" + o : "");}t.title && (r.title = "" + t.title), e.target && (r.target = JSON.stringify(e.target)), y(Object.assign({ et: "share", en: "action", ep: r }, h));var a = h.aso.query.filter(function (e) {return "mtj_shuuid" === e.key;}),i = a[0] ? a[0].value.split("_") : [];p.uuid !== i[i.length - 1] && i.push(p.uuid);var c,s,u,f,l = i.slice(Math.max(0, i.length - 3)).join("_");return t.path = (c = r.path, s = "mtj_shuuid", u = l, f = 0 < (c = c.replace(new RegExp(s + "=[^&]*", "g"), "").replace(/(\?|&)&/g, "$1").replace(/(\?|&)$/g, "")).indexOf("?") ? "&" : "?", c + f + s + "=" + encodeURIComponent(u)), t;}, onAction: function onAction(e, t) {if (e && e.type && e.currentTarget) if ("tap" !== e.type) {if ("touchmove" === e.type && e.touches instanceof Array) {if (-1 !== P) return;if (3 === e.touches.length) {if (w += 1, clearTimeout(k), 3 === w) return r.circleByThreeFingers = !0, r.circleToken = void 0, void y(Object.assign({ et: "page", en: "show" }, h));P = setTimeout(function () {P = -1, k = setTimeout(function () {w = 0;}, 500);}, 1e3);}}} else {var n = [{ key: "xpath", value: "#" + (e.currentTarget.id || t) }];y(Object.assign({ et: "behavior", en: "tap", ep: { data: n } }, h));}} },x = { trackEvent: function trackEvent(e) {var t,r = 1 < arguments.length && void 0 !== arguments[1] ? arguments[1] : {};if (!i(t = e, "String") || !/^[a-z][a-z0-9_]{0,31}$/.test(t)) return Promise.reject(new Error("事件名称不合法"));var n = Object.keys(r).filter(function (e) {return i(n = e, "String") && /^[a-z0-9_]{1,32}$/.test(n) && (t = r[e], i(t, "String") || i(t, "Number"));var t, n;}).map(function (e) {return { key: "" + e, value: "" + r[e], type: i(r[e], "String") ? "string" : "number" };});return j().then(function () {y(Object.assign({ et: "event", en: "" + e, ep: { data: n } }, h));}).catch(function (e) {d("trackEvent", e);});}, setUserInfo: function setUserInfo() {var e = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : {},n = e.tel,r = e.openId;return j().then(function () {var e = m(g.storageKeys.userInfo),t = i(e, "Object") ? e : {};s(n) && (t.tel = h.user.tel = n.substr(n.length - 11)), u(r) && (t.openId = h.user.openId = r), (t.tel || t.openId) && v(g.storageKeys.userInfo, t), i(n, "Undefined") || s(n) || console.error("手机号 ".concat(n, " 不合法")), i(r, "Undefined") || u(r) || console.error("openid ".concat(r, " 不合法"));}).catch(function (e) {d("setUserInfo", e);});}, setUserId: function setUserId(o) {return Promise.resolve().then(function () {if (!(i(o, "String") || i(o, "Number") && Number.isFinite(o))) return Promise.reject(new Error("userId只能是字符串或数字"));var e = "" + o,t = m(g.storageKeys.userProperty),n = i(t, "Object") ? t : {};if (!n.uid_ || n.uid_[0] !== e) {n.uid_ = [e, "1"], v(g.storageKeys.userProperty, n), h.userProperty = JSON.stringify(n);var r = [{ key: "uid", value: e }];return j().then(function () {y(Object.assign({ et: "api", en: "setUserId", ep: { data: r } }, h));}).catch(function (e) {d("setUserId", e);});}});}, setUserProperty: function setUserProperty(o) {return Promise.resolve().then(function () {var e = m(g.storageKeys.userProperty),n = i(e, "Object") ? e : {};if (i(o, "Null")) Object.keys(n).forEach(function (e) {"_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1) && delete n[e];});else if (!i(o, "Object")) return Promise.reject(new Error("userProperty必须是对象"));var r = Object.keys(n).filter(function (e) {return "_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1);}).length;Object.keys(o || {}).forEach(function (e) {var t = o[e];"" !== e && "_" !== e.charAt(0) && "_" !== e.charAt(e.length - 1) && (i(t, "Null") ? n[e] && (delete n[e], r--) : !(i(t, "String") || i(t, "Number") && Number.isFinite(t)) || e.length > g.maxUserPropertyKeyValueLength || ("" + t).length > g.maxUserPropertyKeyValueLength || !n[e] && r >= g.maxUserPropertyCount || (n[e] || r++, n[e] = [t, "1"]));}), v(g.storageKeys.userProperty, n), h.userProperty = JSON.stringify(n);});} },U = App,_ = Page,E = function E(t, e, n) {var r = e[t];e[t] = function (e) {if (n.call(this, e, t), r) return r.apply(this, arguments);};},T = function T(t) {g.enabledEvents.app.forEach(function (e) {E(e, t, O[e]);}), t.mtj = x, U(t);},q = function q(a) {g.enabledEvents.page.forEach(function (e) {E(e, a, I[e]);}), g.enabledEvents.share.forEach(function (e) {var t, n, r, o;r = I[t = e], o = (n = a)[t], n[t] = function (e) {var t = o && o.apply(this, arguments);return r.call(this, e, t);};}), Object.keys(a).forEach(function (e) {"function" == typeof a[e] && -1 === g.enabledEvents.page.indexOf(e) && -1 === g.enabledEvents.share.indexOf(e) && E(e, a, I.onAction);}), _(a);},K = function K() {var e, t;e = wx, o = e;try {t = __webpack_require__(/*! ./mtj-wx-sdk.config */ 31);} catch (e) {return void console.error("请把mtj-wx-sdk.config.js文件拷贝到utils目录中");}t && t.appKey ? (p.key = t.appKey, g.getLocation = t.getLocation || !1, g.disableCircling = t.disableCircling || !1, t.hasPlugin ? module.exports = { App: T, Page: q } : (App = T, Page = q)) : console.error("请设置mtj-wx-sdk.config.js文件中的appKey字段");};return K(), e.init = K, e;}({});
+module.exports = __webpack_require__(/*! regenerator-runtime */ 35);
 
 /***/ }),
 
-/***/ 31:
-/*!*********************************************!*\
-  !*** D:/lunyunW/utils/mtj-wx-sdk.config.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
- /**
-               * @file 百度移动统计配置文件
-               */
-
-module.exports = {
-  /**
-                    * 从百度移动统计获取的AppKey
-                    * @type {string}
-                    */
-  appKey: '605938669e',
-
-  /**
-                         * 是否使用了插件
-                         * @type {boolean}
-                         */
-  hasPlugin: false,
-
-  /**
-                     * 是否获取当前的地理位置和速度信息
-                     * @type {boolean}
-                     */
-  getLocation: false };
-
-/***/ }),
-
-/***/ 357:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/help/help.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getHelpContent = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
-
-var controller = '/index/';
-
-/**
-                             * 获取会员信息
-                             */
-var getHelpContent = function getHelpContent() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-
-  return (0, _index.default)({
-    url: controller + 'getHelpContent',
-    method: 'POST',
-    is_login: true,
-    params: params });
-
-};exports.getHelpContent = getHelpContent;
-
-/***/ }),
-
-/***/ 38:
-/*!**********************************************************!*\
-  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! regenerator-runtime */ 39);
-
-
-/***/ }),
-
-/***/ 39:
+/***/ 35:
 /*!************************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime-module.js ***!
   \************************************************************/
@@ -10153,7 +10144,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(/*! ./runtime */ 40);
+module.exports = __webpack_require__(/*! ./runtime */ 36);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -10170,19 +10161,7 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 4:
-/*!*****************************!*\
-  !*** D:/lunyunW/pages.json ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/***/ }),
-
-/***/ 40:
+/***/ 36:
 /*!*****************************************************!*\
   !*** ./node_modules/regenerator-runtime/runtime.js ***!
   \*****************************************************/
@@ -10914,17 +10893,44 @@ if (hadRuntime) {
 
 /***/ }),
 
-/***/ 41:
-/*!********************************!*\
-  !*** D:/lunyunW/api/reques.js ***!
-  \********************************/
+/***/ 361:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/help/help.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });exports.getHelpContent = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+var controller = '/index/';
+
+/**
+                             * 获取会员信息
+                             */
+var getHelpContent = function getHelpContent() {var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+  return (0, _index.default)({
+    url: controller + 'getHelpContent',
+    method: 'POST',
+    is_login: true,
+    params: params });
+
+};exports.getHelpContent = getHelpContent;
+
+/***/ }),
+
+/***/ 37:
+/*!*****************************************!*\
+  !*** F:/program/used_car/api/reques.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.request = void 0;
 
-var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);var baseUrl = 'https://api.chinartn.cn/api.php?s='; // 'https://beta.api.chinartn.cn/api.php?s='
+var _navigate = __webpack_require__(/*! @/api/navigate.js */ 22);var baseUrl = 'https://api.chinartn.cn/api.php?s='; // 'https://beta.api.chinartn.cn/api.php?s='
 // 页面跳转
 // request 封装
 var request = function request(url, params, type) {
@@ -10973,15 +10979,15 @@ var request = function request(url, params, type) {
 
 /***/ }),
 
-/***/ 42:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/home/home.js ***!
-  \***********************************/
+/***/ 38:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/home/home.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getIndexData = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getIndexData = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /*
                                                                                                                                                                                                                                                                     
@@ -10996,897 +11002,21 @@ var getIndexData = function getIndexData() {var params = arguments.length > 0 &&
 
 /***/ }),
 
-/***/ 5:
-/*!*******************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-stat/dist/index.js ***!
-  \*******************************************************/
+/***/ 4:
+/*!**************************************!*\
+  !*** F:/program/used_car/pages.json ***!
+  \**************************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {var _package = __webpack_require__(/*! ../package.json */ 6);function _possibleConstructorReturn(self, call) {if (call && (typeof call === "object" || typeof call === "function")) {return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self) {if (self === void 0) {throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _getPrototypeOf(o) {_getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {return o.__proto__ || Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function _inherits(subClass, superClass) {if (typeof superClass !== "function" && superClass !== null) {throw new TypeError("Super expression must either be null or a function");}subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } });if (superClass) _setPrototypeOf(subClass, superClass);}function _setPrototypeOf(o, p) {_setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {o.__proto__ = p;return o;};return _setPrototypeOf(o, p);}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;}
 
-var STAT_VERSION = _package.version;
-var STAT_URL = 'https://tongji.dcloud.io/uni/stat';
-var STAT_H5_URL = 'https://tongji.dcloud.io/uni/stat.gif';
-var PAGE_PVER_TIME = 1800;
-var APP_PVER_TIME = 300;
-var OPERATING_TIME = 10;
-
-var UUID_KEY = '__DC_STAT_UUID';
-var UUID_VALUE = '__DC_UUID_VALUE';
-
-function getUuid() {
-  var uuid = '';
-  if (getPlatformName() === 'n') {
-    try {
-      uuid = plus.runtime.getDCloudId();
-    } catch (e) {
-      uuid = '';
-    }
-    return uuid;
-  }
-
-  try {
-    uuid = uni.getStorageSync(UUID_KEY);
-  } catch (e) {
-    uuid = UUID_VALUE;
-  }
-
-  if (!uuid) {
-    uuid = Date.now() + '' + Math.floor(Math.random() * 1e7);
-    try {
-      uni.setStorageSync(UUID_KEY, uuid);
-    } catch (e) {
-      uni.setStorageSync(UUID_KEY, UUID_VALUE);
-    }
-  }
-  return uuid;
-}
-
-var getSgin = function getSgin(statData) {
-  var arr = Object.keys(statData);
-  var sortArr = arr.sort();
-  var sgin = {};
-  var sginStr = '';
-  for (var i in sortArr) {
-    sgin[sortArr[i]] = statData[sortArr[i]];
-    sginStr += sortArr[i] + '=' + statData[sortArr[i]] + '&';
-  }
-  // const options = sginStr.substr(0, sginStr.length - 1)
-  // sginStr = sginStr.substr(0, sginStr.length - 1) + '&key=' + STAT_KEY;
-  // const si = crypto.createHash('md5').update(sginStr).digest('hex');
-  return {
-    sign: '',
-    options: sginStr.substr(0, sginStr.length - 1) };
-
-};
-
-var getSplicing = function getSplicing(data) {
-  var str = '';
-  for (var i in data) {
-    str += i + '=' + data[i] + '&';
-  }
-  return str.substr(0, str.length - 1);
-};
-
-var getTime = function getTime() {
-  return parseInt(new Date().getTime() / 1000);
-};
-
-var getPlatformName = function getPlatformName() {
-  var platformList = {
-    'app-plus': 'n',
-    'h5': 'h5',
-    'mp-weixin': 'wx',
-    'mp-alipay': 'ali',
-    'mp-baidu': 'bd',
-    'mp-toutiao': 'tt',
-    'mp-qq': 'qq' };
-
-  return platformList["mp-weixin"];
-};
-
-var getPackName = function getPackName() {
-  var packName = '';
-  if (getPlatformName() === 'wx' || getPlatformName() === 'qq') {
-    // 兼容微信小程序低版本基础库
-    if (uni.canIUse('getAccountInfoSync')) {
-      packName = uni.getAccountInfoSync().miniProgram.appId || '';
-    }
-  }
-  return packName;
-};
-
-var getVersion = function getVersion() {
-  return getPlatformName() === 'n' ? plus.runtime.version : '';
-};
-
-var getChannel = function getChannel() {
-  var platformName = getPlatformName();
-  var channel = '';
-  if (platformName === 'n') {
-    channel = plus.runtime.channel;
-  }
-  return channel;
-};
-
-var getScene = function getScene(options) {
-  var platformName = getPlatformName();
-  var scene = '';
-  if (options) {
-    return options;
-  }
-  if (platformName === 'wx') {
-    scene = uni.getLaunchOptionsSync().scene;
-  }
-  return scene;
-};
-var First__Visit__Time__KEY = 'First__Visit__Time';
-var Last__Visit__Time__KEY = 'Last__Visit__Time';
-
-var getFirstVisitTime = function getFirstVisitTime() {
-  var timeStorge = uni.getStorageSync(First__Visit__Time__KEY);
-  var time = 0;
-  if (timeStorge) {
-    time = timeStorge;
-  } else {
-    time = getTime();
-    uni.setStorageSync(First__Visit__Time__KEY, time);
-    uni.removeStorageSync(Last__Visit__Time__KEY);
-  }
-  return time;
-};
-
-var getLastVisitTime = function getLastVisitTime() {
-  var timeStorge = uni.getStorageSync(Last__Visit__Time__KEY);
-  var time = 0;
-  if (timeStorge) {
-    time = timeStorge;
-  } else {
-    time = '';
-  }
-  uni.setStorageSync(Last__Visit__Time__KEY, getTime());
-  return time;
-};
-
-
-var PAGE_RESIDENCE_TIME = '__page__residence__time';
-var First_Page_residence_time = 0;
-var Last_Page_residence_time = 0;
-
-
-var setPageResidenceTime = function setPageResidenceTime() {
-  First_Page_residence_time = getTime();
-  if (getPlatformName() === 'n') {
-    uni.setStorageSync(PAGE_RESIDENCE_TIME, getTime());
-  }
-  return First_Page_residence_time;
-};
-
-var getPageResidenceTime = function getPageResidenceTime() {
-  Last_Page_residence_time = getTime();
-  if (getPlatformName() === 'n') {
-    First_Page_residence_time = uni.getStorageSync(PAGE_RESIDENCE_TIME);
-  }
-  return Last_Page_residence_time - First_Page_residence_time;
-};
-var TOTAL__VISIT__COUNT = 'Total__Visit__Count';
-var getTotalVisitCount = function getTotalVisitCount() {
-  var timeStorge = uni.getStorageSync(TOTAL__VISIT__COUNT);
-  var count = 1;
-  if (timeStorge) {
-    count = timeStorge;
-    count++;
-  }
-  uni.setStorageSync(TOTAL__VISIT__COUNT, count);
-  return count;
-};
-
-var GetEncodeURIComponentOptions = function GetEncodeURIComponentOptions(statData) {
-  var data = {};
-  for (var prop in statData) {
-    data[prop] = encodeURIComponent(statData[prop]);
-  }
-  return data;
-};
-
-var Set__First__Time = 0;
-var Set__Last__Time = 0;
-
-var getFirstTime = function getFirstTime() {
-  var time = new Date().getTime();
-  Set__First__Time = time;
-  Set__Last__Time = 0;
-  return time;
-};
-
-
-var getLastTime = function getLastTime() {
-  var time = new Date().getTime();
-  Set__Last__Time = time;
-  return time;
-};
-
-
-var getResidenceTime = function getResidenceTime(type) {
-  var residenceTime = 0;
-  if (Set__First__Time !== 0) {
-    residenceTime = Set__Last__Time - Set__First__Time;
-  }
-
-  residenceTime = parseInt(residenceTime / 1000);
-  residenceTime = residenceTime < 1 ? 1 : residenceTime;
-  if (type === 'app') {
-    var overtime = residenceTime > APP_PVER_TIME ? true : false;
-    return {
-      residenceTime: residenceTime,
-      overtime: overtime };
-
-  }
-  if (type === 'page') {
-    var _overtime = residenceTime > PAGE_PVER_TIME ? true : false;
-    return {
-      residenceTime: residenceTime,
-      overtime: _overtime };
-
-  }
-
-  return {
-    residenceTime: residenceTime };
-
-
-};
-
-var getRoute = function getRoute() {
-  var pages = getCurrentPages();
-  var page = pages[pages.length - 1];
-  var _self = page.$vm;
-
-  if (getPlatformName() === 'bd') {
-    return _self.$mp && _self.$mp.page.is;
-  } else {
-    return _self.$scope && _self.$scope.route || _self.$mp && _self.$mp.page.route;
-  }
-};
-
-var getPageRoute = function getPageRoute(self) {
-  var pages = getCurrentPages();
-  var page = pages[pages.length - 1];
-  var _self = page.$vm;
-  var query = self._query;
-  var str = query && JSON.stringify(query) !== '{}' ? '?' + JSON.stringify(query) : '';
-  // clear
-  self._query = '';
-  if (getPlatformName() === 'bd') {
-    return _self.$mp && _self.$mp.page.is + str;
-  } else {
-    return _self.$scope && _self.$scope.route + str || _self.$mp && _self.$mp.page.route + str;
-  }
-};
-
-var getPageTypes = function getPageTypes(self) {
-  if (self.mpType === 'page' || self.$mp && self.$mp.mpType === 'page' || self.$options.mpType === 'page') {
-    return true;
-  }
-  return false;
-};
-
-var calibration = function calibration(eventName, options) {
-  //  login 、 share 、pay_success 、pay_fail 、register 、title
-  if (!eventName) {
-    console.error("uni.report \u7F3A\u5C11 [eventName] \u53C2\u6570");
-    return true;
-  }
-  if (typeof eventName !== 'string') {
-    console.error("uni.report [eventName] \u53C2\u6570\u7C7B\u578B\u9519\u8BEF,\u53EA\u80FD\u4E3A String \u7C7B\u578B");
-    return true;
-  }
-  if (eventName.length > 255) {
-    console.error("uni.report [eventName] \u53C2\u6570\u957F\u5EA6\u4E0D\u80FD\u5927\u4E8E 255");
-    return true;
-  }
-
-  if (typeof options !== 'string' && typeof options !== 'object') {
-    console.error("uni.report [options] \u53C2\u6570\u7C7B\u578B\u9519\u8BEF,\u53EA\u80FD\u4E3A String \u6216 Object \u7C7B\u578B");
-    return true;
-  }
-
-  if (typeof options === 'string' && options.length > 255) {
-    console.error("uni.report [options] \u53C2\u6570\u957F\u5EA6\u4E0D\u80FD\u5927\u4E8E 255");
-    return true;
-  }
-
-  if (eventName === 'title' && typeof options !== 'string') {
-    console.error('uni.report [eventName] 参数为 title 时，[options] 参数只能为 String 类型');
-    return true;
-  }
-};
-
-var PagesJson = __webpack_require__(/*! uni-pages?{"type":"style"} */ 7).default;
-var statConfig = __webpack_require__(/*! uni-stat-config */ 8).default || __webpack_require__(/*! uni-stat-config */ 8);
-
-var resultOptions = uni.getSystemInfoSync();var
-
-Util = /*#__PURE__*/function () {
-  function Util() {_classCallCheck(this, Util);
-    this.self = '';
-    this._retry = 0;
-    this._platform = '';
-    this._query = {};
-    this._navigationBarTitle = {
-      config: '',
-      page: '',
-      report: '',
-      lt: '' };
-
-    this._operatingTime = 0;
-    this._reportingRequestData = {
-      '1': [],
-      '11': [] };
-
-    this.__prevent_triggering = false;
-
-    this.__licationHide = false;
-    this.__licationShow = false;
-    this._lastPageRoute = '';
-    this.statData = {
-      uuid: getUuid(),
-      ut: getPlatformName(),
-      mpn: getPackName(),
-      ak: statConfig.appid,
-      usv: STAT_VERSION,
-      v: getVersion(),
-      ch: getChannel(),
-      cn: '',
-      pn: '',
-      ct: '',
-      t: getTime(),
-      tt: '',
-      p: resultOptions.platform === 'android' ? 'a' : 'i',
-      brand: resultOptions.brand || '',
-      md: resultOptions.model,
-      sv: resultOptions.system.replace(/(Android|iOS)\s/, ''),
-      mpsdk: resultOptions.SDKVersion || '',
-      mpv: resultOptions.version || '',
-      lang: resultOptions.language,
-      pr: resultOptions.pixelRatio,
-      ww: resultOptions.windowWidth,
-      wh: resultOptions.windowHeight,
-      sw: resultOptions.screenWidth,
-      sh: resultOptions.screenHeight };
-
-
-  }_createClass(Util, [{ key: "_applicationShow", value: function _applicationShow()
-
-    {
-      if (this.__licationHide) {
-        getLastTime();
-        var time = getResidenceTime('app');
-        if (time.overtime) {
-          var options = {
-            path: this._lastPageRoute,
-            scene: this.statData.sc };
-
-          this._sendReportRequest(options);
-        }
-        this.__licationHide = false;
-      }
-    } }, { key: "_applicationHide", value: function _applicationHide(
-
-    self, type) {
-
-      this.__licationHide = true;
-      getLastTime();
-      var time = getResidenceTime();
-      getFirstTime();
-      var route = getPageRoute(this);
-      this._sendHideRequest({
-        urlref: route,
-        urlref_ts: time.residenceTime },
-      type);
-    } }, { key: "_pageShow", value: function _pageShow()
-
-    {
-      var route = getPageRoute(this);
-      var routepath = getRoute();
-      this._navigationBarTitle.config = PagesJson &&
-      PagesJson.pages[routepath] &&
-      PagesJson.pages[routepath].titleNView &&
-      PagesJson.pages[routepath].titleNView.titleText ||
-      PagesJson &&
-      PagesJson.pages[routepath] &&
-      PagesJson.pages[routepath].navigationBarTitleText || '';
-
-      if (this.__licationShow) {
-        getFirstTime();
-        this.__licationShow = false;
-        // console.log('这是 onLauch 之后执行的第一次 pageShow ，为下次记录时间做准备');
-        this._lastPageRoute = route;
-        return;
-      }
-
-      getLastTime();
-      this._lastPageRoute = route;
-      var time = getResidenceTime('page');
-      if (time.overtime) {
-        var options = {
-          path: this._lastPageRoute,
-          scene: this.statData.sc };
-
-        this._sendReportRequest(options);
-      }
-      getFirstTime();
-    } }, { key: "_pageHide", value: function _pageHide()
-
-    {
-      if (!this.__licationHide) {
-        getLastTime();
-        var time = getResidenceTime('page');
-        this._sendPageRequest({
-          url: this._lastPageRoute,
-          urlref: this._lastPageRoute,
-          urlref_ts: time.residenceTime });
-
-        this._navigationBarTitle = {
-          config: '',
-          page: '',
-          report: '',
-          lt: '' };
-
-        return;
-      }
-    } }, { key: "_login", value: function _login()
-
-    {
-      this._sendEventRequest({
-        key: 'login' },
-      0);
-    } }, { key: "_share", value: function _share()
-
-    {
-      this._sendEventRequest({
-        key: 'share' },
-      0);
-    } }, { key: "_payment", value: function _payment(
-    key) {
-      this._sendEventRequest({
-        key: key },
-      0);
-    } }, { key: "_sendReportRequest", value: function _sendReportRequest(
-    options) {
-
-      this._navigationBarTitle.lt = '1';
-      var query = options.query && JSON.stringify(options.query) !== '{}' ? '?' + JSON.stringify(options.query) : '';
-      this.statData.lt = '1';
-      this.statData.url = options.path + query || '';
-      this.statData.t = getTime();
-      this.statData.sc = getScene(options.scene);
-      this.statData.fvts = getFirstVisitTime();
-      this.statData.lvts = getLastVisitTime();
-      this.statData.tvc = getTotalVisitCount();
-      if (getPlatformName() === 'n') {
-        this.getProperty();
-      } else {
-        this.getNetworkInfo();
-      }
-    } }, { key: "_sendPageRequest", value: function _sendPageRequest(
-
-    opt) {var
-
-      url =
-
-
-      opt.url,urlref = opt.urlref,urlref_ts = opt.urlref_ts;
-      this._navigationBarTitle.lt = '11';
-      var options = {
-        ak: this.statData.ak,
-        uuid: this.statData.uuid,
-        lt: '11',
-        ut: this.statData.ut,
-        url: url,
-        tt: this.statData.tt,
-        urlref: urlref,
-        urlref_ts: urlref_ts,
-        ch: this.statData.ch,
-        usv: this.statData.usv,
-        t: getTime(),
-        p: this.statData.p };
-
-      this.request(options);
-    } }, { key: "_sendHideRequest", value: function _sendHideRequest(
-
-    opt, type) {var
-
-      urlref =
-
-      opt.urlref,urlref_ts = opt.urlref_ts;
-      var options = {
-        ak: this.statData.ak,
-        uuid: this.statData.uuid,
-        lt: '3',
-        ut: this.statData.ut,
-        urlref: urlref,
-        urlref_ts: urlref_ts,
-        ch: this.statData.ch,
-        usv: this.statData.usv,
-        t: getTime(),
-        p: this.statData.p };
-
-      this.request(options, type);
-    } }, { key: "_sendEventRequest", value: function _sendEventRequest()
-
-
-
-    {var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},_ref$key = _ref.key,key = _ref$key === void 0 ? '' : _ref$key,_ref$value = _ref.value,value = _ref$value === void 0 ? "" : _ref$value;
-      var route = this._lastPageRoute;
-      var options = {
-        ak: this.statData.ak,
-        uuid: this.statData.uuid,
-        lt: '21',
-        ut: this.statData.ut,
-        url: route,
-        ch: this.statData.ch,
-        e_n: key,
-        e_v: typeof value === 'object' ? JSON.stringify(value) : value.toString(),
-        usv: this.statData.usv,
-        t: getTime(),
-        p: this.statData.p };
-
-      this.request(options);
-    } }, { key: "getNetworkInfo", value: function getNetworkInfo()
-
-    {var _this = this;
-      uni.getNetworkType({
-        success: function success(result) {
-          _this.statData.net = result.networkType;
-          _this.getLocation();
-        } });
-
-    } }, { key: "getProperty", value: function getProperty()
-
-    {var _this2 = this;
-      plus.runtime.getProperty(plus.runtime.appid, function (wgtinfo) {
-        _this2.statData.v = wgtinfo.version || '';
-        _this2.getNetworkInfo();
-      });
-    } }, { key: "getLocation", value: function getLocation()
-
-    {var _this3 = this;
-      if (statConfig.getLocation) {
-        uni.getLocation({
-          type: 'wgs84',
-          geocode: true,
-          success: function success(result) {
-            if (result.address) {
-              _this3.statData.cn = result.address.country;
-              _this3.statData.pn = result.address.province;
-              _this3.statData.ct = result.address.city;
-            }
-
-            _this3.statData.lat = result.latitude;
-            _this3.statData.lng = result.longitude;
-            _this3.request(_this3.statData);
-          } });
-
-      } else {
-        this.statData.lat = 0;
-        this.statData.lng = 0;
-        this.request(this.statData);
-      }
-    } }, { key: "request", value: function request(
-
-    data, type) {var _this4 = this;
-      var time = getTime();
-      var title = this._navigationBarTitle;
-      data.ttn = title.page;
-      data.ttpj = title.config;
-      data.ttc = title.report;
-
-      var requestData = this._reportingRequestData;
-      if (getPlatformName() === 'n') {
-        requestData = uni.getStorageSync('__UNI__STAT__DATA') || {};
-      }
-      if (!requestData[data.lt]) {
-        requestData[data.lt] = [];
-      }
-      requestData[data.lt].push(data);
-
-      if (getPlatformName() === 'n') {
-        uni.setStorageSync('__UNI__STAT__DATA', requestData);
-      }
-      if (getPageResidenceTime() < OPERATING_TIME && !type) {
-        return;
-      }
-      var uniStatData = this._reportingRequestData;
-      if (getPlatformName() === 'n') {
-        uniStatData = uni.getStorageSync('__UNI__STAT__DATA');
-      }
-      // 时间超过，重新获取时间戳
-      setPageResidenceTime();
-      var firstArr = [];
-      var contentArr = [];
-      var lastArr = [];var _loop = function _loop(
-
-      i) {
-        var rd = uniStatData[i];
-        rd.forEach(function (elm) {
-          var newData = getSplicing(elm);
-          if (i === 0) {
-            firstArr.push(newData);
-          } else if (i === 3) {
-            lastArr.push(newData);
-          } else {
-            contentArr.push(newData);
-          }
-        });};for (var i in uniStatData) {_loop(i);
-      }
-
-      firstArr.push.apply(firstArr, contentArr.concat(lastArr));
-      var optionsData = {
-        usv: STAT_VERSION, //统计 SDK 版本号
-        t: time, //发送请求时的时间戮
-        requests: JSON.stringify(firstArr) };
-
-
-      this._reportingRequestData = {};
-      if (getPlatformName() === 'n') {
-        uni.removeStorageSync('__UNI__STAT__DATA');
-      }
-
-      if (data.ut === 'h5') {
-        this.imageRequest(optionsData);
-        return;
-      }
-
-      if (getPlatformName() === 'n' && this.statData.p === 'a') {
-        setTimeout(function () {
-          _this4._sendRequest(optionsData);
-        }, 200);
-        return;
-      }
-      this._sendRequest(optionsData);
-    } }, { key: "_sendRequest", value: function _sendRequest(
-    optionsData) {var _this5 = this;
-      uni.request({
-        url: STAT_URL,
-        method: 'POST',
-        // header: {
-        //   'content-type': 'application/json' // 默认值
-        // },
-        data: optionsData,
-        success: function success() {
-          // if (process.env.NODE_ENV === 'development') {
-          //   console.log('stat request success');
-          // }
-        },
-        fail: function fail(e) {
-          if (++_this5._retry < 3) {
-            setTimeout(function () {
-              _this5._sendRequest(optionsData);
-            }, 1000);
-          }
-        } });
-
-    }
-    /**
-       * h5 请求
-       */ }, { key: "imageRequest", value: function imageRequest(
-    data) {
-      var image = new Image();
-      var options = getSgin(GetEncodeURIComponentOptions(data)).options;
-      image.src = STAT_H5_URL + '?' + options;
-    } }, { key: "sendEvent", value: function sendEvent(
-
-    key, value) {
-      // 校验 type 参数
-      if (calibration(key, value)) return;
-
-      if (key === 'title') {
-        this._navigationBarTitle.report = value;
-        return;
-      }
-      this._sendEventRequest({
-        key: key,
-        value: typeof value === 'object' ? JSON.stringify(value) : value },
-      1);
-    } }]);return Util;}();var
-
-
-
-Stat = /*#__PURE__*/function (_Util) {_inherits(Stat, _Util);_createClass(Stat, null, [{ key: "getInstance", value: function getInstance()
-    {
-      if (!this.instance) {
-        this.instance = new Stat();
-      }
-      return this.instance;
-    } }]);
-  function Stat() {var _this6;_classCallCheck(this, Stat);
-    _this6 = _possibleConstructorReturn(this, _getPrototypeOf(Stat).call(this));
-    _this6.instance = null;
-    // 注册拦截器
-    if (typeof uni.addInterceptor === 'function' && "development" !== 'development') {
-      _this6.addInterceptorInit();
-      _this6.interceptLogin();
-      _this6.interceptShare(true);
-      _this6.interceptRequestPayment();
-    }return _this6;
-  }_createClass(Stat, [{ key: "addInterceptorInit", value: function addInterceptorInit()
-
-    {
-      var self = this;
-      uni.addInterceptor('setNavigationBarTitle', {
-        invoke: function invoke(args) {
-          self._navigationBarTitle.page = args.title;
-        } });
-
-    } }, { key: "interceptLogin", value: function interceptLogin()
-
-    {
-      var self = this;
-      uni.addInterceptor('login', {
-        complete: function complete() {
-          self._login();
-        } });
-
-    } }, { key: "interceptShare", value: function interceptShare(
-
-    type) {
-      var self = this;
-      if (!type) {
-        self._share();
-        return;
-      }
-      uni.addInterceptor('share', {
-        success: function success() {
-          self._share();
-        },
-        fail: function fail() {
-          self._share();
-        } });
-
-    } }, { key: "interceptRequestPayment", value: function interceptRequestPayment()
-
-    {
-      var self = this;
-      uni.addInterceptor('requestPayment', {
-        success: function success() {
-          self._payment('pay_success');
-        },
-        fail: function fail() {
-          self._payment('pay_fail');
-        } });
-
-    } }, { key: "report", value: function report(
-
-    options, self) {
-      this.self = self;
-      // if (process.env.NODE_ENV === 'development') {
-      //   console.log('report init');
-      // }
-      setPageResidenceTime();
-      this.__licationShow = true;
-      this._sendReportRequest(options, true);
-    } }, { key: "load", value: function load(
-
-    options, self) {
-      if (!self.$scope && !self.$mp) {
-        var page = getCurrentPages();
-        self.$scope = page[page.length - 1];
-      }
-      this.self = self;
-      this._query = options;
-    } }, { key: "show", value: function show(
-
-    self) {
-      this.self = self;
-      if (getPageTypes(self)) {
-        this._pageShow(self);
-      } else {
-        this._applicationShow(self);
-      }
-    } }, { key: "ready", value: function ready(
-
-    self) {
-      // this.self = self;
-      // if (getPageTypes(self)) {
-      //   this._pageShow(self);
-      // }
-    } }, { key: "hide", value: function hide(
-    self) {
-      this.self = self;
-      if (getPageTypes(self)) {
-        this._pageHide(self);
-      } else {
-        this._applicationHide(self, true);
-      }
-    } }, { key: "error", value: function error(
-    em) {
-      if (this._platform === 'devtools') {
-        if (true) {
-          console.info('当前运行环境为开发者工具，不上报数据。');
-        }
-        // return;
-      }
-      var emVal = '';
-      if (!em.message) {
-        emVal = JSON.stringify(em);
-      } else {
-        emVal = em.stack;
-      }
-      var options = {
-        ak: this.statData.ak,
-        uuid: this.statData.uuid,
-        lt: '31',
-        ut: this.statData.ut,
-        ch: this.statData.ch,
-        mpsdk: this.statData.mpsdk,
-        mpv: this.statData.mpv,
-        v: this.statData.v,
-        em: emVal,
-        usv: this.statData.usv,
-        t: getTime(),
-        p: this.statData.p };
-
-      this.request(options);
-    } }]);return Stat;}(Util);
-
-
-var stat = Stat.getInstance();
-var isHide = false;
-var lifecycle = {
-  onLaunch: function onLaunch(options) {
-    stat.report(options, this);
-  },
-  onReady: function onReady() {
-    stat.ready(this);
-  },
-  onLoad: function onLoad(options) {
-    stat.load(options, this);
-    // 重写分享，获取分享上报事件
-    if (this.$scope && this.$scope.onShareAppMessage) {
-      var oldShareAppMessage = this.$scope.onShareAppMessage;
-      this.$scope.onShareAppMessage = function (options) {
-        stat.interceptShare(false);
-        return oldShareAppMessage.call(this, options);
-      };
-    }
-  },
-  onShow: function onShow() {
-    isHide = false;
-    stat.show(this);
-  },
-  onHide: function onHide() {
-    isHide = true;
-    stat.hide(this);
-  },
-  onUnload: function onUnload() {
-    if (isHide) {
-      isHide = false;
-      return;
-    }
-    stat.hide(this);
-  },
-  onError: function onError(e) {
-    stat.error(e);
-  } };
-
-
-function main() {
-  if (true) {
-    uni.report = function (type, options) {};
-  } else { var Vue; }
-}
-
-main();
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 530:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/countdown.js ***!
-  \***********************************/
+/***/ 534:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/countdown.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11925,15 +11055,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.countdown 
 
 /***/ }),
 
-/***/ 580:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/home/city.js ***!
-  \***********************************/
+/***/ 584:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/home/city.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getCity = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getCity = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 /*
                                                                                                                                                                                                                                                                
@@ -11948,26 +11078,15 @@ var getCity = function getCity() {var params = arguments.length > 0 && arguments
 
 /***/ }),
 
-/***/ 6:
-/*!******************************************************!*\
-  !*** ./node_modules/@dcloudio/uni-stat/package.json ***!
-  \******************************************************/
-/*! exports provided: _from, _id, _inBundle, _integrity, _location, _phantomChildren, _requested, _requiredBy, _resolved, _shasum, _spec, _where, author, bugs, bundleDependencies, deprecated, description, devDependencies, files, gitHead, homepage, license, main, name, repository, scripts, version, default */
-/***/ (function(module) {
-
-module.exports = {"_from":"@dcloudio/uni-stat@next","_id":"@dcloudio/uni-stat@2.0.0-26420200313001","_inBundle":false,"_integrity":"sha512-7dPuazTiDmUyRcw+WW+UlWGKH0eeCUB+p0P4pJVKEHjpdXnXgvDQCSdJk764NH99TfsUycnuxecP5oHckVa88g==","_location":"/@dcloudio/uni-stat","_phantomChildren":{},"_requested":{"type":"tag","registry":true,"raw":"@dcloudio/uni-stat@next","name":"@dcloudio/uni-stat","escapedName":"@dcloudio%2funi-stat","scope":"@dcloudio","rawSpec":"next","saveSpec":null,"fetchSpec":"next"},"_requiredBy":["#USER","/","/@dcloudio/vue-cli-plugin-uni"],"_resolved":"https://registry.npmjs.org/@dcloudio/uni-stat/-/uni-stat-2.0.0-26420200313001.tgz","_shasum":"a006e329e033cd412accfa635f8933dbb822a9c3","_spec":"@dcloudio/uni-stat@next","_where":"/Users/guoshengqiang/Documents/dcloud-plugins/release/uniapp-cli","author":"","bugs":{"url":"https://github.com/dcloudio/uni-app/issues"},"bundleDependencies":false,"deprecated":false,"description":"","devDependencies":{"@babel/core":"^7.5.5","@babel/preset-env":"^7.5.5","eslint":"^6.1.0","rollup":"^1.19.3","rollup-plugin-babel":"^4.3.3","rollup-plugin-clear":"^2.0.7","rollup-plugin-commonjs":"^10.0.2","rollup-plugin-copy":"^3.1.0","rollup-plugin-eslint":"^7.0.0","rollup-plugin-json":"^4.0.0","rollup-plugin-node-resolve":"^5.2.0","rollup-plugin-replace":"^2.2.0","rollup-plugin-uglify":"^6.0.2"},"files":["dist","package.json","LICENSE"],"gitHead":"b1fdbafab5dd4673cff64188a5203d0c947e4f50","homepage":"https://github.com/dcloudio/uni-app#readme","license":"Apache-2.0","main":"dist/index.js","name":"@dcloudio/uni-stat","repository":{"type":"git","url":"git+https://github.com/dcloudio/uni-app.git","directory":"packages/uni-stat"},"scripts":{"build":"NODE_ENV=production rollup -c rollup.config.js","dev":"NODE_ENV=development rollup -w -c rollup.config.js"},"version":"2.0.0-26420200313001"};
-
-/***/ }),
-
-/***/ 644:
-/*!********************************!*\
-  !*** D:/lunyunW/api/upload.js ***!
-  \********************************/
+/***/ 648:
+/*!*****************************************!*\
+  !*** F:/program/used_car/api/upload.js ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.upload = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 38));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 25));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.upload = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@vue/babel-preset-app/node_modules/@babel/runtime/regenerator */ 34));var _config = _interopRequireDefault(__webpack_require__(/*! @/api/config.js */ 21));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}
 var upload = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
               new Promise(function (resolve, reject) {
                 var imgSrc = uni.chooseImage({
@@ -11995,33 +11114,21 @@ var upload = /*#__PURE__*/function () {var _ref = _asyncToGenerator( /*#__PURE__
 
                   } });
 
-              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee, this);}));return function upload() {return _ref.apply(this, arguments);};}();exports.upload = upload;
+              }));case 2:return _context.abrupt("return", _context.sent);case 3:case "end":return _context.stop();}}}, _callee);}));return function upload() {return _ref.apply(this, arguments);};}();exports.upload = upload;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 
-/***/ 7:
-/*!**********************************************!*\
-  !*** D:/lunyunW/pages.json?{"type":"style"} ***!
-  \**********************************************/
+/***/ 740:
+/*!****************************************************!*\
+  !*** F:/program/used_car/api/shoucang/shoucang.js ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "pages": { "pages/index/index": { "navigationBarTitleText": "路运二手车", "enablePullDownRefresh": true }, "pages/pricing/index": { "navigationBarTitleText": "一口价", "enablePullDownRefresh": true }, "pages/city/City": { "navigationBarTitleText": "选择城市", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/unsoldCar/index": { "navigationBarTitleText": "库存车", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black", "enablePullDownRefresh": true }, "pages/bidding/Bidding": { "navigationBarTitleText": "抢购", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/truckService": { "navigationBarTitleText": "路运车服", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/store/Store": { "navigationBarTitleText": "店铺", "enablePullDownRefresh": true }, "pages/sellcars/SellCars": { "navigationBarTitleText": "我要卖车", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/brand": { "navigationBarTitleText": "选择品牌", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/personalcenter/PersonalCenter": { "navigationBarTitleText": "个人中心" }, "pages/general/details": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/DirectSelling/DirectSelling": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/dgMore": { "navigationBarTitleText": "挂车信息", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black", "navigationBarShadow": { "colorType": "grey" } }, "pages/common/viewMore": { "navigationBarTitleText": "车辆基本信息", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black", "navigationBarShadow": { "colorType": "grey" } }, "pages/kucunDetails/kucunDetails": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/auctionDetails/auctionDetails": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/storeDetails/storeDetails": { "navigationBarTitleText": "店铺详情" }, "pages/storeDetails/base/ShopDetails": { "navigationBarTitleText": "店铺详情", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/common/phonenumber": { "navigationBarTitleText": "登录", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/login": { "navigationBarTitleText": "登录", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/general/base/installment": { "navigationBarTitleText": "分期咨询", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/common/release": { "navigationBarTitleText": "发布成功", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/TestingDetaile": { "navigationBarTitleText": "检测信息详情", "enablePullDownRefresh": true }, "pages/common/appointment": { "navigationBarTitleText": "提交成功", "enablePullDownRefresh": true }, "pages/DirectSelling/base/discounts": { "navigationBarTitleText": "我要优惠", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/common/getGift": { "navigationBarTitleText": "领取礼品成功", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/kucunDetails/base/discounts": { "navigationBarTitleText": "库存车", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/payDeposit/management": { "navigationBarTitleText": "保证金管理", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/payDeposit/amountFrozen": { "navigationBarTitleText": "冻结金额详情", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/payDeposit/refund": { "navigationBarTitleText": "保证金退款", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "pages/payDeposit/payment": { "navigationBarTitleText": "缴纳保证金", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "pages/payDeposit/agreement": { "navigationBarTitleText": "保证金充值协议", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/member/collectiongoods/index": { "navigationBarTitleText": "收藏夹", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/collectionshop/index": { "navigationBarTitleText": "关注店铺", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/newmypath/index": { "navigationBarTitleText": "足迹", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/orderlist/index": { "navigationBarTitleText": "我的订单", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/orderdetail/index": { "navigationBarTitleText": "订单详情", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/shop/index": { "navigationBarTitleText": "店铺中心", "navigationBarBackgroundColor": "#0657A6" }, "other_pages/member/applyshop/index": { "navigationBarTitleText": "我要开店", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/shop/base/ShopDetails": { "navigationBarTitleText": "店铺详情", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/cargoods/index": { "navigationBarTitleText": "车辆管理", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/carprogress/index": { "navigationBarTitleText": "卖车进度", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/member/offer_records/index": { "navigationBarTitleText": "我的出价", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/help/index": { "navigationBarTitleText": "帮助中心", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/special/Special": { "navigationBarTitleText": "港口特价", "enablePullDownRefresh": true }, "other_pages/gangkouDetails/GkouDetails": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/recommend/Recommend": { "navigationBarTitleText": "特别推荐", "enablePullDownRefresh": true }, "other_pages/tebieDetails/tebieDetails": { "navigationBarTitleText": "车辆详情", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/installment/installment": { "navigationBarTitleText": "分期咨询", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/RealName/RealName": { "navigationBarTitleText": "个人实名认证", "enablePullDownRefresh": true }, "other_pages/VehicleImg/VehicleImg": { "navigationBarTitleText": "车辆图片", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/daiguaSell/SellCars": { "navigationBarTitleText": "挂车信息", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/huanxin/HuanXin": { "navigationBarTitleText": "以旧换新" }, "other_pages/oldVehicleImg/VehicleImg": { "navigationBarTitleText": "车辆图片", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" }, "other_pages/sousuo/suosuo": { "navigationBarTitleText": "搜索", "navigationBarBackgroundColor": "#F4F4F4", "navigationBarTextStyle": "black" }, "other_pages/SearchDetail/SearchDetail": { "navigationBarTitleText": "搜索中" }, "other_pages/detectiont/Detection": { "navigationBarTitleText": "车辆检测" }, "other_pages/common/testReport": { "navigationBarTitleText": "检测报告" }, "other_pages/common/installment": { "navigationBarTitleText": "分期付款" }, "other_pages/shop/shop": { "navigationBarTitleText": "我的店铺" }, "other_pages/shopList/shopList": { "navigationBarTitleText": "店铺订单" }, "other_pages/shopDetail/index": { "navigationBarTitleText": "订单详情" }, "other_pages/common/subSuccess": { "navigationBarTitleText": "信息提交成功" }, "other_pages/common/TestingDetaile": { "navigationBarTitleText": "检测项目" }, "other_pages/rejectOptions/rejectOptions": { "navigationBarTitleText": "拒绝车源" }, "other_pages/shopSet/shopSet": { "navigationBarTitleText": "店铺公告", "navigationBarBackgroundColor": "#FFFFFF", "navigationBarTextStyle": "black" } }, "globalStyle": { "navigationBarTextStyle": "white", "navigationBarTitleText": "路运二手车", "navigationBarBackgroundColor": "#0657A6", "backgroundColor": "#F8F8F8" } };exports.default = _default;
-
-/***/ }),
-
-/***/ 736:
-/*!*******************************************!*\
-  !*** D:/lunyunW/api/shoucang/shoucang.js ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.quxiaosc = exports.shoucang = void 0;var _reques = __webpack_require__(/*! @/api/reques.js */ 41);
-var _navigate = __webpack_require__(/*! @/api/navigate.js */ 26);
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.quxiaosc = exports.shoucang = void 0;var _reques = __webpack_require__(/*! @/api/reques.js */ 37);
+var _navigate = __webpack_require__(/*! @/api/navigate.js */ 22);
 // 收藏
 var shoucang = function shoucang(then, toKen, goodsId, price, favType, groupId) {var promotion = arguments.length > 6 && arguments[6] !== undefined ? arguments[6] : "";
   if (toKen !== "") {
@@ -12081,27 +11188,15 @@ exports.shoucang = shoucang;var quxiaosc = function quxiaosc(then, toKen, goodsI
 
 /***/ }),
 
-/***/ 8:
-/*!*********************************************!*\
-  !*** D:/lunyunW/pages.json?{"type":"stat"} ***!
-  \*********************************************/
+/***/ 85:
+/*!************************************************!*\
+  !*** F:/program/used_car/api/member/member.js ***!
+  \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = { "appid": "__UNI__B0EF0E1" };exports.default = _default;
-
-/***/ }),
-
-/***/ 89:
-/*!***************************************!*\
-  !*** D:/lunyunW/api/member/member.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.goodsCarDetail = exports.setGoodsCancel = exports.setGoodsRecommend = exports.setShopNotice = exports.goodsOnline = exports.goodsOffline = exports.cancelyj = exports.agreeyj = exports.transDeal = exports.carOrderCreate = exports.getShopOrderCount = exports.getOrderTestingInfoAndMark = exports.getTestItem = exports.stagesPay = exports.procedureAgent = exports.userAlreadyGuohu = exports.alreadyDeposit = exports.ApplyOrderTestingRefund = exports.cencelReserv = exports.agreeReserv = exports.userOrderCehckCar = exports.getTestingList = exports.getbaillist = exports.getMemberPromotionOfferRecords = exports.isCantRefund = exports.bailApplyRefund = exports.memberNeedBailMoney = exports.memberIsNeedBail = exports.addShop = exports.getIsbindmobile = exports.getMemberShopInfo = exports.isBindId = exports.carOrderDetail = exports.orderClose = exports.getOrderList = exports.getUserCarGoodsList = exports.delMyPath = exports.newMyPath = exports.myCollection = exports.cancelFavorites = exports.favoritesGoodsorshop = exports.getNoticeList = exports.getMemberIndexData = exports.getMemberInfo = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.goodsCarDetail = exports.setGoodsCancel = exports.setGoodsRecommend = exports.setShopNotice = exports.goodsOnline = exports.goodsOffline = exports.cancelyj = exports.agreeyj = exports.transDeal = exports.carOrderCreate = exports.getShopOrderCount = exports.getOrderTestingInfoAndMark = exports.getTestItem = exports.stagesPay = exports.procedureAgent = exports.userAlreadyGuohu = exports.alreadyDeposit = exports.ApplyOrderTestingRefund = exports.cencelReserv = exports.agreeReserv = exports.userOrderCehckCar = exports.getTestingList = exports.getbaillist = exports.getMemberPromotionOfferRecords = exports.isCantRefund = exports.bailApplyRefund = exports.memberNeedBailMoney = exports.memberIsNeedBail = exports.addShop = exports.getIsbindmobile = exports.getMemberShopInfo = exports.isBindId = exports.carOrderDetail = exports.orderClose = exports.getOrderList = exports.getUserCarGoodsList = exports.delMyPath = exports.newMyPath = exports.myCollection = exports.cancelFavorites = exports.favoritesGoodsorshop = exports.getNoticeList = exports.getMemberIndexData = exports.getMemberInfo = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var controller = '/member/';
 var orderController = '/order/';
@@ -12582,15 +11677,15 @@ exports.setGoodsCancel = setGoodsCancel;var goodsCarDetail = function goodsCarDe
 
 /***/ }),
 
-/***/ 968:
-/*!***********************************!*\
-  !*** D:/lunyunW/api/shop/shop.js ***!
-  \***********************************/
+/***/ 972:
+/*!********************************************!*\
+  !*** F:/program/used_car/api/shop/shop.js ***!
+  \********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.getShopDealCarGoodsList = exports.getShopCarGoodsList = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 24));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+Object.defineProperty(exports, "__esModule", { value: true });exports.getShopDealCarGoodsList = exports.getShopCarGoodsList = void 0;var _index = _interopRequireDefault(__webpack_require__(/*! @/api/index */ 20));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var controller = '/shop/';
 
